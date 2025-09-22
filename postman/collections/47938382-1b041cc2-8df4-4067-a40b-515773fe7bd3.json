@@ -1709,7 +1709,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/lists/{{?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{newlistname",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1719,7 +1719,7 @@
 							"path": [
 								"1",
 								"lists",
-								"{{"
+								"{{listID}}"
 							],
 							"query": [
 								{
@@ -1729,6 +1729,10 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "{{newlistname"
 								}
 							]
 						}
