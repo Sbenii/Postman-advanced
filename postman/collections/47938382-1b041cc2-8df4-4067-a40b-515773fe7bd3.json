@@ -1225,6 +1225,47 @@
 					"response": []
 				},
 				{
+					"name": "Create a card",
+					"id": "47938382-4ec4f9ba-48c9-4641-8eb4-2b6dd2296499",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "5{{listID}}"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete board",
 					"event": [
 						{
@@ -1331,47 +1372,6 @@
 								"{{boardID}}"
 							],
 							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create a card",
-					"id": "47938382-4ec4f9ba-48c9-4641-8eb4-2b6dd2296499",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"cards"
-							],
-							"query": [
-								{
-									"key": "idList",
-									"value": "5{{listID}}"
-								},
 								{
 									"key": "key",
 									"value": "{{key}}"
