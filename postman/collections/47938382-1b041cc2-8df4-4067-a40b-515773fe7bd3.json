@@ -1807,11 +1807,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://api.trelloom/1/cards/{id}?key=APIKey&token=APIToken",
+							"raw": "https://api.trello.com/1/cards/{id}?key={{&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
-								"trelloom"
+								"trello",
+								"com"
 							],
 							"path": [
 								"1",
@@ -1821,11 +1822,11 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{"
 								},
 								{
 									"key": "token",
-									"value": "APIToken"
+									"value": "{{token}}"
 								}
 							]
 						}
