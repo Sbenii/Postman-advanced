@@ -1239,7 +1239,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}&n",
+							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}&name=Beni",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1261,9 +1261,8 @@
 									"value": "{{token}}"
 								},
 								{
-									"key": "n",
-									"value": null,
-									"type": "text"
+									"key": "name",
+									"value": "Beni"
 								}
 							]
 						}
