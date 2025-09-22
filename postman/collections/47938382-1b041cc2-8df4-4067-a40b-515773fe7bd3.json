@@ -611,12 +611,11 @@
 							"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}/api/users/2",
+							"raw": "{{base_url}}api/users/2",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"users",
 								"2"
 							]
