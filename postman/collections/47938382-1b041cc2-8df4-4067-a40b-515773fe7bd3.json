@@ -1014,14 +1014,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}boa?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"1",
 								"boards",
-								"{{boardID}}boa"
+								"{{boardID}}"
 							],
 							"query": [
 								{
