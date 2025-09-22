@@ -1250,7 +1250,7 @@
 								"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `myboard${randomNum}`;",
+									"let uniqueValue = `mylist${randomNum}`;",
 									"pm.environment.set(\"mylistname\", uniqueValue);",
 									""
 								],
@@ -1262,7 +1262,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "80d7ea82-cb82-47e2-ac89-72076387ff90",
+								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
 								"exec": [],
 								"type": "text/javascript"
 							}
