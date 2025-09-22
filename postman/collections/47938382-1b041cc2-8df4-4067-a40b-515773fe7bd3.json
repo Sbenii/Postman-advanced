@@ -102,6 +102,273 @@
 					"response": []
 				},
 				{
+					"name": "List single user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code = 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Checking if fields: id, email, first_name, last_name and avatar exists\", function () {",
+									"    var Fields = pm.response.json();",
+									"    pm.expect(Fields.data.id).to.exist;",
+									"    pm.expect(Fields.data.email).to.exist;",
+									"    pm.expect(Fields.data.first_name).to.exist;",
+									"    pm.expect(Fields.data.last_name).to.exist;",
+									"    pm.expect(Fields.data.avatar).to.exist;",
+									"});",
+									"pm.test(\"Checking correct email format \", function(){",
+									"    var mail=pm.response.json();",
+									"    let emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;",
+									"    pm.expect(mail.data.email).to.match(emailRegex)",
+									"})",
+									"pm.test(\"Correct user fetched\", function () {",
+									"    var ID =pm.environment.get(\"UserId\");",
+									"    var userid = pm.response.json();",
+									"    pm.expect(userid.data.id).to.eql(ID);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "2d300e78-9a13-4548-a5aa-43c1edfa703b"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const randomValue = Math.floor(Math.random() * 12) + 1;",
+									"pm.environment.set(\"UserId\", randomValue);",
+									"// let randomvalue = [];",
+									"// for (let x = 1; x <= 12; x++) {",
+									"//     randomvalue[x] = x ;",
+									"// }",
+									"// const idx = Math.floor(Math.random() * randomvalue.length);",
+									"// const picked = randomvalue[idx];",
+									"// console.log(\"Random pick:\", picked);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "e17b5e8e-e990-4c92-b2bf-8ef1d9f3c6d2"
+							}
+						}
+					],
+					"id": "47938382-1321c7ca-78ec-42d5-bd09-324e3c5aaea6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/users/{{UserId}}",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"users",
+								"{{UserId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List a user not found",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"pm.test(\"Check of JSON response is emty\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.empty;",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "4bd91d72-0406-4758-bc75-20ab16380d20"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "327c88ef-5909-4da5-8d0b-a8a1f81bbb8a"
+							}
+						}
+					],
+					"id": "47938382-6f172217-1474-4256-a9ec-8491cc8a8042",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/users/23",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"users",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List all resources",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"var resourcename=pm.response.json();",
+									"let resource2name=resourcename.data[1].name;",
+									"pm.environment.set(\"r2name\", resource2name);",
+									"pm.test(\"If a users called cerulean and true red exist\", function () {",
+									"    var j = pm.response.json();",
+									"    var array=j.data;",
+									"    let cerulean=false;",
+									"    let truered=false;",
+									"    for (let i=0;i<array.length;++i){",
+									"        if (array[i].name=='cerulean'){",
+									"            cerulean=true;",
+									"        }",
+									"        else if (array[i].name=='true red'){",
+									"            truered=true;",
+									"        }",
+									"        ",
+									"    }",
+									"    pm.expect(cerulean).to.eql(true);",
+									"    pm.expect(truered).to.eql(true)",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "f98bcc59-6a8f-4879-b5cf-9afe58ac1b9a"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "ebc037f6-6cec-4180-868e-8f73771671e5"
+							}
+						}
+					],
+					"id": "47938382-4692c714-6583-458d-b8af-f4aec22dad59",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/unknown",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"unknown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List single resource",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"let rename=pm.environment.get(\"r2name\");",
+									"pm.test(\"Correct name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.name).to.eql(rename);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "f9b8a971-0e0b-420d-9038-18215e45e069"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [],
+								"type": "text/javascript",
+								"id": "044deda8-955a-404b-a137-900d36d975d2"
+							}
+						}
+					],
+					"id": "47938382-cf3e80bd-b3d2-4a16-aa1d-5a86f97357d8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/unknown/2",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"unknown",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "google",
 					"id": "47938382-f5d0d744-0247-440c-bfcf-3c371b34732f",
 					"protocolProfileBehavior": {
