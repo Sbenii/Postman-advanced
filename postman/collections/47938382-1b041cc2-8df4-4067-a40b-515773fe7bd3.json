@@ -1359,7 +1359,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards?idList=5abbe4b7ddc1b351ef961414&key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1373,7 +1373,7 @@
 							"query": [
 								{
 									"key": "idList",
-									"value": "5abbe4b7ddc1b351ef961414"
+									"value": "5{{listID}}"
 								},
 								{
 									"key": "key",
