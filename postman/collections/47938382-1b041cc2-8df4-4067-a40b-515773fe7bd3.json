@@ -496,13 +496,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/uses",
+							"raw": "{{base_url}}api/user",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
-								"uses"
+								"user"
 							]
 						}
 					},
