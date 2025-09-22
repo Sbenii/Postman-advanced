@@ -1590,6 +1590,31 @@
 				},
 				{
 					"name": "Update card",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "45596baf-4c7d-4cbe-a62b-6296fce2b5b4",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mynewardname${randomNum}`;",
+									"pm.environment.set(\"mynewcardname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8f75b298-df82-4111-9f8a-60c3bff35a68",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-a5047273-db08-4033-9ca8-3574a1a4e853",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
