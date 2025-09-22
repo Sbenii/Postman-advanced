@@ -1645,7 +1645,7 @@
 					"response": []
 				},
 				{
-					"name": "Get created list Copy",
+					"name": "Get  updated list",
 					"id": "47938382-e1446e49-44a7-4788-8503-13e4d1d33e1f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
