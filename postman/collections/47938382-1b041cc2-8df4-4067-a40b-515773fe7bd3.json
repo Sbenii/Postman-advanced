@@ -710,12 +710,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/register",
+							"raw": "{{base_url}}api/register",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"register"
 							]
 						}
@@ -770,12 +769,11 @@
 							"raw": "{\n    \"email\": \"sydney@fife\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}/api/register",
+							"raw": "{{base_url}}api/register",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"register"
 							]
 						}
