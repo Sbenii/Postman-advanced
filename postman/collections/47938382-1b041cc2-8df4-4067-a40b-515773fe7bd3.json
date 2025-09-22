@@ -1349,8 +1349,8 @@
 								"id": "52a02c56-4992-4af5-9d53-bdaed2d45b0e",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `mynewb${randomNum}`;",
-									"pm.environment.set(\"mycardname\", uniqueValue);",
+									"let uniqueValue = `mynewboardname${randomNum}`;",
+									"pm.environment.set(\"mynewb\", uniqueValue);",
 									""
 								],
 								"type": "text/javascript",
@@ -1361,7 +1361,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6c5182d1-5bb8-45d8-bb29-aeb9a96b0fec",
+								"id": "23bffe89-21a5-4cc5-b81e-3739f0c15214",
 								"exec": [],
 								"type": "text/javascript"
 							}
