@@ -1350,7 +1350,7 @@
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
 									"let uniqueValue = `mynewboardname${randomNum}`;",
-									"pm.environment.set(\"mynewb\", uniqueValue);",
+									"pm.environment.set(\"mynewboardname\", uniqueValue);",
 									""
 								],
 								"type": "text/javascript",
@@ -1361,7 +1361,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "23bffe89-21a5-4cc5-b81e-3739f0c15214",
+								"id": "5e317914-0d75-4981-9905-394699f2b3ce",
 								"exec": [],
 								"type": "text/javascript"
 							}
@@ -1375,7 +1375,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}?key={{key}}&token={{token}}&name",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}?key={{key}}&token={{token}}&name={{my",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1398,7 +1398,7 @@
 								},
 								{
 									"key": "name",
-									"value": null
+									"value": "{{my"
 								}
 							]
 						}
