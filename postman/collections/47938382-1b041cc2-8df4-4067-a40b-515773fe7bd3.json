@@ -537,6 +537,61 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Update user (patch)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "0a299e96-d4e6-45ca-b9b7-ec432b6157b3"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [],
+								"type": "text/javascript",
+								"id": "0c6120d6-d3c0-4021-80c7-8c575871d1f8"
+							}
+						}
+					],
+					"id": "47938382-c38f14c9-15ab-413f-a83e-79d2f93dafbd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}api/users/2",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "47938382-ce8aa49d-7995-4653-980b-647699ed2b80"
