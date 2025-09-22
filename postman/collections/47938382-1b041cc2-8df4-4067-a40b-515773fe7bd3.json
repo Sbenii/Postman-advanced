@@ -1065,7 +1065,35 @@
 					"response": []
 				}
 			],
-			"id": "47938382-ef8532f5-150e-407f-b1d1-4accc9c932d0"
+			"id": "47938382-ef8532f5-150e-407f-b1d1-4accc9c932d0",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e9b80ebf-7e0d-4d00-87ff-5a7251bf84bb",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d62f1182-4195-4188-aa2d-dab2b79fdfa0",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
 		}
 	]
 }
