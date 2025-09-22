@@ -233,12 +233,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/users/23",
+							"raw": "{{base_url}}api/users/23",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"users",
 								"23"
 							]
