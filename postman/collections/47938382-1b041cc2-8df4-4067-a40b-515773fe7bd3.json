@@ -1251,7 +1251,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key=APIKey&token=APIToken",
+							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key={{k&token=APIToken",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1270,7 +1270,7 @@
 								},
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{k"
 								},
 								{
 									"key": "token",
