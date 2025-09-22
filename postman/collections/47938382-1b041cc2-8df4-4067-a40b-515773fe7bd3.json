@@ -1239,7 +1239,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}&n",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1259,6 +1259,11 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
+								},
+								{
+									"key": "n",
+									"value": null,
+									"type": "text"
 								}
 							]
 						}
