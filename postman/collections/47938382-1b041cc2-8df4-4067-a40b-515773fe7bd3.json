@@ -924,6 +924,29 @@
 			"item": [
 				{
 					"name": "Create board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a48655c7-7b90-47a0-b03c-e249ca183eed",
+								"exec": [
+									"let jasondata=pm.response.json();",
+									"pm.environment.set(\"boardID\", jasondata.id);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5ecb22d0-32ad-43a9-81fd-c53a94e186e0",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-e90a1cdf-eaf5-4bfb-a766-132023289b3d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
