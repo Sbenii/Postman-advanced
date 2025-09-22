@@ -1145,7 +1145,7 @@
 								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
 								"exec": [
 									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"boardID\", jasondata.id);"
+									"pm.environment.set(\"listID\", jasondata.id);"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -1201,14 +1201,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists/{id}?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/lists/{?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"1",
 								"lists",
-								"{id}"
+								"{"
 							],
 							"query": [
 								{
