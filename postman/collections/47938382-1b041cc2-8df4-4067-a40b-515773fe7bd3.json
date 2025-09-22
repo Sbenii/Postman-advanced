@@ -1843,7 +1843,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1864,6 +1864,11 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
+								},
+								{
+									"key": "value",
+									"value": null,
+									"type": "text"
 								}
 							]
 						}
