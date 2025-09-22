@@ -968,7 +968,7 @@
 								"id": "2dbae900-2a63-4bb8-bbde-5dd946de60b1",
 								"exec": [
 									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"variable_key\", \"variable_value\");"
+									"pm.environment.set(\"boardID\", \"variable_value\");"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -978,7 +978,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "845bc965-4928-4cd3-8f21-e64562a23250",
+								"id": "9bd15865-daa3-44a1-930a-27982e0aef3d",
 								"exec": [],
 								"type": "text/javascript"
 							}
