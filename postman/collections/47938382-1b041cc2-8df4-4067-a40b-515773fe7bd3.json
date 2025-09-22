@@ -1700,7 +1700,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Update list",
 					"id": "47938382-bb6ee3a6-8660-45fa-9ffc-408f6602e658",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
