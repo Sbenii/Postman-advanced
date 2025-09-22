@@ -941,7 +941,7 @@
 									"pm.test(\"Check if desc field exists\", function () {",
 									"    pm.expect(jasondata.desc).to.exist;",
 									"});",
-									"pm.test(\"Check if organization\", function () {",
+									"pm.test(\"Check if organization id exists\", function () {",
 									"    pm.expect(jasondata.idOrganization).to.exist;",
 									"});"
 								],
@@ -953,7 +953,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7121b6b3-1903-4d4b-9334-c74797a79b45",
+								"id": "e176a813-62a0-4861-b806-3c361a0961f1",
 								"exec": [],
 								"type": "text/javascript"
 							}
