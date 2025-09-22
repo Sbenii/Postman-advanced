@@ -931,7 +931,10 @@
 								"id": "a48655c7-7b90-47a0-b03c-e249ca183eed",
 								"exec": [
 									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"boardID\", jasondata.id);"
+									"pm.environment.set(\"boardID\", jasondata.id);",
+									"pm.test(\"Your test name\", function () {",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -941,7 +944,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "5ecb22d0-32ad-43a9-81fd-c53a94e186e0",
+								"id": "559191f5-db45-4903-a931-225a7d931d2d",
 								"exec": [],
 								"type": "text/javascript"
 							}
