@@ -253,6 +253,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "f98bcc59-6a8f-4879-b5cf-9afe58ac1b9a",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -280,18 +281,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "f98bcc59-6a8f-4879-b5cf-9afe58ac1b9a"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "ebc037f6-6cec-4180-868e-8f73771671e5",
 								"exec": [
 									""
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "ebc037f6-6cec-4180-868e-8f73771671e5"
+								"requests": {}
 							}
 						}
 					],
@@ -309,11 +311,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}api/unknown",
+							"raw": "{{base_url}}/api/unknown",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"unknown"
 							]
 						}
@@ -326,6 +329,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "f9b8a971-0e0b-420d-9038-18215e45e069",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -338,15 +342,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "f9b8a971-0e0b-420d-9038-18215e45e069"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "044deda8-955a-404b-a137-900d36d975d2",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "044deda8-955a-404b-a137-900d36d975d2"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -364,11 +372,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}api/unknown/2",
+							"raw": "{{base_url}}/api/unknown/2",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"unknown",
 								"2"
 							]
