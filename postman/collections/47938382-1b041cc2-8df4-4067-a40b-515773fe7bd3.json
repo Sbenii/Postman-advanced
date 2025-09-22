@@ -1010,7 +1010,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get board",
 					"id": "47938382-0c09f6a2-3626-4dd6-86bf-6e59abd00771",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
