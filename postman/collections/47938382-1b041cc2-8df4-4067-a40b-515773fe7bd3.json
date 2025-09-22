@@ -1469,6 +1469,76 @@
 					"response": []
 				},
 				{
+					"name": "Update card",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "45596baf-4c7d-4cbe-a62b-6296fce2b5b4",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mynewcardname${randomNum}`;",
+									"pm.environment.set(\"mynewcardname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "08e6bd28-953f-4483-aeda-0e4629af4c56",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-a5047273-db08-4033-9ca8-3574a1a4e853",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}&name={{mynewcardname}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"{{cardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "{{mynewcardname}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete board",
 					"event": [
 						{
@@ -1582,76 +1652,6 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update card",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "45596baf-4c7d-4cbe-a62b-6296fce2b5b4",
-								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `mynewcardname${randomNum}`;",
-									"pm.environment.set(\"mynewcardname\", uniqueValue);",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "08e6bd28-953f-4483-aeda-0e4629af4c56",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-a5047273-db08-4033-9ca8-3574a1a4e853",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}&name={{mynewcardname}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"cards",
-								"{{cardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								},
-								{
-									"key": "name",
-									"value": "{{mynewcardname}}"
 								}
 							]
 						}
