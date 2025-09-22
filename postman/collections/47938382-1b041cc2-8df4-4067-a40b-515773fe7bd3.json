@@ -943,7 +943,9 @@
 									"});",
 									"pm.test(\"Check if organization id exists\", function () {",
 									"    pm.expect(jasondata.idOrganization).to.exist;",
-									"});"
+									"});",
+									"",
+									"let createdboard=pm.environment"
 								],
 								"type": "text/javascript",
 								"packages": {},
