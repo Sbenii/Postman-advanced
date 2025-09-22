@@ -1460,7 +1460,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://api.trello.com/1/cards/{id}?key={{kr&token={{token}}",
+					"raw": "https://api.trello.com/1/cards/{i?key={{key}}&token={{token}}",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -1470,12 +1470,12 @@
 					"path": [
 						"1",
 						"cards",
-						"{id}"
+						"{i"
 					],
 					"query": [
 						{
 							"key": "key",
-							"value": "{{kr"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
