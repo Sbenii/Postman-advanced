@@ -833,12 +833,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/login",
+							"raw": "{{base_url}}api/login",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"login"
 							]
 						}
