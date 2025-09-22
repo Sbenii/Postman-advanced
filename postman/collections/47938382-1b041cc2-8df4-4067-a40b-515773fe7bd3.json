@@ -369,6 +369,64 @@
 					"response": []
 				},
 				{
+					"name": "List resource not found",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"pm.test(\"Check of JSON response is emty\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.empty;",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "5844a138-9e49-4361-9628-84ac4d370661"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "0de42640-83c4-49fb-8f11-d5a92a09fb46"
+							}
+						}
+					],
+					"id": "47938382-18c74b86-23ea-4c51-bba4-d1c863cba39a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/unknown/23",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"unknown",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "google",
 					"id": "47938382-f5d0d744-0247-440c-bfcf-3c371b34732f",
 					"protocolProfileBehavior": {
