@@ -932,12 +932,9 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/?name={name}&key={{key}}&token={{token}}",
-							"protocol": "https",
+							"raw": "{{ba/1/boards/?name={name}&key={{key}}&token={{token}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{ba"
 							],
 							"path": [
 								"1",
