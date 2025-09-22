@@ -574,6 +574,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "0a299e96-d4e6-45ca-b9b7-ec432b6157b3",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -581,15 +582,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "0a299e96-d4e6-45ca-b9b7-ec432b6157b3"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "0c6120d6-d3c0-4021-80c7-8c575871d1f8",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "0c6120d6-d3c0-4021-80c7-8c575871d1f8"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -611,11 +616,12 @@
 							"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}api/users/2",
+							"raw": "{{base_url}}/api/users/2",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"users",
 								"2"
 							]
@@ -629,6 +635,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "1c5fdd1f-56a8-4102-bf0c-e832c11c0f0e",
 								"exec": [
 									"pm.test(\"Status code is 204\", function () {",
 									"    pm.response.to.have.status(204);",
@@ -638,18 +645,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "1c5fdd1f-56a8-4102-bf0c-e832c11c0f0e"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "85a54547-6fa6-45c5-afd1-0d3ea902245c",
 								"exec": [
 									""
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "85a54547-6fa6-45c5-afd1-0d3ea902245c"
+								"requests": {}
 							}
 						}
 					],
@@ -671,11 +679,12 @@
 							"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}api/users/2",
+							"raw": "{{base_url}}/api/users/2",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"users",
 								"2"
 							]
