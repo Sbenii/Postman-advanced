@@ -1239,7 +1239,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/1/cards?idList=5{{listID}}&key={{key}}&token={{token}}&name=Beni",
+							"raw": "{{base_url}}/1/cards?idList={{listID}}&key={{key}}&token={{token}}&name=Beni",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1250,7 +1250,7 @@
 							"query": [
 								{
 									"key": "idList",
-									"value": "5{{listID}}"
+									"value": "{{listID}}"
 								},
 								{
 									"key": "key",
