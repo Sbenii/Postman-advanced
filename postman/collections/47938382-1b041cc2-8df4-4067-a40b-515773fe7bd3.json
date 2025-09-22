@@ -1320,12 +1320,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/lists/{id}?key=APIKey&token=APIToken",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/lists/{id}?key=APIKey&token=APIToken",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
