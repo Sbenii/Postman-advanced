@@ -958,7 +958,7 @@
 									"// Generate a random 3-digit number",
 									"let randomNum= Math.floor(Math.random() * 1000).toString().padStart (3, '0');",
 									"// Create the dynamic value",
-									"let uniqueValue = 'myboard${randomNum}';",
+									"let uniqueValue = 'myboard ${randomNum}';",
 									"// Set it as an environment or global variable",
 									"pm.environment.set(\"myboardname\", uniqueValue); // use pm.globals.set(...)if you prefer global"
 								],
