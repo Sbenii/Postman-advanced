@@ -1603,7 +1603,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{id}?key=APIKey&token={{t",
+							"raw": "https://api.trello.com/1/cards/{?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1613,16 +1613,16 @@
 							"path": [
 								"1",
 								"cards",
-								"{id}"
+								"{"
 							],
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
-									"value": "{{t"
+									"value": "{{token}}"
 								}
 							]
 						}
