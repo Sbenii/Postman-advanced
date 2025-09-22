@@ -1144,7 +1144,8 @@
 							"script": {
 								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
 								"exec": [
-									""
+									"let jasondata=pm.response.json();",
+									"pm.environment.set(\"boardID\", jasondata.id);"
 								],
 								"type": "text/javascript",
 								"packages": {},
