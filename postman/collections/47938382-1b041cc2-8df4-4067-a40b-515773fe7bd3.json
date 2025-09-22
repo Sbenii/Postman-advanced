@@ -1251,7 +1251,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key={{key}}&token=",
+							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1274,7 +1274,7 @@
 								},
 								{
 									"key": "token",
-									"value": ""
+									"value": "{{token}}"
 								}
 							]
 						}
