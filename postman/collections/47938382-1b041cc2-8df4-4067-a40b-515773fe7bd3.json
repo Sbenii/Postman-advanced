@@ -968,7 +968,7 @@
 								"id": "2dbae900-2a63-4bb8-bbde-5dd946de60b1",
 								"exec": [
 									"let jasondata=pm.response.json();",
-									""
+									"pm.environment.set(\"variable_key\", \"variable_value\");"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -978,7 +978,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e32737b5-f00d-4767-a92d-1c25c96bcb3b",
+								"id": "845bc965-4928-4cd3-8f21-e64562a23250",
 								"exec": [],
 								"type": "text/javascript"
 							}
