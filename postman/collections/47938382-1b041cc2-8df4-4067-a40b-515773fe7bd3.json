@@ -1342,6 +1342,31 @@
 				},
 				{
 					"name": "Update board",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "52a02c56-4992-4af5-9d53-bdaed2d45b0e",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mynewb${randomNum}`;",
+									"pm.environment.set(\"mycardname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "6c5182d1-5bb8-45d8-bb29-aeb9a96b0fec",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-3d364459-1d37-49bb-b127-3e2dee8a793b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1373,8 +1398,7 @@
 								},
 								{
 									"key": "name",
-									"value": null,
-									"type": "text"
+									"value": null
 								}
 							]
 						}
