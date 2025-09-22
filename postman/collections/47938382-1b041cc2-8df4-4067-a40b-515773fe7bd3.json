@@ -1160,7 +1160,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists?name={{mylis&idBoard={{boardID}}&key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/lists?name={{mylistname}}&idBoard={{boardID}}&key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1171,7 +1171,7 @@
 							"query": [
 								{
 									"key": "name",
-									"value": "{{mylis"
+									"value": "{{mylistname}}"
 								},
 								{
 									"key": "idBoard",
