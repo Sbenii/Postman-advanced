@@ -9,6 +9,99 @@
 			"name": "ReqRes",
 			"item": [
 				{
+					"name": "List users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Correct page\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.page).to.eql(2);",
+									"});",
+									"pm.test(\"Correct page entries\", function () {",
+									"    var jData = pm.response.json();",
+									"    pm.expect(jData.page).to.eql(2);",
+									"});",
+									"pm.test(\"Total number of pages \", function () {",
+									"    var jD = pm.response.json();",
+									"    pm.expect(jD.total).to.eql(12);",
+									"});",
+									"pm.test(\"Correct entries per page\", function () {",
+									"    var jsondata = pm.response.json();",
+									"    pm.expect(jsondata.per_page).to.eql(6);",
+									"});",
+									"pm.test(\"Correct first user id\", function () {",
+									"    var j = pm.response.json();",
+									"    pm.expect(j.data[0].id).to.eql(7);",
+									"});",
+									"pm.test(\"If a user called george exists\", function () {",
+									"    var j = pm.response.json();",
+									"    var array=j.data;",
+									"    let george=false;",
+									"    for (let i=0;i<array.length;++i){",
+									"        if (array[i].first_name=='George'){",
+									"            george=true;",
+									"            break;",
+									"        }",
+									"    }",
+									"    pm.expect(george).to.eql(true)",
+									"",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "08b1b9eb-173c-4db7-9804-860817fa58c7"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "286e1bcd-0b46-4994-8226-809309140920"
+							}
+						}
+					],
+					"id": "47938382-3aadaf0b-bb40-43e5-bc7d-cb40666f6815",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/users?page=2",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "google",
 					"id": "47938382-f5d0d744-0247-440c-bfcf-3c371b34732f",
 					"protocolProfileBehavior": {
