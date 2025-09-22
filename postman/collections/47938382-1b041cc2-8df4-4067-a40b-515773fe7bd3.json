@@ -1589,7 +1589,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Update card",
 					"id": "47938382-a5047273-db08-4033-9ca8-3574a1a4e853",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
