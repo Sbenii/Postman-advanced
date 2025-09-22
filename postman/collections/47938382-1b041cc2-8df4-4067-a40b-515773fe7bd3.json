@@ -1359,7 +1359,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards?idList=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken",
+							"raw": "https://api.trello.com/1/cards?idList=5abbe4b7ddc1b351ef961414&key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1377,11 +1377,11 @@
 								},
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
-									"value": "APIToken"
+									"value": "{{token}}"
 								}
 							]
 						}
