@@ -1597,7 +1597,7 @@
 								"id": "45596baf-4c7d-4cbe-a62b-6296fce2b5b4",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `mynewardname${randomNum}`;",
+									"let uniqueValue = `mynewcardname${randomNum}`;",
 									"pm.environment.set(\"mynewcardname\", uniqueValue);",
 									""
 								],
@@ -1609,7 +1609,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8f75b298-df82-4111-9f8a-60c3bff35a68",
+								"id": "08e6bd28-953f-4483-aeda-0e4629af4c56",
 								"exec": [],
 								"type": "text/javascript"
 							}
