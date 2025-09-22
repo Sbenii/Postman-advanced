@@ -1295,6 +1295,47 @@
 					"response": []
 				},
 				{
+					"name": "Get card",
+					"id": "47938382-d55aa68c-2f96-4584-a770-c64cb9a363cd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"{{cardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete board",
 					"event": [
 						{
@@ -1444,18 +1485,6 @@
 					}
 				}
 			]
-		},
-		{
-			"name": "New Request",
-			"id": "47938382-d55aa68c-2f96-4584-a770-c64cb9a363cd",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	]
 }
