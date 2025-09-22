@@ -1807,7 +1807,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{id}?key={{&token={{token}}",
+							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1817,12 +1817,12 @@
 							"path": [
 								"1",
 								"cards",
-								"{id}"
+								"{{cardID}}"
 							],
 							"query": [
 								{
 									"key": "key",
-									"value": "{{"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
