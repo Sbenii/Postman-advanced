@@ -1539,7 +1539,7 @@
 					"response": []
 				},
 				{
-					"name": "Get card Copy",
+					"name": "Get updated card",
 					"id": "47938382-8f1ba748-6390-4e1d-93b6-3a58a731033f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
