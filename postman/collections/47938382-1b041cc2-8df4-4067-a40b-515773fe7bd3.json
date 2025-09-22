@@ -1252,18 +1252,6 @@
 						"header": []
 					},
 					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "47938382-ff3c9ed1-57e0-45e4-a0de-c81ea8d613ce",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "47938382-ef8532f5-150e-407f-b1d1-4accc9c932d0",
