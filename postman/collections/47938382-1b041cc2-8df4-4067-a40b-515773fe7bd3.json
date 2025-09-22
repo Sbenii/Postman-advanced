@@ -860,6 +860,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "e028fdf3-2248-45bf-b4a8-39a5e970e728",
 								"exec": [
 									"pm.test(\"Status code is 400\", function () {",
 									"    pm.response.to.have.status(400);",
@@ -867,15 +868,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "e028fdf3-2248-45bf-b4a8-39a5e970e728"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "fd516fd2-97c4-442a-9df9-e26b4f4ab122",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "fd516fd2-97c4-442a-9df9-e26b4f4ab122"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -897,11 +902,12 @@
 							"raw": "{\n    \"email\": \"peter@klaven\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}api/login",
+							"raw": "{{base_url}}/api/login",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"login"
 							]
 						}
@@ -914,6 +920,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "c7be90ee-6baf-4535-8a3a-924fcec9a377",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -922,18 +929,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "c7be90ee-6baf-4535-8a3a-924fcec9a377"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "6fff27d8-d786-4639-a7a7-bf43c8289ab8",
 								"exec": [
 									""
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "6fff27d8-d786-4639-a7a7-bf43c8289ab8"
+								"requests": {}
 							}
 						}
 					],
@@ -951,11 +959,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}api/users?delay=3",
+							"raw": "{{base_url}}/api/users?delay=3",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"users"
 							],
 							"query": [
