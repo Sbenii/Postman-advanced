@@ -192,6 +192,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "4bd91d72-0406-4758-bc75-20ab16380d20",
 								"exec": [
 									"pm.test(\"Status code is 404\", function () {",
 									"    pm.response.to.have.status(404);",
@@ -203,18 +204,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "4bd91d72-0406-4758-bc75-20ab16380d20"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "327c88ef-5909-4da5-8d0b-a8a1f81bbb8a",
 								"exec": [
 									""
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "327c88ef-5909-4da5-8d0b-a8a1f81bbb8a"
+								"requests": {}
 							}
 						}
 					],
@@ -232,11 +234,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}api/users/23",
+							"raw": "{{base_url}}/api/users/23",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"users",
 								"23"
 							]
