@@ -845,7 +845,7 @@
 					"response": []
 				},
 				{
-					"name": "Login-unsuccessful",
+					"name": "Login-unsuccessfull",
 					"event": [
 						{
 							"listen": "test",
@@ -892,12 +892,11 @@
 							"raw": "{\n    \"email\": \"peter@klaven\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}/api/login",
+							"raw": "{{base_url}}api/login",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"login"
 							]
 						}
