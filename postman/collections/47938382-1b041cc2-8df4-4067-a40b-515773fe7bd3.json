@@ -1109,7 +1109,7 @@
 					"response": []
 				},
 				{
-					"name": "Get created board Copy",
+					"name": "Get deleted  board",
 					"id": "47938382-47744140-9cc8-4bf4-8207-16c21533a274",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
