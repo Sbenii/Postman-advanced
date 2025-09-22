@@ -1469,6 +1469,104 @@
 					"response": []
 				},
 				{
+					"name": "Update list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mynewlistname${randomNum}`;",
+									"pm.environment.set(\"mynewlistname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "50e41a95-e6b2-40f3-bae3-6c9bdbf00526",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-bb6ee3a6-8660-45fa-9ffc-408f6602e658",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{newlistname}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"{{listID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "{{newlistname}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  updated list",
+					"id": "47938382-e1446e49-44a7-4788-8503-13e4d1d33e1f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"{{listID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Update card",
 					"event": [
 						{
@@ -1564,104 +1662,6 @@
 								"1",
 								"cards",
 								"{{cardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update list",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
-								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `mynewlistname${randomNum}`;",
-									"pm.environment.set(\"mynewlistname\", uniqueValue);",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "50e41a95-e6b2-40f3-bae3-6c9bdbf00526",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-bb6ee3a6-8660-45fa-9ffc-408f6602e658",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{newlistname}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{{listID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								},
-								{
-									"key": "name",
-									"value": "{{newlistname}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get  updated list",
-					"id": "47938382-e1446e49-44a7-4788-8503-13e4d1d33e1f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{{listID}}"
 							],
 							"query": [
 								{
