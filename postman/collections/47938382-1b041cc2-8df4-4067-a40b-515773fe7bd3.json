@@ -976,7 +976,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/boards/?{{=Board1&key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/boards/?name=Board1&key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -987,7 +987,7 @@
 							],
 							"query": [
 								{
-									"key": "{{",
+									"key": "name",
 									"value": "Board1"
 								},
 								{
