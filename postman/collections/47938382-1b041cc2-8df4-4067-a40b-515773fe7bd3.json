@@ -1406,7 +1406,7 @@
 					"response": []
 				},
 				{
-					"name": "Get created board Copy",
+					"name": "Get updated board",
 					"event": [
 						{
 							"listen": "test",
