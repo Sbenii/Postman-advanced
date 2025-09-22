@@ -1461,7 +1461,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Update board",
 					"id": "47938382-3d364459-1d37-49bb-b127-3e2dee8a793b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
