@@ -6,14 +6,21 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "google",
 			"id": "47938382-f5d0d744-0247-440c-bfcf-3c371b34732f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "google.com",
+					"host": [
+						"google",
+						"com"
+					]
+				}
 			},
 			"response": []
 		}
