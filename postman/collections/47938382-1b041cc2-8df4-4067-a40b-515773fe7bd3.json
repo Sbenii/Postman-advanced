@@ -1191,6 +1191,39 @@
 					"response": []
 				},
 				{
+					"name": "Get created list",
+					"id": "47938382-8a04a232-d397-4ec8-b95a-f3f553822463",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/lists/{id}?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete board",
 					"event": [
 						{
@@ -1304,39 +1337,6 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get created list",
-					"id": "47938382-8a04a232-d397-4ec8-b95a-f3f553822463",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/lists/{id}?key={{key}}&token={{",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{id}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{"
 								}
 							]
 						}
