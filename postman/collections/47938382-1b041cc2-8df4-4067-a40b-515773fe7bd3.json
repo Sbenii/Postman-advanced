@@ -1024,8 +1024,8 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{b?key=APIKey&token=APIToken",
-							"protocol": "https",
+							"raw": "cGET \\\n  --url 'https://api.trello.com/1/boards/{id}?key=APIKey&token=APIToken' \\\n  --header 'Accept: application/json'",
+							"protocol": "cGET \\\n  --url 'https",
 							"host": [
 								"api",
 								"trello",
@@ -1034,7 +1034,7 @@
 							"path": [
 								"1",
 								"boards",
-								"{{b"
+								"{id}"
 							],
 							"query": [
 								{
@@ -1043,7 +1043,7 @@
 								},
 								{
 									"key": "token",
-									"value": "APIToken"
+									"value": "APIToken' \\\n  --header 'Accept: application/json'"
 								}
 							]
 						}
