@@ -1017,9 +1017,9 @@
 							"script": {
 								"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
 								"exec": [
-									"pm.test(\"Check that closed field is equal \", function () {",
+									"pm.test(\"Check that closed field is equal to false\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.value).to.eql(100);",
+									"    pm.expect(jsonData.value).to.eql(false);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1030,7 +1030,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1ca81140-2974-452b-a728-6ad90e238779",
+								"id": "04723051-3e78-43bf-9d9d-eedb934def80",
 								"exec": [],
 								"type": "text/javascript"
 							}
