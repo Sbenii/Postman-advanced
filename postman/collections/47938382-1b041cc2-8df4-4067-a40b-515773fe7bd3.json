@@ -960,8 +960,7 @@
 									"// Create the dynamic value",
 									"let uniqueValue = 'myboard${randomNum}';",
 									"// Set it as an environment or global variable",
-									"pm.environment.set(\"myboardname\", uniqueValue); // use pm.globals.set(...)",
-									"if you prefer global"
+									"pm.environment.set(\"myboardname\", uniqueValue); // use pm.globals.set(...)if you prefer global"
 								],
 								"type": "text/javascript",
 								"packages": {},
