@@ -107,6 +107,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "2d300e78-9a13-4548-a5aa-43c1edfa703b",
 								"exec": [
 									"pm.test(\"Status code = 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -132,12 +133,13 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "2d300e78-9a13-4548-a5aa-43c1edfa703b"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "e17b5e8e-e990-4c92-b2bf-8ef1d9f3c6d2",
 								"exec": [
 									"const randomValue = Math.floor(Math.random() * 12) + 1;",
 									"pm.environment.set(\"UserId\", randomValue);",
@@ -151,7 +153,7 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "e17b5e8e-e990-4c92-b2bf-8ef1d9f3c6d2"
+								"requests": {}
 							}
 						}
 					],
