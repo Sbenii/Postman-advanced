@@ -311,12 +311,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/unknown",
+							"raw": "{{base_url}}api/unknown",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"unknown"
 							]
 						}
@@ -372,12 +371,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/unknown/2",
+							"raw": "{{base_url}}api/unknown/2",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"unknown",
 								"2"
 							]
@@ -433,12 +431,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/unknown/23",
+							"raw": "{{base_url}}api/unknown/23",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"unknown",
 								"23"
 							]
