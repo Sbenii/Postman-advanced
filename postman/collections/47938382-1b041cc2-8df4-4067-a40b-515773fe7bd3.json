@@ -1019,7 +1019,7 @@
 								"exec": [
 									"pm.test(\"Check that closed field is equal to false\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.value).to.eql(false);",
+									"    pm.expect(jsonData.closed).to.eql(false);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1030,7 +1030,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "04723051-3e78-43bf-9d9d-eedb934def80",
+								"id": "2898058b-82d0-42e3-bc2e-b68ccdc54d25",
 								"exec": [],
 								"type": "text/javascript"
 							}
