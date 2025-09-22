@@ -1798,14 +1798,37 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete card",
 					"id": "47938382-71a05b04-9494-44e2-85e4-cfd94ca97984",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trelloom/1/cards/{id}?key=APIKey&token=APIToken",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trelloom"
+							],
+							"path": [
+								"1",
+								"cards",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "APIToken"
+								}
+							]
+						}
 					},
 					"response": []
 				}
