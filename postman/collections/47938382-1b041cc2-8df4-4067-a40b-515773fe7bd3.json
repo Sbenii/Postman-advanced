@@ -946,7 +946,7 @@
 									"});",
 									"",
 									"let createdboard=pm.environment.get(\"myboardname\")",
-									"pm.test(\"C\", function () {",
+									"pm.test(\"Check if name is correct\", function () {",
 									"    pm.expect(jasondata.value).to.eql(createdboard);",
 									"});"
 								],
