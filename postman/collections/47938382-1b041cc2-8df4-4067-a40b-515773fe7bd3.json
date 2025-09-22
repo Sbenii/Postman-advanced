@@ -961,6 +961,28 @@
 				},
 				{
 					"name": "Delete board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2dbae900-2a63-4bb8-bbde-5dd946de60b1",
+								"exec": [
+									"let jas"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "43a8dcef-948a-49fc-a884-32a3e18d7a6b",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-13c62307-2bf0-4848-9fc0-de0bd55c40ff",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
