@@ -1201,14 +1201,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists/{?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"1",
 								"lists",
-								"{"
+								"{{listID}}"
 							],
 							"query": [
 								{
