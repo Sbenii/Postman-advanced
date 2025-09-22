@@ -1110,12 +1110,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}?key={{key}}&token={{token}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
