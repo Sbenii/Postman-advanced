@@ -1581,6 +1581,31 @@
 				},
 				{
 					"name": "Update list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mynewcardname${randomNum}`;",
+									"pm.environment.set(\"mynewcardname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "137e9792-882d-4ee7-a8f6-efe8cac56915",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-bb6ee3a6-8660-45fa-9ffc-408f6602e658",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
