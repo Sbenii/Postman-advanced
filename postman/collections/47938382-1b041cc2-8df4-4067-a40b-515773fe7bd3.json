@@ -391,6 +391,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "5844a138-9e49-4361-9628-84ac4d370661",
 								"exec": [
 									"pm.test(\"Status code is 404\", function () {",
 									"    pm.response.to.have.status(404);",
@@ -402,18 +403,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "5844a138-9e49-4361-9628-84ac4d370661"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "0de42640-83c4-49fb-8f11-d5a92a09fb46",
 								"exec": [
 									""
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "0de42640-83c4-49fb-8f11-d5a92a09fb46"
+								"requests": {}
 							}
 						}
 					],
@@ -431,11 +433,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}api/unknown/23",
+							"raw": "{{base_url}}/api/unknown/23",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"unknown",
 								"23"
 							]
@@ -449,6 +452,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "bd3fdc45-6e62-47d0-9c86-b4b1cf350e7b",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -456,15 +460,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "bd3fdc45-6e62-47d0-9c86-b4b1cf350e7b"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "c2ceafc9-42fe-485e-829a-40b146ed323b",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "c2ceafc9-42fe-485e-829a-40b146ed323b"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -491,11 +499,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}api/uses",
+							"raw": "{{base_url}}/api/uses",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"uses"
 							]
 						}
