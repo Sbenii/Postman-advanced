@@ -1248,7 +1248,7 @@
 								"id": "33b42674-6656-412a-9a85-a9c2886e1060",
 								"exec": [
 									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"litID\", jasondata.id);"
+									"pm.environment.set(\"cardID\", jasondata.id);"
 								],
 								"type": "text/javascript",
 								"packages": {},
