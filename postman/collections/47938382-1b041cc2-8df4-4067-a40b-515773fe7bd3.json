@@ -947,8 +947,7 @@
 									"",
 									"let createdboard=pm.environment.get(\"myboardname\")",
 									"pm.test(\"Your test name\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.value).to.eql(100);",
+									"    pm.expect(jasondata.value).to.eql({});",
 									"});"
 								],
 								"type": "text/javascript",
