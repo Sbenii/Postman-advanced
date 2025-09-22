@@ -932,6 +932,15 @@
 								"exec": [
 									"let jasondata=pm.response.json();",
 									"pm.environment.set(\"boardID\", jasondata.id);",
+									"pm.test(\"Check \", function () {",
+									"    pm.expect(jasondata.id).to.exist;",
+									"});",
+									"pm.test(\"Your test name\", function () {",
+									"    pm.expect(jasondata.id).to.exist;",
+									"});",
+									"pm.test(\"Your test name\", function () {",
+									"    pm.expect(jasondata.id).to.exist;",
+									"});",
 									"pm.test(\"Your test name\", function () {",
 									"    pm.expect(jasondata.id).to.exist;",
 									"});"
@@ -944,7 +953,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "20e5215b-c95a-4d1d-a799-434011e30e88",
+								"id": "b6bc88e9-99f1-4636-9e4f-1d70223006e0",
 								"exec": [],
 								"type": "text/javascript"
 							}
