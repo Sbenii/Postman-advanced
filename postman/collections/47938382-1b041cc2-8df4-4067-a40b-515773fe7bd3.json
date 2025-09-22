@@ -1122,69 +1122,6 @@
 					"response": []
 				},
 				{
-					"name": "Get created board Copy",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
-								"exec": [
-									"pm.test(\"Check that closed field is equal to false\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.closed).to.eql(false);",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "2898058b-82d0-42e3-bc2e-b68ccdc54d25",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-98f8f89f-09dc-4d9c-8ca7-881a3be13ab1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -1462,6 +1399,69 @@
 								{
 									"key": "name",
 									"value": "{{mynewboardname}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get created board Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
+								"exec": [
+									"pm.test(\"Check that closed field is equal to false\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.closed).to.eql(false);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2898058b-82d0-42e3-bc2e-b68ccdc54d25",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-98f8f89f-09dc-4d9c-8ca7-881a3be13ab1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
 								}
 							]
 						}
