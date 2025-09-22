@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "47938382-ce8aa49d-7995-4653-980b-647699ed2b80"
+		},
+		{
 			"name": "google",
 			"id": "47938382-f5d0d744-0247-440c-bfcf-3c371b34732f",
 			"protocolProfileBehavior": {
