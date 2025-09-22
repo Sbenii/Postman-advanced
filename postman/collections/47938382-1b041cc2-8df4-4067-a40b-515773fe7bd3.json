@@ -517,6 +517,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "36921bbf-73ce-4099-aed6-794493588834",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -524,15 +525,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "36921bbf-73ce-4099-aed6-794493588834"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "c7716f14-4ee3-4c1d-be7f-ecb1c027f72b",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "c7716f14-4ee3-4c1d-be7f-ecb1c027f72b"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -550,11 +555,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}api/users/2",
+							"raw": "{{base_url}}/api/users/2",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"users",
 								"2"
 							]
