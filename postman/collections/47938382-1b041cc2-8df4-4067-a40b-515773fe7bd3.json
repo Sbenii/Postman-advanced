@@ -967,7 +967,8 @@
 							"script": {
 								"id": "2dbae900-2a63-4bb8-bbde-5dd946de60b1",
 								"exec": [
-									"let jasondata=pm.response.json()"
+									"let jasondata=pm.response.json();",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -977,7 +978,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "3407713f-3cbc-45ca-9f77-6822e00f7e6b",
+								"id": "e32737b5-f00d-4767-a92d-1c25c96bcb3b",
 								"exec": [],
 								"type": "text/javascript"
 							}
