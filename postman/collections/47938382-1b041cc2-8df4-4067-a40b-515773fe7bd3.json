@@ -1470,7 +1470,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}?key=&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{id}?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1485,7 +1485,7 @@
 							"query": [
 								{
 									"key": "key",
-									"value": ""
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
