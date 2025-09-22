@@ -1226,6 +1226,31 @@
 				},
 				{
 					"name": "Create a card",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b48d38e6-e18f-497a-a6e2-e39a27efce7b",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mycard${randomNum}`;",
+									"pm.environment.set(\"mycardname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "321f6773-c54a-4849-9528-caa0b407a3ff",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-4ec4f9ba-48c9-4641-8eb4-2b6dd2296499",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
