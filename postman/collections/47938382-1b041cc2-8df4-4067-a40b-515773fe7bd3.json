@@ -735,6 +735,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "fb17936d-305e-4af5-95df-25d6b41f3611",
 								"exec": [
 									"pm.test(\"Status code is 400\", function () {",
 									"    pm.response.to.have.status(400);",
@@ -742,15 +743,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "fb17936d-305e-4af5-95df-25d6b41f3611"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "6d74cb79-9abc-4a9b-9f8e-5c8e4ef96eb5",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "6d74cb79-9abc-4a9b-9f8e-5c8e4ef96eb5"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -772,11 +777,12 @@
 							"raw": "{\n    \"email\": \"sydney@fife\"\n}"
 						},
 						"url": {
-							"raw": "{{base_url}}api/register",
+							"raw": "{{base_url}}/api/register",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"register"
 							]
 						}
@@ -789,6 +795,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "9231b61a-8fb2-4cf4-b0a1-10bddf7fa26b",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -796,15 +803,19 @@
 								],
 								"type": "text/javascript",
 								"packages": {},
-								"id": "9231b61a-8fb2-4cf4-b0a1-10bddf7fa26b"
+								"requests": {}
 							}
 						},
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"id": "11fc9cd9-d82f-438c-b843-a0f804dc7b85",
+								"exec": [
+									""
+								],
 								"type": "text/javascript",
-								"id": "11fc9cd9-d82f-438c-b843-a0f804dc7b85"
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -831,11 +842,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}api/login",
+							"raw": "{{base_url}}/api/login",
 							"host": [
-								"{{base_url}}api"
+								"{{base_url}}"
 							],
 							"path": [
+								"api",
 								"login"
 							]
 						}
