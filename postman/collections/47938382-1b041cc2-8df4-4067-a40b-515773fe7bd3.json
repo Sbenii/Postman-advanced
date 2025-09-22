@@ -1017,7 +1017,10 @@
 							"script": {
 								"id": "2dbae900-2a63-4bb8-bbde-5dd946de60b1",
 								"exec": [
-									""
+									"pm.test(\"Value is null\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -1027,7 +1030,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "61f61cf6-2946-4348-a4ca-670b2048c4c4",
+								"id": "e3641719-f755-462d-b975-d12410ff75bc",
 								"exec": [],
 								"type": "text/javascript"
 							}
