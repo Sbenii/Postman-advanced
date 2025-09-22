@@ -86,12 +86,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/users?page=2",
+							"raw": "{{base_url}}api/users?page=2",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"users"
 							],
 							"query": [
