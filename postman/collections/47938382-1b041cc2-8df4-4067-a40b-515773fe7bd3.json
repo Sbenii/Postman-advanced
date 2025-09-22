@@ -948,12 +948,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/api/users?delay=3",
+							"raw": "{{base_url}}api/users?delay=3",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}api"
 							],
 							"path": [
-								"api",
 								"users"
 							],
 							"query": [
