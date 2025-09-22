@@ -1143,8 +1143,12 @@
 							"listen": "test",
 							"script": {
 								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -1156,7 +1160,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/lists?name={{mylis&idBoard={{boardID}}&key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1167,7 +1171,7 @@
 							"query": [
 								{
 									"key": "name",
-									"value": "{name}"
+									"value": "{{mylis"
 								},
 								{
 									"key": "idBoard",
