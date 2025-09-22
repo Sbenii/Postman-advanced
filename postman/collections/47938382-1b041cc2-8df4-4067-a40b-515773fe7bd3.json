@@ -932,7 +932,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/?name={name}&key=9422d73c0abc386c3dafdfdd224ad2cc&token=AP",
+							"raw": "https://api.trello.com/1/boards/?name={name}&key=9422d73c0abc386c3dafdfdd224ad2cc&token=",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -955,7 +955,7 @@
 								},
 								{
 									"key": "token",
-									"value": "AP"
+									"value": ""
 								}
 							]
 						}
