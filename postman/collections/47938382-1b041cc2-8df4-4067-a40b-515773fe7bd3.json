@@ -957,7 +957,8 @@
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
 									"let uniqueValue = `myboard${randomNum}`;",
-									"pm.environment.set(\"myboardname\", uniqueValue);"
+									"pm.environment.set(\"myboardname\", uniqueValue);",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
