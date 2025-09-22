@@ -992,14 +992,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/boards/68d15e48735c5952d59a0efd?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/boards/{{boa?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"1",
 								"boards",
-								"68d15e48735c5952d59a0efd"
+								"{{boa"
 							],
 							"query": [
 								{
