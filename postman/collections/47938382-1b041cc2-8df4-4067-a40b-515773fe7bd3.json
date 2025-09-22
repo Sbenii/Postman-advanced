@@ -1011,6 +1011,31 @@
 				},
 				{
 					"name": "Get created board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
+								"exec": [
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "eddd6bc5-7026-4ca9-a5fd-e4d373ab2f04",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-0c09f6a2-3626-4dd6-86bf-6e59abd00771",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
