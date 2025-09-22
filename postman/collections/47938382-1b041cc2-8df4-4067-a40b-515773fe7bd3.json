@@ -1245,9 +1245,14 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "321f6773-c54a-4849-9528-caa0b407a3ff",
-								"exec": [],
-								"type": "text/javascript"
+								"id": "33b42674-6656-412a-9a85-a9c2886e1060",
+								"exec": [
+									"let jasondata=pm.response.json();",
+									"pm.environment.set(\"litID\", jasondata.id);"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
