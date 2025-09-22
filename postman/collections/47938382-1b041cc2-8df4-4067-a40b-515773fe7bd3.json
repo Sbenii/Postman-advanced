@@ -1187,7 +1187,7 @@
 							"script": {
 								"id": "0f950c12-ec93-4583-b270-5c22c97c5d3c",
 								"exec": [
-									"pm.test(\"Board is successf\", function () {",
+									"pm.test(\"Board is successfully deleted\", function () {",
 									"    pm.response.to.have.status(404);",
 									"});"
 								],
@@ -1199,7 +1199,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "fc296eb7-c708-4b82-8c55-376ae31f0a00",
+								"id": "386d93f4-60fd-41de-b7d4-68c56923cc4b",
 								"exec": [],
 								"type": "text/javascript"
 							}
