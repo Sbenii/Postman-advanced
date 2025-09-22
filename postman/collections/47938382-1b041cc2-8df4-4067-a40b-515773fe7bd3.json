@@ -1187,8 +1187,8 @@
 							"script": {
 								"id": "0f950c12-ec93-4583-b270-5c22c97c5d3c",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status();",
+									"pm.test(\"Board is successf\", function () {",
+									"    pm.response.to.have.status(404);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1199,7 +1199,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "dad30fcc-f5ca-4dad-98d4-520cf522e246",
+								"id": "fc296eb7-c708-4b82-8c55-376ae31f0a00",
 								"exec": [],
 								"type": "text/javascript"
 							}
