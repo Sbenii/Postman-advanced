@@ -1796,7 +1796,7 @@
 					"response": []
 				},
 				{
-					"name": "Get  deleted list",
+					"name": "Get  archived list",
 					"id": "47938382-a775dfea-75e8-4ee2-833a-afb73a5d9b2b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
