@@ -933,7 +933,7 @@
 									"let jasondata=pm.response.json();",
 									"pm.environment.set(\"boardID\", jasondata.id);",
 									"pm.test(\"Your test name\", function () {",
-									"    pm.expect(jsonData.id).to.eql(100);",
+									"    pm.expect(jasondata.id).to.exist;",
 									"});"
 								],
 								"type": "text/javascript",
@@ -944,7 +944,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "237765a2-3aa8-455a-9501-0bd2419c6f5a",
+								"id": "20e5215b-c95a-4d1d-a799-434011e30e88",
 								"exec": [],
 								"type": "text/javascript"
 							}
