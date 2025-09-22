@@ -1446,7 +1446,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "Get card",
 			"id": "47938382-d55aa68c-2f96-4584-a770-c64cb9a363cd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
