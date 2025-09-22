@@ -967,8 +967,7 @@
 							"script": {
 								"id": "2dbae900-2a63-4bb8-bbde-5dd946de60b1",
 								"exec": [
-									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"boardID\", jasondata.id);"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -978,7 +977,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "9b05b516-a731-4216-bd82-ed74dbf8f12b",
+								"id": "61f61cf6-2946-4348-a4ca-670b2048c4c4",
 								"exec": [],
 								"type": "text/javascript"
 							}
