@@ -1345,14 +1345,46 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Create a card",
 					"id": "47938382-4ec4f9ba-48c9-4641-8eb4-2b6dd2296499",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/cards?idList=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "5abbe4b7ddc1b351ef961414"
+								},
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "APIToken"
+								}
+							]
+						}
 					},
 					"response": []
 				}
