@@ -945,7 +945,7 @@
 									"    pm.expect(jasondata.idOrganization).to.exist;",
 									"});",
 									"",
-									"let createdboard=pm.environment"
+									"let createdboard=pm.environment.get()"
 								],
 								"type": "text/javascript",
 								"packages": {},
