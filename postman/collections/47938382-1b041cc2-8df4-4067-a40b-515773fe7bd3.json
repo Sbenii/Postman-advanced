@@ -1320,7 +1320,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/lists/{id}?key=APIKey&token=APIToken",
+							"raw": "{{base_url}}/1/lists/{id}?key={{key}}&token={{",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1332,11 +1332,11 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
-									"value": "APIToken"
+									"value": "{{"
 								}
 							]
 						}
