@@ -932,7 +932,7 @@
 								"exec": [
 									"let jasondata=pm.response.json();",
 									"pm.environment.set(\"boardID\", jasondata.id);",
-									"pm.test(\"Check \", function () {",
+									"pm.test(\"Check if id field exists\", function () {",
 									"    pm.expect(jasondata.id).to.exist;",
 									"});",
 									"pm.test(\"Your test name\", function () {",
@@ -953,7 +953,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "b6bc88e9-99f1-4636-9e4f-1d70223006e0",
+								"id": "34e5189e-4db7-4249-8489-d13b14574d84",
 								"exec": [],
 								"type": "text/javascript"
 							}
