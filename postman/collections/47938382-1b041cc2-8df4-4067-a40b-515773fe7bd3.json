@@ -1243,6 +1243,31 @@
 				},
 				{
 					"name": "Create a list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `myboard${randomNum}`;",
+									"pm.environment.set(\"mylistname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "80d7ea82-cb82-47e2-ac89-72076387ff90",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-6bbb62ef-114a-4c4e-ab6c-abdc6c9f7bfd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
