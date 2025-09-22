@@ -1251,9 +1251,9 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{ba/1/lists?name={name}&idBoard=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken",
+							"raw": "{{base_url}}/1/lists?name={name}&idBoard=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken",
 							"host": [
-								"{{ba"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
