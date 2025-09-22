@@ -427,6 +427,116 @@
 					"response": []
 				},
 				{
+					"name": "Create a user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "bd3fdc45-6e62-47d0-9c86-b4b1cf350e7b"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [],
+								"type": "text/javascript",
+								"id": "c2ceafc9-42fe-485e-829a-40b146ed323b"
+							}
+						}
+					],
+					"id": "47938382-ce0ef754-c5f2-4155-8091-fab1959f0df6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}api/uses",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"uses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "36921bbf-73ce-4099-aed6-794493588834"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [],
+								"type": "text/javascript",
+								"id": "c7716f14-4ee3-4c1d-be7f-ecb1c027f72b"
+							}
+						}
+					],
+					"id": "47938382-fe74bd2d-ab51-4a35-a119-18d7b9d01425",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "reqres-free-v1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}api/users/2",
+							"host": [
+								"{{base_url}}api"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "google",
 					"id": "47938382-f5d0d744-0247-440c-bfcf-3c371b34732f",
 					"protocolProfileBehavior": {
