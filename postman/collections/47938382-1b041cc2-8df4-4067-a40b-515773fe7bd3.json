@@ -953,9 +953,19 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e176a813-62a0-4861-b806-3c361a0961f1",
-								"exec": [],
-								"type": "text/javascript"
+								"id": "8e768524-e3fe-4ac1-8269-bf07f891da6d",
+								"exec": [
+									"// Generate a random 3-digit number",
+									"let randomNum Math.floor(Math.random() * 1000).toString().padStart (3, '0');",
+									"// Create the dynamic value",
+									"let uniqueValue = 'myboard${randomNum];",
+									"// Set it as an environment or global variable",
+									"pm.environment.set(\"myboardname\", uniqueValue); // use pm.globals.set(...)",
+									"if you prefer global"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
