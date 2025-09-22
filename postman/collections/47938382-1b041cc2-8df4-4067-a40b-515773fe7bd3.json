@@ -1070,7 +1070,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "e9b80ebf-7e0d-4d00-87ff-5a7251bf84bb",
+						"id": "14f99bc3-5024-43a5-a62b-a685afa9745a",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
@@ -1082,13 +1082,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d62f1182-4195-4188-aa2d-dab2b79fdfa0",
+						"id": "c5a5f245-eec3-4dd7-a3f6-84e2aa750efd",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
 							"});"
 						]
 					}
