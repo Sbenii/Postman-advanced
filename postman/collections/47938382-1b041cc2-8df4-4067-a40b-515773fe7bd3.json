@@ -935,7 +935,7 @@
 									"pm.test(\"Check if id field exists\", function () {",
 									"    pm.expect(jasondata.id).to.exist;",
 									"});",
-									"pm.test(\"Your test name\", function () {",
+									"pm.test(\"Che\", function () {",
 									"    pm.expect(jasondata.id).to.exist;",
 									"});",
 									"pm.test(\"Your test name\", function () {",
@@ -953,7 +953,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "34e5189e-4db7-4249-8489-d13b14574d84",
+								"id": "b5ccd780-7087-47d4-9679-c3887ead0fa4",
 								"exec": [],
 								"type": "text/javascript"
 							}
