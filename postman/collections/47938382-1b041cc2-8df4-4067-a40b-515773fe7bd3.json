@@ -956,7 +956,7 @@
 								"id": "8e768524-e3fe-4ac1-8269-bf07f891da6d",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000).toString().padStart (3, '0');",
-									"let uniqueValue = 'myboard${randomNum}`;",
+									"let uniqueValue = `myboard${randomNum}`;",
 									"pm.environment.set(\"myboardname\", uniqueValue);"
 								],
 								"type": "text/javascript",
