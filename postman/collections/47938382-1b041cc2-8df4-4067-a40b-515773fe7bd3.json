@@ -1122,6 +1122,71 @@
 					"response": []
 				},
 				{
+					"name": "Create a list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `mylist${randomNum}`;",
+									"pm.environment.set(\"mylistname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-6bbb62ef-114a-4c4e-ab6c-abdc6c9f7bfd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "{name}"
+								},
+								{
+									"key": "idBoard",
+									"value": "{{boardID}}"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete board",
 					"event": [
 						{
@@ -1228,71 +1293,6 @@
 								"{{boardID}}"
 							],
 							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create a list",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
-								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `mylist${randomNum}`;",
-									"pm.environment.set(\"mylistname\", uniqueValue);",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-6bbb62ef-114a-4c4e-ab6c-abdc6c9f7bfd",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/lists?name={name}&idBoard={{boardID}}&key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"lists"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "{name}"
-								},
-								{
-									"key": "idBoard",
-									"value": "{{boardID}}"
-								},
 								{
 									"key": "key",
 									"value": "{{key}}"
