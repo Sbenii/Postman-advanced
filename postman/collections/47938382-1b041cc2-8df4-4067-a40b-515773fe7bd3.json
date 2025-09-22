@@ -948,6 +948,9 @@
 									"let createdboard=pm.environment.get(\"myboardname\")",
 									"pm.test(\"Check if name is correct\", function () {",
 									"    pm.expect(jasondata.name).to.eql(createdboard);",
+									"});",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
 									"});"
 								],
 								"type": "text/javascript",
