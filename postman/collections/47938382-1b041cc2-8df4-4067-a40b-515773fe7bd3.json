@@ -2135,7 +2135,8 @@
 								"exec": [
 									"pm.test(\"Board is successfully deleted\", function () {",
 									"    pm.response.to.have.status(404);",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -2146,8 +2147,12 @@
 							"listen": "prerequest",
 							"script": {
 								"id": "386d93f4-60fd-41de-b7d4-68c56923cc4b",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
