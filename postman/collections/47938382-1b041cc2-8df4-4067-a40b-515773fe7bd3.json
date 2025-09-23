@@ -1881,7 +1881,7 @@
 							"script": {
 								"id": "d2515ff2-d01e-49d3-a143-79f196513e38",
 								"exec": [
-									"pm.test(\"Status code is 404\", function () {",
+									"pm.test(\"Card is successfully\", function () {",
 									"    pm.response.to.have.status(404);",
 									"});"
 								],
@@ -1893,7 +1893,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "bdc56ede-dee4-43e6-8371-e6cfdc7f3b4f",
+								"id": "d8b13cc8-2594-493e-af56-cffb77f8509b",
 								"exec": [],
 								"type": "text/javascript"
 							}
