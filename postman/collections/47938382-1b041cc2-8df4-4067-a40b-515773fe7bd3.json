@@ -1815,6 +1815,30 @@
 				},
 				{
 					"name": "Delete card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a089dc31-262f-45b5-a7e8-dc58e956ef26",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f101e975-8bde-46b7-8fe7-2b59f8b1c178",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-71a05b04-9494-44e2-85e4-cfd94ca97984",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
