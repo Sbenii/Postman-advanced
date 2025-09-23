@@ -2071,6 +2071,9 @@
 									"pm.test(\"Value is null\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData._value).to.eql(null);",
+									"});",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -2082,8 +2085,12 @@
 							"listen": "prerequest",
 							"script": {
 								"id": "daf87ed6-8bf9-4faf-85d0-cf7fc1b1f4d9",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
