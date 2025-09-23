@@ -1424,8 +1424,14 @@
 							"listen": "test",
 							"script": {
 								"id": "5e317914-0d75-4981-9905-394699f2b3ce",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
