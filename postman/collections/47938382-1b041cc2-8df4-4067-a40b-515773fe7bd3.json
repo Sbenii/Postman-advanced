@@ -1759,8 +1759,7 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"",
-									""
+									"sjdsj"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -1770,7 +1769,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "baa2fc1a-671b-479b-9281-6fb43b22b9c7",
+								"id": "23222545-3c36-4c46-8f8a-9ef1ae7756f9",
 								"exec": [],
 								"type": "text/javascript"
 							}
