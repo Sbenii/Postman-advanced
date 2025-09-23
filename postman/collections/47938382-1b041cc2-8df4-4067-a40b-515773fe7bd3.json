@@ -1554,6 +1554,9 @@
 									"let randomNum= Math.floor(Math.random() * 1000);",
 									"let uniqueValue = `mynewlistname${randomNum}`;",
 									"pm.environment.set(\"mynewlistname\", uniqueValue);",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
 									""
 								],
 								"type": "text/javascript",
