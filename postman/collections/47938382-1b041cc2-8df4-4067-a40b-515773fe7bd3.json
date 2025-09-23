@@ -1882,7 +1882,7 @@
 								"id": "d2515ff2-d01e-49d3-a143-79f196513e38",
 								"exec": [
 									"pm.test(\"Status code is 404\", function () {",
-									"    pm.response.to.have.status();",
+									"    pm.response.to.have.status(404);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1893,7 +1893,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1de376ba-7606-4cfd-a1bd-aa0b78252e9a",
+								"id": "bdc56ede-dee4-43e6-8371-e6cfdc7f3b4f",
 								"exec": [],
 								"type": "text/javascript"
 							}
@@ -1940,6 +1940,30 @@
 				},
 				{
 					"name": "Archive list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "296294c8-0fbd-4bdd-bb78-0ab443b9322f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e6a6b585-43e7-46bd-a387-49d5e0d7d222",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-f347814e-0846-4ee9-873b-9cc955ca9594",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
