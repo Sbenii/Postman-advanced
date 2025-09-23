@@ -1617,6 +1617,30 @@
 				},
 				{
 					"name": "Get  updated list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "00fe887f-4c9a-46ab-95f8-a7d67473714c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "25ecffbb-34d7-437d-a571-3e7bee94d1d8",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-e1446e49-44a7-4788-8503-13e4d1d33e1f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
