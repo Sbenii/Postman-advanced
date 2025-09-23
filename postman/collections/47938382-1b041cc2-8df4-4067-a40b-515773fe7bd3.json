@@ -1204,6 +1204,30 @@
 				},
 				{
 					"name": "Get created list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c33159d4-654d-43b2-a082-209e90d10a4b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bd401f0e-bb17-4fa2-9e12-a099511c927e",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-8a04a232-d397-4ec8-b95a-f3f553822463",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
