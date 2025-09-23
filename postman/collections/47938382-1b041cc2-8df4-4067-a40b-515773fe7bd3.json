@@ -1750,6 +1750,32 @@
 				},
 				{
 					"name": "Get updated card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "47fe1b36-283b-4446-bf32-7d02704f1f89",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "baa2fc1a-671b-479b-9281-6fb43b22b9c7",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-8f1ba748-6390-4e1d-93b6-3a58a731033f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
