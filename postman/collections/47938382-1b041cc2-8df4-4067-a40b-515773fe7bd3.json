@@ -1284,7 +1284,9 @@
 								"exec": [
 									"let jasondata=pm.response.json();",
 									"pm.environment.set(\"cardID\", jasondata.id);",
-									""
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -1337,6 +1339,30 @@
 				},
 				{
 					"name": "Get card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "691ffc64-5512-455a-a720-3d4113f17168",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "83f86538-bb17-4276-9d4f-e578ffb0a28c",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-d55aa68c-2f96-4584-a770-c64cb9a363cd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
