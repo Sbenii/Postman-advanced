@@ -1875,6 +1875,30 @@
 				},
 				{
 					"name": "Get deleted card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d2515ff2-d01e-49d3-a143-79f196513e38",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status();",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1de376ba-7606-4cfd-a1bd-aa0b78252e9a",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-8896fd91-4594-49ff-83e3-4c7ee7add256",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
