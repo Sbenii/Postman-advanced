@@ -1153,7 +1153,10 @@
 								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
 								"exec": [
 									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"listID\", jasondata.id);"
+									"pm.environment.set(\"listID\", jasondata.id);",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {},
