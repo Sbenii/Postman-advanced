@@ -1881,7 +1881,7 @@
 							"script": {
 								"id": "d2515ff2-d01e-49d3-a143-79f196513e38",
 								"exec": [
-									"pm.test(\"Card is successfully\", function () {",
+									"pm.test(\"Card is successfully deleted\", function () {",
 									"    pm.response.to.have.status(404);",
 									"});"
 								],
@@ -1893,7 +1893,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d8b13cc8-2594-493e-af56-cffb77f8509b",
+								"id": "4317109d-7cde-47a9-819d-295c70288729",
 								"exec": [],
 								"type": "text/javascript"
 							}
