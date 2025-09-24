@@ -1347,7 +1347,8 @@
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -1358,8 +1359,12 @@
 							"listen": "prerequest",
 							"script": {
 								"id": "83f86538-bb17-4276-9d4f-e578ffb0a28c",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
