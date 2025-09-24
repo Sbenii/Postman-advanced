@@ -1268,7 +1268,7 @@
 								"id": "b48d38e6-e18f-497a-a6e2-e39a27efce7b",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `mycard${randomNum}`;",
+									"let uniqueValue = `Card${randomNum}`;",
 									"pm.environment.set(\"mycardname\", uniqueValue);",
 									""
 								],
