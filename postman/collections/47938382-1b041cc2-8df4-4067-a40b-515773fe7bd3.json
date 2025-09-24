@@ -1419,7 +1419,7 @@
 								"id": "52a02c56-4992-4af5-9d53-bdaed2d45b0e",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Newboardname${randomNum}`;",
+									"let uniqueValue = `Updatedboard${randomNum}`;",
 									"pm.environment.set(\"mynewboardname\", uniqueValue);",
 									""
 								],
