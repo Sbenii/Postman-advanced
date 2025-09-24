@@ -1067,7 +1067,7 @@
 							"script": {
 								"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
 								"exec": [
-									"pm.test(\"Check that closed field is equal to false\", function () {",
+									"pm.test(\"Check that closed state of the board is equal to false\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.closed).to.eql(false);",
 									"});",
