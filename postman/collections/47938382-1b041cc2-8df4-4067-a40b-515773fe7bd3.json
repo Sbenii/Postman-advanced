@@ -1348,7 +1348,7 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"pm.test(\"Check\", function () {",
+									"pm.test(\"Check that created card is emp\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.value).to.eql(100);",
 									"});"
