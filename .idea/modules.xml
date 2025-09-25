@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FirstSeleniumproject/FirstSeleniumproject.iml" filepath="$PROJECT_DIR$/FirstSeleniumproject/FirstSeleniumproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/QA-Boot-camp.iml" filepath="$PROJECT_DIR$/.idea/QA-Boot-camp.iml" />
     </modules>
   </component>
