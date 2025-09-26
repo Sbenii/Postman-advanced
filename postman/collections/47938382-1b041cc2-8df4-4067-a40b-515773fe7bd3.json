@@ -1351,7 +1351,8 @@
 									"pm.test(\"Check that created card is empty by default\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.badges.checkItems).to.eql(0);",
-									"});"
+									"});",
+									"pm.test(\"Check that created card has the correct name\", function () {"
 								],
 								"type": "text/javascript",
 								"packages": {},
