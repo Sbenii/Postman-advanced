@@ -134,7 +134,8 @@
 									"    var ID =pm.environment.get(\"UserId\");",
 									"    var userid = pm.response.json();",
 									"    pm.expect(userid.data.id).to.eql(ID);",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
