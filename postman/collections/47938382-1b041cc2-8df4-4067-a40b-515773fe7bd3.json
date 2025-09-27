@@ -1575,8 +1575,8 @@
 							"script": {
 								"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Edilist${randomNum}`;",
+									"let randomNum= Math.floor(Math.random() * 100);",
+									"let uniqueValue = `Editedlist${randomNum}`;",
 									"pm.environment.set(\"mynewlistname\", uniqueValue);",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1710,7 +1710,7 @@
 								"id": "45596baf-4c7d-4cbe-a62b-6296fce2b5b4",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Updatedcard${randomNum}`;",
+									"let uniqueValue = `Edcard${randomNum}`;",
 									"pm.environment.set(\"mynewcardname\", uniqueValue);",
 									""
 								],
