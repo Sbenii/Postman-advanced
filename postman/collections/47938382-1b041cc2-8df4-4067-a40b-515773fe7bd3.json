@@ -1279,8 +1279,8 @@
 							"script": {
 								"id": "b48d38e6-e18f-497a-a6e2-e39a27efce7b",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 100);",
-									"let uniqueValue = `NewCard${randomNum}`;",
+									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let uniqueValue = `Card${randomNum}`;",
 									"pm.environment.set(\"mycardname\", uniqueValue);",
 									""
 								],
@@ -1435,7 +1435,7 @@
 								"id": "52a02c56-4992-4af5-9d53-bdaed2d45b0e",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Updatedboard${randomNum}`;",
+									"let uniqueValue = `EditedBoard${randomNum}`;",
 									"pm.environment.set(\"mynewboardname\", uniqueValue);",
 									""
 								],
