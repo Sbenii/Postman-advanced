@@ -1145,7 +1145,7 @@
 							"script": {
 								"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let randomNum= Math.floor(Math.random() * 100);",
 									"let uniqueValue = `List${randomNum}`;",
 									"pm.environment.set(\"mylistname\", uniqueValue);",
 									""
