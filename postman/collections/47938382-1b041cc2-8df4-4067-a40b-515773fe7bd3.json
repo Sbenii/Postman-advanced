@@ -1709,8 +1709,8 @@
 							"script": {
 								"id": "45596baf-4c7d-4cbe-a62b-6296fce2b5b4",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Edcard${randomNum}`;",
+									"let randomNum= Math.floor(Math.random() * 100);",
+									"let uniqueValue = `Editedcard${randomNum}`;",
 									"pm.environment.set(\"mynewcardname\", uniqueValue);",
 									""
 								],
