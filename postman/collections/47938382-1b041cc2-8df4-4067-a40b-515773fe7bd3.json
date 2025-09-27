@@ -205,7 +205,8 @@
 									"pm.test(\"Check of JSON response is emty\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData).to.be.empty;",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
