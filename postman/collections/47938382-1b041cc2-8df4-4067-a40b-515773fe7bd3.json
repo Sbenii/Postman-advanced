@@ -1279,8 +1279,8 @@
 							"script": {
 								"id": "b48d38e6-e18f-497a-a6e2-e39a27efce7b",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Card${randomNum}`;",
+									"let randomNum= Math.floor(Math.random() * 100);",
+									"let uniqueValue = `NewCard${randomNum}`;",
 									"pm.environment.set(\"mycardname\", uniqueValue);",
 									""
 								],
@@ -1434,7 +1434,7 @@
 							"script": {
 								"id": "52a02c56-4992-4af5-9d53-bdaed2d45b0e",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let randomNum= Math.floor(Math.random() * 100);",
 									"let uniqueValue = `EditedBoard${randomNum}`;",
 									"pm.environment.set(\"mynewboardname\", uniqueValue);",
 									""
@@ -1576,7 +1576,7 @@
 								"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
 								"exec": [
 									"let randomNum= Math.floor(Math.random() * 1000);",
-									"let uniqueValue = `Updatedlist${randomNum}`;",
+									"let uniqueValue = `Edilist${randomNum}`;",
 									"pm.environment.set(\"mynewlistname\", uniqueValue);",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
