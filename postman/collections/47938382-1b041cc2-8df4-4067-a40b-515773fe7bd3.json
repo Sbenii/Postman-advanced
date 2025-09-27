@@ -1021,7 +1021,7 @@
 							"script": {
 								"id": "8e768524-e3fe-4ac1-8269-bf07f891da6d",
 								"exec": [
-									"let randomNum= Math.floor(Math.random() * 1000);",
+									"let randomNum= Math.floor(Math.random() * 100);",
 									"let uniqueValue = `NewBoard${randomNum}`;",
 									"pm.environment.set(\"myboardname\", uniqueValue);",
 									""
