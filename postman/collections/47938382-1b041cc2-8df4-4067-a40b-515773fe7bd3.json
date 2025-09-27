@@ -135,7 +135,9 @@
 									"    var userid = pm.response.json();",
 									"    pm.expect(userid.data.id).to.eql(ID);",
 									"});",
-									""
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {},
