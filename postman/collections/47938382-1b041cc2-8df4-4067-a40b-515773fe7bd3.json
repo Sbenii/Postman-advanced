@@ -1163,7 +1163,8 @@
 									"});",
 									"pm.test(\"Check member type is equal to admin\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    console.log(jsonData)",
+									"    console.log(jsonData.memberType)",
+									"    pm.expect(jsonData.memberType).to.eql(\"admin\");",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1174,7 +1175,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "92c9318e-8e79-482b-80fc-548a662a7e22",
+								"id": "078050e0-dec2-4cea-8bb5-208869ceffae",
 								"exec": [],
 								"type": "text/javascript"
 							}
