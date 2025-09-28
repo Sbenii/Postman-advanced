@@ -1161,6 +1161,7 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
+									"",
 									"pm.test(\"Check if ID is correct\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.id).to.eql({{}});",
@@ -1174,7 +1175,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "22cabe78-7f9f-4da1-a5d5-854f5df3a64c",
+								"id": "9c2599ce-14c4-4260-ad9a-47f19ad00e36",
 								"exec": [],
 								"type": "text/javascript"
 							}
