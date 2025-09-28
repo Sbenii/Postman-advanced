@@ -1163,7 +1163,7 @@
 									"});",
 									"let Bid= pm.environment.get(\"boardID\");",
 									"console.log(Bid)",
-									"pm.test(\"Check if ID is correct\", function () {",
+									"pm.test(\"Check \", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.id).to.eql(Bid);",
 									"});"
@@ -1176,7 +1176,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c5b4d3cd-9895-413d-8ff5-48f5435d08b0",
+								"id": "bc855c81-03f3-4eb2-85a2-9b4fe5a87cce",
 								"exec": [],
 								"type": "text/javascript"
 							}
