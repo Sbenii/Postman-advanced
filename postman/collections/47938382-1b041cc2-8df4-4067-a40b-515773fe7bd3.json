@@ -2254,7 +2254,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/memberships?key=APIKey&token={{t",
+							"raw": "https://api.trello.com/1/boards/{id}/memberships?key=APIKey&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2274,7 +2274,7 @@
 								},
 								{
 									"key": "token",
-									"value": "{{t"
+									"value": "{{token}}"
 								}
 							]
 						}
