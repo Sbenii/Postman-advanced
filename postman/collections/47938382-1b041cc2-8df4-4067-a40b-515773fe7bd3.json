@@ -1162,10 +1162,9 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"let Bid= pm.environment.get(\"boardID\");",
-									"console.log(Bid)",
 									"pm.test(\"Check member type is equal to admin\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.id).to.eql(Bid);",
+									"    pm.expect(jsonData.).to.eql(Bid);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1176,7 +1175,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "a798e937-004b-4ce9-8082-74bdf85fbeb3",
+								"id": "a9d02805-6f42-4d8e-9820-59ba74be867f",
 								"exec": [],
 								"type": "text/javascript"
 							}
