@@ -1165,7 +1165,7 @@
 									"    var jsonData = pm.response.json();",
 									"    console.log(jsonData[0].memberType)",
 									"    let text=\"admin\"",
-									"    pm.expect(jsonData.memberType).to.equal(text);",
+									"    pm.expect(jsonData[0].memberType).to.equal(text);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1176,7 +1176,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6b552213-41cd-4b8d-ad76-b376ab45f475",
+								"id": "1688b24e-475a-4bd7-8dfd-aafc6bfb4ec3",
 								"exec": [],
 								"type": "text/javascript"
 							}
