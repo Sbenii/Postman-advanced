@@ -1149,6 +1149,30 @@
 				},
 				{
 					"name": "Get membership of board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d28b1dd7-cb6e-474b-8347-7715b1fc72db",
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1d4dfa1c-8288-4b31-9456-f3e93d15ab01",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-d74b7c6c-d53f-44a6-9b55-34c4d14467a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
