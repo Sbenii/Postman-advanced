@@ -1164,7 +1164,7 @@
 									"let Bid= pm.environment.get(\"boardID\");",
 									"pm.test(\"Check if ID is correct\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.id).to.eql();",
+									"    pm.expect(jsonData.id).to.eql(Bid);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1175,7 +1175,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "29c08d7e-c688-4bc7-8ddb-2bff863b5f98",
+								"id": "eac15c98-3a6f-454c-968a-fca9a3da1421",
 								"exec": [],
 								"type": "text/javascript"
 							}
