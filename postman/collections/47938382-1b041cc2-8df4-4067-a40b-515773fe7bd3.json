@@ -2240,14 +2240,44 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get membership of board",
 					"id": "47938382-d74b7c6c-d53f-44a6-9b55-34c4d14467a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/memberships?key=APIKey&token={{t",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"memberships"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "{{t"
+								}
+							]
+						}
 					},
 					"response": []
 				}
