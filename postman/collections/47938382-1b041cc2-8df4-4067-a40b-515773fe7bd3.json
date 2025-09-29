@@ -1020,7 +1020,8 @@
 									"pm.test(\"Successful POST request\", function () {",
 									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 									"});",
-									"let cl = pm.environment.set(\"Closed\", jasondata.closed);",
+									"pm.environment.set(\"Closed\", jasondata.closed);",
+									"",
 									"console.log(cl)"
 								],
 								"type": "text/javascript",
