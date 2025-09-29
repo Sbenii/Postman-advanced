@@ -1303,7 +1303,7 @@
 									"});",
 									"pm.test(\"Check user name in response\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].memberCreator.).to.eql(100);",
+									"    pm.expect(jsonData[0].memberCreator.username).to.eql(\"sezeranobenny\");",
 									"});"
 								],
 								"type": "text/javascript",
