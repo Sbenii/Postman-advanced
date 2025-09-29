@@ -1019,7 +1019,8 @@
 									"});",
 									"pm.test(\"Successful POST request\", function () {",
 									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
