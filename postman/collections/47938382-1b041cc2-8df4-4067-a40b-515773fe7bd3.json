@@ -1244,8 +1244,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4a939c43-85f8-4807-9c47-24713825d428",
-								"exec": [],
+								"packages": {},
 								"type": "text/javascript"
 							}
 						}
@@ -1258,7 +1257,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/{{name}}?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/boards/{{boardID}}/?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1266,7 +1265,7 @@
 								"1",
 								"boards",
 								"{{boardID}}",
-								"{{name}}"
+								""
 							],
 							"query": [
 								{
