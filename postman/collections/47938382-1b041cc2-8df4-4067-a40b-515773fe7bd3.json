@@ -1021,7 +1021,7 @@
 									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 									"});",
 									"pm.environment.set(\"Closed\", jasondata.closed);",
-									"",
+									"let cl=pm.environment.get(\"Closed\");",
 									"console.log(cl)"
 								],
 								"type": "text/javascript",
