@@ -1297,11 +1297,11 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"pm.test(\"Check username in response\", function () {",
+									"pm.test(\"Check Full name in response\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].memberCreator.fullName).to.eql(\"Beni Sezerano\");",
 									"});",
-									"pm.test(\"Check name\", function () {",
+									"pm.test(\"Check user name in\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.value).to.eql(100);",
 									"});"
@@ -1315,8 +1315,12 @@
 							"listen": "prerequest",
 							"script": {
 								"id": "9b2a3253-9d82-4927-8e28-7933171a3f03",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
