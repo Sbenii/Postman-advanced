@@ -2388,7 +2388,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{boardId}/actions?key=APIKey&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{boardId}/actions?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2404,7 +2404,7 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
