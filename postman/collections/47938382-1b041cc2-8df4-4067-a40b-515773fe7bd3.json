@@ -2392,7 +2392,8 @@
 									"pm.test(\"Check username in response\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].memberCreator.fullName).to.eql(\"Beni Sezerano\");",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
@@ -2402,7 +2403,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "cf0fcfdc-1bd3-4da0-b7bf-43db7f3e0035",
+								"id": "7a4bbaee-4a95-4634-b31f-d30390397fc0",
 								"exec": [],
 								"type": "text/javascript"
 							}
