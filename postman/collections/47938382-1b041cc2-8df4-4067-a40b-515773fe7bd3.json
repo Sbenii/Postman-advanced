@@ -2310,7 +2310,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get a field on a board",
 					"id": "47938382-ec08364a-fb9f-4e0d-95cb-762f75264ce0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
