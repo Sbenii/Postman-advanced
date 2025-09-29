@@ -2380,6 +2380,30 @@
 				},
 				{
 					"name": "Get actions of a board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4470090a-723b-489d-9fe8-4c9eaf5210ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9af26093-72e4-4975-8fa3-2a1d9a9e9915",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-7049a002-07a8-4be7-870f-13b14b1a0bc9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
