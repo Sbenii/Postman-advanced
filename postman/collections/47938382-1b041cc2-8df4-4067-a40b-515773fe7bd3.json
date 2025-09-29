@@ -2391,7 +2391,7 @@
 									"});",
 									"pm.test(\"Check username in response\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.memberCreator.).to.eql(\"Beni Sezerano\");",
+									"    pm.expect(jsonData.memberCreator.fullname).to.eql(\"Beni Sezerano\");",
 									"});"
 								],
 								"type": "text/javascript",
@@ -2402,7 +2402,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ec0cba63-f5a6-45cc-bf0b-de89add7589d",
+								"id": "1a362ab0-6366-46b8-b194-595496e0b8ec",
 								"exec": [],
 								"type": "text/javascript"
 							}
