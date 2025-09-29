@@ -2386,7 +2386,32 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{boardId}/actions?key=APIKey&token=APIToken",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{boardId}",
+								"actions"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "APIToken"
+								}
+							]
+						}
 					},
 					"response": []
 				}
