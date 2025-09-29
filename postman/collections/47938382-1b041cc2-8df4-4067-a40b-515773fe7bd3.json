@@ -1023,7 +1023,7 @@
 									"pm.environment.set(\"Closed\", jasondata.closed);",
 									"pm.test(\"Your test name\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.value).to.eql(100);",
+									"    pm.expect(jsonData.closed).to.eql(False);",
 									"});"
 								],
 								"type": "text/javascript",
