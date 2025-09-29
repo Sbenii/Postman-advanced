@@ -2391,7 +2391,7 @@
 									"});",
 									"pm.test(\"Check username in response\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.).to.eql(100);",
+									"    pm.expect(jsonData.member).to.eql());",
 									"});"
 								],
 								"type": "text/javascript",
@@ -2402,7 +2402,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4afc34f0-9b05-4a16-bdd3-94ef8ec2c34a",
+								"id": "a14ed971-10bd-42e9-8ba1-cc41b903a355",
 								"exec": [],
 								"type": "text/javascript"
 							}
