@@ -1287,6 +1287,72 @@
 					"response": []
 				},
 				{
+					"name": "Get actions of a board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4470090a-723b-489d-9fe8-4c9eaf5210ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Check username in response\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData[0].memberCreator.fullName).to.eql(\"Beni Sezerano\");",
+									"});",
+									"pm.test(\"Check name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9b2a3253-9d82-4927-8e28-7933171a3f03",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-7049a002-07a8-4be7-870f-13b14b1a0bc9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/boards/{{boardID}}/actions?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"actions"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -2363,72 +2429,6 @@
 								"1",
 								"boards",
 								"{{boardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get actions of a board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "4470090a-723b-489d-9fe8-4c9eaf5210ff",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"pm.test(\"Check username in response\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].memberCreator.fullName).to.eql(\"Beni Sezerano\");",
-									"});",
-									"pm.test(\"Check name\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.value).to.eql(100);",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "9b2a3253-9d82-4927-8e28-7933171a3f03",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-7049a002-07a8-4be7-870f-13b14b1a0bc9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/actions?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"actions"
 							],
 							"query": [
 								{
