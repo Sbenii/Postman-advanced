@@ -1229,7 +1229,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/{{closed}}?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/{{Closed}}?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1240,7 +1240,7 @@
 								"1",
 								"boards",
 								"{{boardID}}",
-								"{{closed}}"
+								"{{Closed}}"
 							],
 							"query": [
 								{
