@@ -1232,7 +1232,7 @@
 									"pm.test(\"Your test name\", function () {",
 									"    var jsonData = pm.response.json();",
 									"",
-									"    pm.environment.get(\"varia\");",
+									"    let field=pm.environment.get(\"name\");",
 									"    pm.expect(jsonData.value).to.eql(100);",
 									"});"
 								],
@@ -1244,7 +1244,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "70674b30-d5c8-4564-9127-2bcfe3ca2245",
+								"id": "d8e8759c-a1df-4efd-a8d0-3970cd042759",
 								"exec": [],
 								"type": "text/javascript"
 							}
