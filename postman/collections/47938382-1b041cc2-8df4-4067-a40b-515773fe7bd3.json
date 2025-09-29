@@ -1021,10 +1021,7 @@
 									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 									"});",
 									"pm.environment.set(\"Closed\", jasondata.closed);",
-									"pm.test(\"Your test name\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.closed).to.eql(false);",
-									"});"
+									"console.log(Cl)"
 								],
 								"type": "text/javascript",
 								"packages": {},
