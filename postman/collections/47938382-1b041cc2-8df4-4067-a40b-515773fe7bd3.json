@@ -1223,6 +1223,33 @@
 				},
 				{
 					"name": "Get a field on a board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6ace7767-5d3d-4912-bdd5-e25b19265f9a",
+								"exec": [
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"",
+									"    pm.environment.get(\"varia\");",
+									"    pm.expect(jsonData.value).to.eql(100);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "70674b30-d5c8-4564-9127-2bcfe3ca2245",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-ec08364a-fb9f-4e0d-95cb-762f75264ce0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
