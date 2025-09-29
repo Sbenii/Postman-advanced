@@ -1244,8 +1244,13 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "51c1888c-9b6f-4d52-98e1-88c879b55fe5",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
 								"packages": {},
-								"type": "text/javascript"
+								"requests": {}
 							}
 						}
 					],
@@ -1257,7 +1262,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/boards/{{boardID}}/name?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1265,7 +1270,7 @@
 								"1",
 								"boards",
 								"{{boardID}}",
-								""
+								"name"
 							],
 							"query": [
 								{
