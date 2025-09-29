@@ -1034,6 +1034,7 @@
 									"let randomNum= Math.floor(Math.random() * 100);",
 									"let uniqueValue = `NewBoard${randomNum}`;",
 									"pm.environment.set(\"myboardname\", uniqueValue);",
+									"",
 									""
 								],
 								"type": "text/javascript",
