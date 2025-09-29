@@ -1231,7 +1231,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/{{n}}?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/{{name}}?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1242,7 +1242,7 @@
 								"1",
 								"boards",
 								"{{boardID}}",
-								"{{n}}"
+								"{{name}}"
 							],
 							"query": [
 								{
