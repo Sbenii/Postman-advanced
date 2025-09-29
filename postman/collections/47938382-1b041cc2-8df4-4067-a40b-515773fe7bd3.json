@@ -1233,7 +1233,7 @@
 									"    var jsonData = pm.response.json();",
 									"",
 									"    let field=pm.environment.get(\"name\");",
-									"    pm.expect(jsonData.name).to.eql(field);",
+									"    pm.expect(jsonData.value).to.eql(field);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1262,7 +1262,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/closed?key={{key}}&token={{token}}",
+							"raw": "{{base_url}}/1/boards/{{boardID}}/name?key={{key}}&token={{token}}",
 							"host": [
 								"{{base_url}}"
 							],
@@ -1270,7 +1270,7 @@
 								"1",
 								"boards",
 								"{{boardID}}",
-								"closed"
+								"name"
 							],
 							"query": [
 								{
