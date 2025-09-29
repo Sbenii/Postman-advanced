@@ -1233,7 +1233,7 @@
 									"    var jsonData = pm.response.json();",
 									"",
 									"    let field=pm.environment.get(\"name\");",
-									"    pm.expect(jsonData.value).to.eql(100);",
+									"    pm.expect(jsonData.name).to.eql(field);",
 									"});"
 								],
 								"type": "text/javascript",
@@ -1244,7 +1244,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d8e8759c-a1df-4efd-a8d0-3970cd042759",
+								"id": "4a939c43-85f8-4807-9c47-24713825d428",
 								"exec": [],
 								"type": "text/javascript"
 							}
