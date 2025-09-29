@@ -2379,7 +2379,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get actions of a board",
 					"id": "47938382-7049a002-07a8-4be7-870f-13b14b1a0bc9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
