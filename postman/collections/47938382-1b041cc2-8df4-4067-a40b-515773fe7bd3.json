@@ -1358,6 +1358,31 @@
 				},
 				{
 					"name": "Get Boardstars on a board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a8a0866-01b1-4a55-b682-c5871db229e7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8181efcd-9275-444b-96c1-4d115f71cbb9",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-81334a8c-ba8f-4552-92db-195cce8d9e90",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
