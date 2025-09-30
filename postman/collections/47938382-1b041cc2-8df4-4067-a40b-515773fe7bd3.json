@@ -2449,7 +2449,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get Boardstars on a board",
 					"id": "47938382-81334a8c-ba8f-4552-92db-195cce8d9e90",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
