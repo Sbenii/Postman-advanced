@@ -2463,7 +2463,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{boardId}/boardStars?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{/boardStars?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2473,7 +2473,7 @@
 							"path": [
 								"1",
 								"boards",
-								"{boardId}",
+								"{{",
 								"boardStars"
 							],
 							"query": [
