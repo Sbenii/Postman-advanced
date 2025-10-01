@@ -1990,8 +1990,38 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{idMembership}?type={type}&key=APIKey&token=APIToken",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"memberships",
+								"{idMembership}"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "{type}"
+								},
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "APIToken"
+								}
+							]
+						}
 					},
 					"response": []
 				},
