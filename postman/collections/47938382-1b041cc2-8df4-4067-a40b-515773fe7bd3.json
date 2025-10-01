@@ -2894,7 +2894,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/lists/{filter}?key=APIKey&token={{listID}}",
+							"raw": "https://api.trello.com/1/boards/{id}/lists/{filter}?key=APIKey&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2915,7 +2915,7 @@
 								},
 								{
 									"key": "token",
-									"value": "{{listID}}"
+									"value": "{{token}}"
 								}
 							]
 						}
