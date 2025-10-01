@@ -2523,6 +2523,18 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get all boards",
+					"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "47938382-ef8532f5-150e-407f-b1d1-4accc9c932d0",
