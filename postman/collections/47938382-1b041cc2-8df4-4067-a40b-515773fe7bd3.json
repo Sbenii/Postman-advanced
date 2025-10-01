@@ -2857,7 +2857,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/lists?key=APIKey&token=APIToken",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/lists?key={{&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2873,11 +2873,11 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{"
 								},
 								{
 									"key": "token",
-									"value": "APIToken"
+									"value": "{{token}}"
 								}
 							]
 						}
