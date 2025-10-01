@@ -2054,6 +2054,18 @@
 					"response": []
 				},
 				{
+					"name": "Update membership of a member on a board",
+					"id": "47938382-10dc5b0e-8688-4713-b940-c447e0e28b8f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
 					"name": "Get updated  membership of board",
 					"event": [
 						{
@@ -2120,18 +2132,6 @@
 								}
 							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update membership of a member on a board",
-					"id": "47938382-10dc5b0e-8688-4713-b940-c447e0e28b8f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				},
