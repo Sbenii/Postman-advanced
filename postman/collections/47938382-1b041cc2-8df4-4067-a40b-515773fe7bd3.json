@@ -982,6 +982,51 @@
 			"name": "Trello APIs",
 			"item": [
 				{
+					"name": "Get all boards",
+					"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"members",
+								"me",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,url"
+								},
+								{
+									"key": "filter",
+									"value": "open"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create board",
 					"event": [
 						{
@@ -2511,51 +2556,6 @@
 								"{{boardID}}"
 							],
 							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get all boards",
-					"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"members",
-								"me",
-								"boards"
-							],
-							"query": [
-								{
-									"key": "fields",
-									"value": "name,url"
-								},
-								{
-									"key": "filter",
-									"value": "open"
-								},
 								{
 									"key": "key",
 									"value": "{{key}}"
