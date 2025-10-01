@@ -2003,6 +2003,7 @@
 									"});",
 									"var jsonData=pm.response.json();",
 									"pm.environment.set(\"membershipID\", jsonData[1].id);",
+									"let ",
 									"console.log()"
 								],
 								"type": "text/javascript",
