@@ -2761,7 +2761,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Create a label on a board",
 					"id": "47938382-ccb88e87-8cde-4842-a21e-ba669553256e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
