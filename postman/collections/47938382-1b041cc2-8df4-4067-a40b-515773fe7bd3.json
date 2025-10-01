@@ -1840,7 +1840,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/members?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{/members?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1850,7 +1850,7 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{",
 								"members"
 							],
 							"query": [
