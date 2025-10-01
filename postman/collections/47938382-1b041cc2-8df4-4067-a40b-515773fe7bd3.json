@@ -2653,7 +2653,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards/compler?key=&{{key}}token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards/complete?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2665,15 +2665,15 @@
 								"boards",
 								"{{boardID}}",
 								"cards",
-								"compler"
+								"complete"
 							],
 							"query": [
 								{
 									"key": "key",
-									"value": ""
+									"value": "{{key}}"
 								},
 								{
-									"key": "{{key}}token",
+									"key": "token",
 									"value": "{{token}}"
 								}
 							]
