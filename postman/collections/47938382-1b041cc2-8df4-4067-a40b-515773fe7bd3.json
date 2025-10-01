@@ -2682,7 +2682,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get custom field on a board",
 					"id": "47938382-cc6d2666-dc2b-4c16-aca2-5dc44bd096e4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
