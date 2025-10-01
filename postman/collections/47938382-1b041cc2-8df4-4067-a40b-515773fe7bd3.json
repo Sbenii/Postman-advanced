@@ -1984,7 +1984,7 @@
 					"response": []
 				},
 				{
-					"name": "Get membership of board before invitation Copy",
+					"name": "Get membership of board after invitation",
 					"event": [
 						{
 							"listen": "test",
