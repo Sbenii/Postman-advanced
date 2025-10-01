@@ -2653,7 +2653,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/cards/{filter}?key=&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{id}/cards/{fil}?key=&{{key}}token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2665,7 +2665,7 @@
 								"boards",
 								"{id}",
 								"cards",
-								"{filter}"
+								"{fil}"
 							],
 							"query": [
 								{
@@ -2673,7 +2673,7 @@
 									"value": ""
 								},
 								{
-									"key": "token",
+									"key": "{{key}}token",
 									"value": "{{token}}"
 								}
 							]
