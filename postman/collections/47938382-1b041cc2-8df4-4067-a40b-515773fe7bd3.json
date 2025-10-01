@@ -2644,14 +2644,40 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get filtered cards on a board",
 					"id": "47938382-29f72312-b692-4ee1-933e-a3dbe7e9279c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/cards/{filter}?key=APIKey&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"cards",
+								"{filter}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
