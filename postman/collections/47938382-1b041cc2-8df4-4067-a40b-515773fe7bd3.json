@@ -2579,7 +2579,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/checklists?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2589,7 +2589,7 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{boardID}}",
 								"checklists"
 							],
 							"query": [
