@@ -2616,7 +2616,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards?key={{key}}&token={{",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2636,7 +2636,7 @@
 								},
 								{
 									"key": "token",
-									"value": "{{"
+									"value": "{{token}}"
 								}
 							]
 						}
