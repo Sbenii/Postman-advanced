@@ -2894,7 +2894,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/lists/closed?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/lists/open?nkey={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2906,11 +2906,11 @@
 								"boards",
 								"{{boardID}}",
 								"lists",
-								"closed"
+								"open"
 							],
 							"query": [
 								{
-									"key": "key",
+									"key": "nkey",
 									"value": "{{key}}"
 								},
 								{
