@@ -1993,7 +1993,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/members/68dcff35b679c09e7fa90e48?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/members/{{mem?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2005,7 +2005,7 @@
 								"boards",
 								"{{boardID}}",
 								"members",
-								"68dcff35b679c09e7fa90e48"
+								"{{mem"
 							],
 							"query": [
 								{
