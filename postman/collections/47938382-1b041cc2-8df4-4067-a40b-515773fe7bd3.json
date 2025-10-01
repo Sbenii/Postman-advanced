@@ -1561,7 +1561,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards/incomplete?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards/complete?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1573,7 +1573,7 @@
 								"boards",
 								"{{boardID}}",
 								"cards",
-								"incomplete"
+								"complete"
 							],
 							"query": [
 								{
