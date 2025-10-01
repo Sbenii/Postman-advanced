@@ -2770,7 +2770,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/labels?name=Label1&color=blue&key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?name=Label1&color=blue&key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2780,7 +2780,7 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{boardID}}",
 								"labels"
 							],
 							"query": [
