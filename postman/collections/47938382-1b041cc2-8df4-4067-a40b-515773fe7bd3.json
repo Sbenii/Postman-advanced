@@ -1229,7 +1229,7 @@
 							"script": {
 								"id": "6ace7767-5d3d-4912-bdd5-e25b19265f9a",
 								"exec": [
-									"pm.test(\"CHEC name\", function () {",
+									"pm.test(\"Check name\", function () {",
 									"    var jsonData = pm.response.json();",
 									"",
 									"    let field=pm.environment.get(\"name\");",
