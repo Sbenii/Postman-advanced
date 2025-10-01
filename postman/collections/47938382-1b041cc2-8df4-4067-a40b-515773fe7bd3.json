@@ -1876,7 +1876,7 @@
 								"id": "84244289-0288-4c8b-a6b0-d7a500478c06",
 								"exec": [
 									"var jsonData = pm.response.json();",
-									"pm.globals.set(\"memberID\", jsonData.id);",
+									"pm.globals.set(\"memberID\", jsonData.members.id);",
 									""
 								],
 								"type": "text/javascript",
@@ -1887,7 +1887,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "0f6ba0ff-05c6-42ed-8a9d-098d76e23ca4",
+								"id": "189b6f1b-f074-4fb6-9dd1-c54e6edb26a2",
 								"exec": [],
 								"type": "text/javascript"
 							}
