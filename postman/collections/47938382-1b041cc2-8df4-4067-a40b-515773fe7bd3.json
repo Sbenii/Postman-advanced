@@ -2733,7 +2733,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/labels?key=APIKey&token={{",
+							"raw": "https://api.trello.com/1/boards/{id}/labels?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2749,11 +2749,11 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
-									"value": "{{"
+									"value": "{{token}}"
 								}
 							]
 						}
