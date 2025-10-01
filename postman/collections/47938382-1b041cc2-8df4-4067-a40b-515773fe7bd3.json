@@ -1632,6 +1632,51 @@
 					"response": []
 				},
 				{
+					"name": "Create a label on a board",
+					"id": "47938382-ccb88e87-8cde-4842-a21e-ba669553256e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?name=Label1&color=blue&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"labels"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Label1"
+								},
+								{
+									"key": "color",
+									"value": "blue"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get labels on a board",
 					"id": "47938382-9848993c-8e5d-4992-9df5-7bca44f57578",
 					"protocolProfileBehavior": {
@@ -2747,51 +2792,6 @@
 								"{{boardID}}"
 							],
 							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create a label on a board",
-					"id": "47938382-ccb88e87-8cde-4842-a21e-ba669553256e",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?name=Label1&color=blue&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"labels"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "Label1"
-								},
-								{
-									"key": "color",
-									"value": "blue"
-								},
 								{
 									"key": "key",
 									"value": "{{key}}"
