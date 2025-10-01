@@ -2724,14 +2724,39 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get labels on a board",
 					"id": "47938382-9848993c-8e5d-4992-9df5-7bca44f57578",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/labels?key=APIKey&token={{",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"labels"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "{{"
+								}
+							]
+						}
 					},
 					"response": []
 				}
