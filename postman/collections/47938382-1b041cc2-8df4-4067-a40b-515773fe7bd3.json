@@ -1669,43 +1669,6 @@
 					"response": []
 				},
 				{
-					"name": "Get labels on a board Copy",
-					"id": "47938382-fdf32ed1-6dca-44cc-b651-2feb215a0b85",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"labels"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Create a label on a board",
 					"id": "47938382-ccb88e87-8cde-4842-a21e-ba669553256e",
 					"protocolProfileBehavior": {
@@ -1737,6 +1700,43 @@
 									"key": "color",
 									"value": "blue"
 								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get labels on a board Copy",
+					"id": "47938382-fdf32ed1-6dca-44cc-b651-2feb215a0b85",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"labels"
+							],
+							"query": [
 								{
 									"key": "key",
 									"value": "{{key}}"
