@@ -2892,7 +2892,33 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/lists/{filter}?key=APIKey&token={{listID}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"lists",
+								"{filter}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "{{listID}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
