@@ -2696,7 +2696,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/customFields?key=APIKey&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{{/customFields?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2706,13 +2706,13 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{{",
 								"customFields"
 							],
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
