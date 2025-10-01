@@ -1956,7 +1956,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/members/68cd475cf1d669e7f762e8f3?key=APIKey&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/members/68cd475cf1d669e7f762e8f3?key={{&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1973,7 +1973,7 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": "{{"
 								},
 								{
 									"key": "token",
