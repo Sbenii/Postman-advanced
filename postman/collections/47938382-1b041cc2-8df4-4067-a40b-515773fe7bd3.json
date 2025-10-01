@@ -2061,7 +2061,7 @@
 					"response": []
 				},
 				{
-					"name": "Update membership of a member on a board Copy",
+					"name": "Update membership of a member on a board",
 					"id": "47938382-167ec34b-60a4-437b-a8b1-20dfc5463455",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
