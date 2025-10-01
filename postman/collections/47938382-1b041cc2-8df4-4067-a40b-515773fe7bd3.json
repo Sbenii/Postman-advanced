@@ -1831,6 +1831,43 @@
 					"response": []
 				},
 				{
+					"name": "Get members of a board",
+					"id": "47938382-eec10e98-35d9-43d1-b866-628447d384e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/members?key=APIKey&token={",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"members"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "{"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -2916,43 +2953,6 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get members of a board",
-					"id": "47938382-eec10e98-35d9-43d1-b866-628447d384e0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/members?key=APIKey&token=APIToken",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{id}",
-								"members"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "APIKey"
-								},
-								{
-									"key": "token",
-									"value": "APIToken"
 								}
 							]
 						}
