@@ -2070,7 +2070,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{{membershipID}}?type={type}&key=APIKey&token={{",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{{membershipID}}?type={type}&key=&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2091,11 +2091,11 @@
 								},
 								{
 									"key": "key",
-									"value": "APIKey"
+									"value": ""
 								},
 								{
 									"key": "token",
-									"value": "{{"
+									"value": "{{token}}"
 								}
 							]
 						}
