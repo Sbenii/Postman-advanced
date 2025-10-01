@@ -1798,76 +1798,6 @@
 					"response": []
 				},
 				{
-					"name": "Get membership of board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "d28b1dd7-cb6e-474b-8347-7715b1fc72db",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.above(200);",
-									"});",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"pm.test(\"Check member type is equal to admin\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].memberType).to.equal(\"admin\");",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "f9a2c0eb-b608-424e-b8a5-b21248d277f5",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-d74b7c6c-d53f-44a6-9b55-34c4d14467a8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/memberships?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"memberships"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Invite a member to a board",
 					"event": [
 						{
@@ -1968,6 +1898,76 @@
 								"boards",
 								"{{boardID}}",
 								"members"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get membership of board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d28b1dd7-cb6e-474b-8347-7715b1fc72db",
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.above(200);",
+									"});",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Check member type is equal to admin\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData[0].memberType).to.equal(\"admin\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f9a2c0eb-b608-424e-b8a5-b21248d277f5",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-d74b7c6c-d53f-44a6-9b55-34c4d14467a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/boards/{{boardID}}/memberships?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"memberships"
 							],
 							"query": [
 								{
