@@ -2960,14 +2960,57 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Invite a member to a board",
 					"id": "47938382-4e36135d-60b3-4a29-9afa-046f1a53b906",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/members?email={email}&key=APIKey&token={{",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"members"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "{email}"
+								},
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "{{"
+								}
+							]
+						}
 					},
 					"response": []
 				}
