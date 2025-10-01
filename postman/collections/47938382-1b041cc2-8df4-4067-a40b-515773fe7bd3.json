@@ -2061,48 +2061,6 @@
 					"response": []
 				},
 				{
-					"name": "Update membership of a member on a board",
-					"id": "47938382-10dc5b0e-8688-4713-b940-c447e0e28b8f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{{membershipID}}?type=observer&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"memberships",
-								"{{membershipID}}"
-							],
-							"query": [
-								{
-									"key": "type",
-									"value": "observer"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Update membership of a member on a board Copy",
 					"id": "47938382-167ec34b-60a4-437b-a8b1-20dfc5463455",
 					"protocolProfileBehavior": {
