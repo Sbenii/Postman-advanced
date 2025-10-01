@@ -1869,6 +1869,30 @@
 				},
 				{
 					"name": "Invite a member to a board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "84244289-0288-4c8b-a6b0-d7a500478c06",
+								"exec": [
+									"",
+									"pm.globals.set(\"variable_key\", \"variable_value\");",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d528c793-751e-4196-91f4-65ba4399bdae",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "47938382-4e36135d-60b3-4a29-9afa-046f1a53b906",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
