@@ -1875,7 +1875,7 @@
 							"script": {
 								"id": "84244289-0288-4c8b-a6b0-d7a500478c06",
 								"exec": [
-									"",
+									"var ",
 									"pm.globals.set(\"variable_key\", \"variable_value\");",
 									""
 								],
@@ -1887,7 +1887,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d528c793-751e-4196-91f4-65ba4399bdae",
+								"id": "d83169f6-7f24-4d3f-a4c6-cca967e29fd4",
 								"exec": [],
 								"type": "text/javascript"
 							}
