@@ -1669,6 +1669,61 @@
 					"response": []
 				},
 				{
+					"name": "Invite a member to a board",
+					"id": "47938382-4e36135d-60b3-4a29-9afa-046f1a53b906",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/members?email=sezebeni@gmail.com&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"members"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sezebeni@gmail.com"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a label on a board",
 					"id": "47938382-ccb88e87-8cde-4842-a21e-ba669553256e",
 					"protocolProfileBehavior": {
@@ -2946,61 +3001,6 @@
 								"{{boardID}}"
 							],
 							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Invite a member to a board",
-					"id": "47938382-4e36135d-60b3-4a29-9afa-046f1a53b906",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"fullName\": \"<string>\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/members?email=sezebeni@gmail.com&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"members"
-							],
-							"query": [
-								{
-									"key": "email",
-									"value": "sezebeni@gmail.com"
-								},
 								{
 									"key": "key",
 									"value": "{{key}}"
