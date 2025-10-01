@@ -2003,9 +2003,7 @@
 									"});",
 									"var jsonData=pm.response.json();",
 									"pm.environment.set(\"membershipID\", jsonData[1].id);",
-									"let id =",
-									"pm.environment.get(\"variable_key\");",
-									"console.log()"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {},
