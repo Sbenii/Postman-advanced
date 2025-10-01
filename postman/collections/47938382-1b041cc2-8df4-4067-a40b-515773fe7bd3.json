@@ -1947,6 +1947,44 @@
 					"response": []
 				},
 				{
+					"name": "Delete a member on the board",
+					"id": "47938382-d54fba08-37c8-4b20-b5f6-b01aa56d33c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}/members/{idMember}?key=APIKey&token=APIToken",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}",
+								"members",
+								"{idMember}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "APIKey"
+								},
+								{
+									"key": "token",
+									"value": "APIToken"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -3032,44 +3070,6 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete a member on the board",
-					"id": "47938382-d54fba08-37c8-4b20-b5f6-b01aa56d33c0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/members/{idMember}?key=APIKey&token=APIToken",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{id}",
-								"members",
-								"{idMember}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "APIKey"
-								},
-								{
-									"key": "token",
-									"value": "APIToken"
 								}
 							]
 						}
