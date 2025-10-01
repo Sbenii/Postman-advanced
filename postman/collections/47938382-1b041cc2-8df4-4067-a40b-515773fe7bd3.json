@@ -2022,7 +2022,7 @@
 					"response": []
 				},
 				{
-					"name": "Get members of a board Copy",
+					"name": "Get updated members of a board",
 					"id": "47938382-11dee751-1b6d-4cba-a149-d8ccb4397ce6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
