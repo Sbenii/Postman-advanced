@@ -1714,7 +1714,7 @@
 					"response": []
 				},
 				{
-					"name": "Get labels on a board Copy",
+					"name": "Get created labels on a board",
 					"id": "47938382-fdf32ed1-6dca-44cc-b651-2feb215a0b85",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
