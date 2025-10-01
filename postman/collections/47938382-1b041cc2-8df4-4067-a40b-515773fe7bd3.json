@@ -1478,6 +1478,43 @@
 					"response": []
 				},
 				{
+					"name": "Get checklist on a board",
+					"id": "47938382-aa7ba9d6-8b2c-44e1-9812-6858124138ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"checklists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -2554,43 +2591,6 @@
 								"1",
 								"boards",
 								"{{boardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get checklist on a board",
-					"id": "47938382-aa7ba9d6-8b2c-44e1-9812-6858124138ff",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"checklists"
 							],
 							"query": [
 								{
