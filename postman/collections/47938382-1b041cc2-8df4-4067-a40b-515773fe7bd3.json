@@ -1947,7 +1947,7 @@
 					"response": []
 				},
 				{
-					"name": "Get members of a board Copy",
+					"name": "Get invited members of a board",
 					"id": "47938382-2ec67493-0280-494c-b6bc-53e734f1c85b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
