@@ -2983,7 +2983,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/members?email={email}&key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{id}/members?email=s&zekey={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2999,10 +2999,10 @@
 							"query": [
 								{
 									"key": "email",
-									"value": "{email}"
+									"value": "s"
 								},
 								{
-									"key": "key",
+									"key": "zekey",
 									"value": "{{key}}"
 								},
 								{
