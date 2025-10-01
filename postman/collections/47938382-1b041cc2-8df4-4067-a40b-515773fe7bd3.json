@@ -2607,7 +2607,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get cards on a board",
 					"id": "47938382-166636c2-c183-42af-9e90-68970eb8d4ef",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
