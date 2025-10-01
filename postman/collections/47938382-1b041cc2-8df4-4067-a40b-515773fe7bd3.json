@@ -2001,8 +2001,8 @@
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].memberType).to.equal(\"admin\");",
 									"});",
-									"var jsonData=pm.response.json()",
-									"pm.environment.set(\"membershipID\", \"\");"
+									"var jsonData=pm.response.json();",
+									"pm.environment.set(\"membershipID\", jsonData.);"
 								],
 								"type": "text/javascript",
 								"packages": {},
