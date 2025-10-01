@@ -3015,7 +3015,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete a member on the board",
 					"id": "47938382-d54fba08-37c8-4b20-b5f6-b01aa56d33c0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
