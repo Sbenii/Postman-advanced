@@ -1053,6 +1053,15 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{base_url}}/1/boards/?name={{myboardname}}&key={{key}}&token={{token}}",
 							"host": [
