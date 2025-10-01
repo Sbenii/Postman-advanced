@@ -2534,8 +2534,8 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "GET https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
-							"protocol": "GET https",
+							"raw": "https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
+							"protocol": "https",
 							"host": [
 								"api",
 								"trello",
