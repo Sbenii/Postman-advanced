@@ -1984,7 +1984,7 @@
 					"response": []
 				},
 				{
-					"name": "Get membership of board Copy",
+					"name": "Get updated  membership of board",
 					"event": [
 						{
 							"listen": "test",
