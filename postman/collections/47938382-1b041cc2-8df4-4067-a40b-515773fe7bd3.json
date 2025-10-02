@@ -2378,7 +2378,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/boardPlugins?key={{key}}K&token={{token}}",
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/boardPlugins?key={{key}}&token={{token}}",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -2394,7 +2394,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "{{key}}K"
+											"value": "{{key}}"
 										},
 										{
 											"key": "token",
