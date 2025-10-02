@@ -1869,244 +1869,244 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Invite a member to a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "84244289-0288-4c8b-a6b0-d7a500478c06",
+										"exec": [
+											"var jsonData = pm.response.json();",
+											"pm.environment.set(\"memberID\", jsonData.members[0].id);",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "489d588b-12df-4b70-a6cd-3cb2f3621e47",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "47938382-4e36135d-60b3-4a29-9afa-046f1a53b906",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fullName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/members?email=sezebeni@gmail.com&key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"members"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "sezebeni@gmail.com"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get invited members of a board",
+							"id": "47938382-2ec67493-0280-494c-b6bc-53e734f1c85b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"members"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get membership of board after invitation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d28b1dd7-cb6e-474b-8347-7715b1fc72db",
+										"exec": [
+											"pm.test(\"Response time is less than 200ms\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.above(200);",
+											"});",
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"pm.test(\"Check member type is equal to admin\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData[0].memberType).to.equal(\"admin\");",
+											"});",
+											"var jsonData=pm.response.json();",
+											"pm.environment.set(\"membershipID\", jsonData[1].id);",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "f9a2c0eb-b608-424e-b8a5-b21248d277f5",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-03b154f5-4761-4bfd-a006-c26738473005",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships?key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"memberships"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update membership of a member on a board",
+							"id": "47938382-167ec34b-60a4-437b-a8b1-20dfc5463455",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{{membershipID}}?type=observer&key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"memberships",
+										"{{membershipID}}"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "observer"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-b336cf1e-e1b7-465f-8432-fbb6366dc825"
-				},
-				{
-					"name": "Invite a member to a board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "84244289-0288-4c8b-a6b0-d7a500478c06",
-								"exec": [
-									"var jsonData = pm.response.json();",
-									"pm.environment.set(\"memberID\", jsonData.members[0].id);",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "489d588b-12df-4b70-a6cd-3cb2f3621e47",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-4e36135d-60b3-4a29-9afa-046f1a53b906",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"fullName\": \"<string>\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/members?email=sezebeni@gmail.com&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"members"
-							],
-							"query": [
-								{
-									"key": "email",
-									"value": "sezebeni@gmail.com"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get invited members of a board",
-					"id": "47938382-2ec67493-0280-494c-b6bc-53e734f1c85b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"members"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get membership of board after invitation",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "d28b1dd7-cb6e-474b-8347-7715b1fc72db",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.above(200);",
-									"});",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"pm.test(\"Check member type is equal to admin\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].memberType).to.equal(\"admin\");",
-									"});",
-									"var jsonData=pm.response.json();",
-									"pm.environment.set(\"membershipID\", jsonData[1].id);",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "f9a2c0eb-b608-424e-b8a5-b21248d277f5",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-03b154f5-4761-4bfd-a006-c26738473005",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/memberships?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"memberships"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update membership of a member on a board",
-					"id": "47938382-167ec34b-60a4-437b-a8b1-20dfc5463455",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{{membershipID}}?type=observer&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"memberships",
-								"{{membershipID}}"
-							],
-							"query": [
-								{
-									"key": "type",
-									"value": "observer"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
 				},
 				{
 					"name": "Get updated  membership of board",
