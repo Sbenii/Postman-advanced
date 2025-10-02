@@ -2286,6 +2286,44 @@
 					"response": []
 				},
 				{
+					"name": "Create an Email key for the board",
+					"id": "47938382-7bb974f0-4861-4284-b1bb-225658c2b4bb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/emailKey/generate?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"emailKey",
+								"generate"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -3362,44 +3400,6 @@
 								"1",
 								"boards",
 								"{{boardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create an Email key for the board",
-					"id": "47938382-7bb974f0-4861-4284-b1bb-225658c2b4bb",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/emailKey/generate?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"emailKey",
-								"generate"
 							],
 							"query": [
 								{
