@@ -3387,7 +3387,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/emailKey/generate?key={{&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/emailKey/generate?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3397,14 +3397,14 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{boardID}}",
 								"emailKey",
 								"generate"
 							],
 							"query": [
 								{
 									"key": "key",
-									"value": "{{"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
