@@ -2324,6 +2324,43 @@
 					"response": []
 				},
 				{
+					"name": "Mark board as viewed",
+					"id": "47938382-bf368194-29a8-4ef9-9e89-a6c34b6736ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/markedAsViewed?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardID}}",
+								"markedAsViewed"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Create a list",
 					"event": [
 						{
@@ -3400,43 +3437,6 @@
 								"1",
 								"boards",
 								"{{boardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Mark board as viewed",
-					"id": "47938382-bf368194-29a8-4ef9-9e89-a6c34b6736ab",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/markedAsViewed?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"markedAsViewed"
 							],
 							"query": [
 								{
