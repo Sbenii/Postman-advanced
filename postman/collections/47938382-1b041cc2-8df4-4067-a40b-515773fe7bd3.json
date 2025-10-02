@@ -3378,7 +3378,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Create an Email key for the board",
 					"id": "47938382-7bb974f0-4861-4284-b1bb-225658c2b4bb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
