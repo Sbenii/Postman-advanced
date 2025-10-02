@@ -2371,7 +2371,37 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{id}/boardPlugins?key=APIK&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{id}",
+										"boardPlugins"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "APIK"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
