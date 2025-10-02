@@ -2364,7 +2364,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get powerUps on board",
 							"id": "47938382-f01b9463-0f89-44fc-8793-246959e672ea",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
