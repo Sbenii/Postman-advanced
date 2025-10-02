@@ -1272,220 +1272,220 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get actions of a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4470090a-723b-489d-9fe8-4c9eaf5210ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"pm.test(\"Check Full name in response\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData[0].memberCreator.fullName).to.eql(\"Beni Sezerano\");",
+											"});",
+											"pm.test(\"Check user name in response\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData[0].memberCreator.username).to.eql(\"sezeranobenny\");",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "9b2a3253-9d82-4927-8e28-7933171a3f03",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-7049a002-07a8-4be7-870f-13b14b1a0bc9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/1/boards/{{boardID}}/actions?key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"actions"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Boardstars on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3a8a0866-01b1-4a55-b682-c5871db229e7",
+										"exec": [
+											"pm.test(\"Check if status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "9400d98a-67b1-4128-9069-dc091e807858",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "47938382-81334a8c-ba8f-4552-92db-195cce8d9e90",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/boardStars?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"boardStars"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get checklist on a board",
+							"id": "47938382-aa7ba9d6-8b2c-44e1-9812-6858124138ff",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"checklists"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get cards on a board",
+							"id": "47938382-166636c2-c183-42af-9e90-68970eb8d4ef",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{boardID}}/cards?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-b336cf1e-e1b7-465f-8432-fbb6366dc825"
-				},
-				{
-					"name": "Get actions of a board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "4470090a-723b-489d-9fe8-4c9eaf5210ff",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"pm.test(\"Check Full name in response\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].memberCreator.fullName).to.eql(\"Beni Sezerano\");",
-									"});",
-									"pm.test(\"Check user name in response\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].memberCreator.username).to.eql(\"sezeranobenny\");",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "9b2a3253-9d82-4927-8e28-7933171a3f03",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-7049a002-07a8-4be7-870f-13b14b1a0bc9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/actions?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"actions"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Boardstars on a board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "3a8a0866-01b1-4a55-b682-c5871db229e7",
-								"exec": [
-									"pm.test(\"Check if status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "9400d98a-67b1-4128-9069-dc091e807858",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-81334a8c-ba8f-4552-92db-195cce8d9e90",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/boardStars?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"boardStars"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get checklist on a board",
-					"id": "47938382-aa7ba9d6-8b2c-44e1-9812-6858124138ff",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"checklists"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get cards on a board",
-					"id": "47938382-166636c2-c183-42af-9e90-68970eb8d4ef",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}/cards?key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"cards"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
 				},
 				{
 					"name": "Get filtered cards on a board",
