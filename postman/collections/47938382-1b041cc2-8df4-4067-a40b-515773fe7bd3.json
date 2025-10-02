@@ -982,6 +982,11 @@
 			"name": "Trello APIs",
 			"item": [
 				{
+					"name": "Boards",
+					"item": [],
+					"id": "47938382-b336cf1e-e1b7-465f-8432-fbb6366dc825"
+				},
+				{
 					"name": "Get all boards",
 					"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
 					"protocolProfileBehavior": {
