@@ -3349,7 +3349,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/calendarKey/generate?key={{&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/calendarKey/generate?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3359,14 +3359,14 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{boardID}}",
 								"calendarKey",
 								"generate"
 							],
 							"query": [
 								{
 									"key": "key",
-									"value": "{{"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
