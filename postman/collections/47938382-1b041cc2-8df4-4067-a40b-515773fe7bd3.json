@@ -983,297 +983,298 @@
 			"item": [
 				{
 					"name": "Boards",
-					"item": [],
+					"item": [
+						{
+							"name": "Get all boards",
+							"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"members",
+										"me",
+										"boards"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "name,url"
+										},
+										{
+											"key": "filter",
+											"value": "open"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a48655c7-7b90-47a0-b03c-e249ca183eed",
+										"exec": [
+											"let jasondata=pm.response.json();",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.have.header(\"Content-Type\");",
+											"});",
+											"pm.environment.set(\"boardID\", jasondata.id);",
+											"pm.test(\"Check if id field exists\", function () {",
+											"    pm.expect(jasondata.id).to.exist;",
+											"});",
+											"pm.test(\"Check if name field exists\", function () {",
+											"    pm.expect(jasondata.name).to.exist;",
+											"});",
+											"pm.test(\"Check if desc field exists\", function () {",
+											"    pm.expect(jasondata.desc).to.exist;",
+											"});",
+											"pm.test(\"Check if organization id exists\", function () {",
+											"    pm.expect(jasondata.idOrganization).to.exist;",
+											"});",
+											"",
+											"let createdboard=pm.environment.get(\"myboardname\")",
+											"pm.test(\"Check if name is correct\", function () {",
+											"    pm.expect(jasondata.name).to.eql(createdboard);",
+											"});",
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"pm.test(\"Content-Type is present\", function () {",
+											"    pm.response.to.have.header(\"Content-Type\");",
+											"});",
+											"pm.test(\"Successful POST request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+											"});",
+											"pm.environment.set(\"name\", jasondata.name);",
+											"let cl=pm.environment.get(\"name\");",
+											"console.log(cl)"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "8e768524-e3fe-4ac1-8269-bf07f891da6d",
+										"exec": [
+											"let randomNum= Math.floor(Math.random() * 100);",
+											"let uniqueValue = `NewBoard${randomNum}`;",
+											"pm.environment.set(\"myboardname\", uniqueValue);",
+											"",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-e90a1cdf-eaf5-4bfb-a766-132023289b3d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/1/boards/?name={{myboardname}}&key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "{{myboardname}}"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get created board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
+										"exec": [
+											"pm.test(\"Check that closed state of the board is equal to false\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.closed).to.eql(false);",
+											"});",
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "2898058b-82d0-42e3-bc2e-b68ccdc54d25",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-0c09f6a2-3626-4dd6-86bf-6e59abd00771",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a field on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6ace7767-5d3d-4912-bdd5-e25b19265f9a",
+										"exec": [
+											"pm.test(\"Check name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"",
+											"    let field=pm.environment.get(\"name\");",
+											"    pm.expect(jsonData._value).to.eql(field);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "51c1888c-9b6f-4d52-98e1-88c879b55fe5",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-ec08364a-fb9f-4e0d-95cb-762f75264ce0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/1/boards/{{boardID}}/name?key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{boardID}}",
+										"name"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "47938382-b336cf1e-e1b7-465f-8432-fbb6366dc825"
-				},
-				{
-					"name": "Get all boards",
-					"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"members",
-								"me",
-								"boards"
-							],
-							"query": [
-								{
-									"key": "fields",
-									"value": "name,url"
-								},
-								{
-									"key": "filter",
-									"value": "open"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a48655c7-7b90-47a0-b03c-e249ca183eed",
-								"exec": [
-									"let jasondata=pm.response.json();",
-									"pm.test(\"Content-Type is present\", function () {",
-									"    pm.response.to.have.header(\"Content-Type\");",
-									"});",
-									"pm.environment.set(\"boardID\", jasondata.id);",
-									"pm.test(\"Check if id field exists\", function () {",
-									"    pm.expect(jasondata.id).to.exist;",
-									"});",
-									"pm.test(\"Check if name field exists\", function () {",
-									"    pm.expect(jasondata.name).to.exist;",
-									"});",
-									"pm.test(\"Check if desc field exists\", function () {",
-									"    pm.expect(jasondata.desc).to.exist;",
-									"});",
-									"pm.test(\"Check if organization id exists\", function () {",
-									"    pm.expect(jasondata.idOrganization).to.exist;",
-									"});",
-									"",
-									"let createdboard=pm.environment.get(\"myboardname\")",
-									"pm.test(\"Check if name is correct\", function () {",
-									"    pm.expect(jasondata.name).to.eql(createdboard);",
-									"});",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"pm.test(\"Content-Type is present\", function () {",
-									"    pm.response.to.have.header(\"Content-Type\");",
-									"});",
-									"pm.test(\"Successful POST request\", function () {",
-									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
-									"});",
-									"pm.environment.set(\"name\", jasondata.name);",
-									"let cl=pm.environment.get(\"name\");",
-									"console.log(cl)"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "8e768524-e3fe-4ac1-8269-bf07f891da6d",
-								"exec": [
-									"let randomNum= Math.floor(Math.random() * 100);",
-									"let uniqueValue = `NewBoard${randomNum}`;",
-									"pm.environment.set(\"myboardname\", uniqueValue);",
-									"",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-e90a1cdf-eaf5-4bfb-a766-132023289b3d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{base_url}}/1/boards/?name={{myboardname}}&key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								""
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "{{myboardname}}"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get created board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "5c34c905-90c0-41e9-852b-5a787131ecd8",
-								"exec": [
-									"pm.test(\"Check that closed state of the board is equal to false\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.closed).to.eql(false);",
-									"});",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "2898058b-82d0-42e3-bc2e-b68ccdc54d25",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-0c09f6a2-3626-4dd6-86bf-6e59abd00771",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get a field on a board",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "6ace7767-5d3d-4912-bdd5-e25b19265f9a",
-								"exec": [
-									"pm.test(\"Check name\", function () {",
-									"    var jsonData = pm.response.json();",
-									"",
-									"    let field=pm.environment.get(\"name\");",
-									"    pm.expect(jsonData._value).to.eql(field);",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "51c1888c-9b6f-4d52-98e1-88c879b55fe5",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-ec08364a-fb9f-4e0d-95cb-762f75264ce0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/boards/{{boardID}}/name?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"boards",
-								"{{boardID}}",
-								"name"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
 				},
 				{
 					"name": "Get actions of a board",
