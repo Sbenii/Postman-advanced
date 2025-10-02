@@ -3425,7 +3425,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{id}/markedAsViewed?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{boardID}}/markedAsViewed?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3435,7 +3435,7 @@
 							"path": [
 								"1",
 								"boards",
-								"{id}",
+								"{{boardID}}",
 								"markedAsViewed"
 							],
 							"query": [
