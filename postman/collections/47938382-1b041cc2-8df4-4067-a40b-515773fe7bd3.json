@@ -3340,7 +3340,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Create a calendar key for a board",
 					"id": "47938382-be97cdfa-8715-49d4-b376-479e45e2938e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
