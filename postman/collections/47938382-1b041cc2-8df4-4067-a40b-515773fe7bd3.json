@@ -2412,8 +2412,33 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{id}/boardPlugins?key={{ke&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{id}",
+										"boardPlugins"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{ke"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
