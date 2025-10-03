@@ -2917,7 +2917,7 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"pm.test(\"Successful POST request\", function () {",
-									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 									"});"
 								],
 								"type": "text/javascript",
