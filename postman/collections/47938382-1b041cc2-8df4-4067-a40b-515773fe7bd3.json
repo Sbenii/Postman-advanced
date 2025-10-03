@@ -2608,9 +2608,7 @@
 											"let randomNum= Math.floor(Math.random() * 100);",
 											"let uniqueValue = `Editedlist${randomNum}`;",
 											"pm.environment.set(\"mynewlistname\", uniqueValue);",
-											"pm.test(\"Status code is 200\", function () {",
-											"    pm.response.to.have.status(200);",
-											"});",
+											"",
 											""
 										],
 										"type": "text/javascript",
@@ -2623,6 +2621,9 @@
 									"script": {
 										"id": "50e41a95-e6b2-40f3-bae3-6c9bdbf00526",
 										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
 											""
 										],
 										"type": "text/javascript",
