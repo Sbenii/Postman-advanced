@@ -2849,7 +2849,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Archive all cards",
 							"id": "47938382-487e81c6-c8eb-4d80-9779-c875e2425b4b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
