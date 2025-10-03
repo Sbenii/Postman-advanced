@@ -2591,6 +2591,78 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Update list",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
+										"exec": [
+											"let randomNum= Math.floor(Math.random() * 100);",
+											"let uniqueValue = `Editedlist${randomNum}`;",
+											"pm.environment.set(\"mynewlistname\", uniqueValue);",
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "50e41a95-e6b2-40f3-bae3-6c9bdbf00526",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-bb6ee3a6-8660-45fa-9ffc-408f6602e658",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{mynewlistname}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"lists",
+										"{{listID}}"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										},
+										{
+											"key": "name",
+											"value": "{{mynewlistname}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
@@ -2885,78 +2957,6 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update list",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "746fd6cf-3454-42b1-b345-9e9dd5a7eb06",
-								"exec": [
-									"let randomNum= Math.floor(Math.random() * 100);",
-									"let uniqueValue = `Editedlist${randomNum}`;",
-									"pm.environment.set(\"mynewlistname\", uniqueValue);",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "50e41a95-e6b2-40f3-bae3-6c9bdbf00526",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-bb6ee3a6-8660-45fa-9ffc-408f6602e658",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{mynewlistname}}",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{{listID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								},
-								{
-									"key": "name",
-									"value": "{{mynewlistname}}"
 								}
 							]
 						}
