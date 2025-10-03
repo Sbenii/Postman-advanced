@@ -2663,9 +2663,193 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get  updated list",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "00fe887f-4c9a-46ab-95f8-a7d67473714c",
+										"exec": [
+											"pm.test(\"Status code: should be 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "25ecffbb-34d7-437d-a571-3e7bee94d1d8",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-e1446e49-44a7-4788-8503-13e4d1d33e1f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										"{{listID}}"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
+				},
+				{
+					"name": "Get  archived list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3338f668-a5a3-47c9-98f5-c2996912630e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bf2793c1-3a35-4add-8929-b2ff3aa88727",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-a775dfea-75e8-4ee2-833a-afb73a5d9b2b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"{{listID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Archive list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "296294c8-0fbd-4bdd-bb78-0ab443b9322f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e6a6b585-43e7-46bd-a387-49d5e0d7d222",
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47938382-f347814e-0846-4ee9-873b-9cc955ca9594",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"{{listID}}",
+								"closed"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "value",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
 				},
 				{
 					"name": "Create a card",
@@ -2964,68 +3148,6 @@
 					"response": []
 				},
 				{
-					"name": "Get  updated list",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "00fe887f-4c9a-46ab-95f8-a7d67473714c",
-								"exec": [
-									"pm.test(\"Status code: should be 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "25ecffbb-34d7-437d-a571-3e7bee94d1d8",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						}
-					],
-					"id": "47938382-e1446e49-44a7-4788-8503-13e4d1d33e1f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{{listID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Update card",
 					"event": [
 						{
@@ -3284,128 +3406,6 @@
 								"1",
 								"cards",
 								"{{cardID}}"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Archive list",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "296294c8-0fbd-4bdd-bb78-0ab443b9322f",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "e6a6b585-43e7-46bd-a387-49d5e0d7d222",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-f347814e-0846-4ee9-873b-9cc955ca9594",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value=true",
-							"protocol": "https",
-							"host": [
-								"api",
-								"trello",
-								"com"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{{listID}}",
-								"closed"
-							],
-							"query": [
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								},
-								{
-									"key": "value",
-									"value": "true"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get  archived list",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "3338f668-a5a3-47c9-98f5-c2996912630e",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "bf2793c1-3a35-4add-8929-b2ff3aa88727",
-								"exec": [],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "47938382-a775dfea-75e8-4ee2-833a-afb73a5d9b2b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"lists",
-								"{{listID}}"
 							],
 							"query": [
 								{
