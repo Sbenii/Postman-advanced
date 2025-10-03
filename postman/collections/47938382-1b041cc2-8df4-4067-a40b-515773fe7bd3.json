@@ -2925,6 +2925,18 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "47938382-499b7362-eff7-433e-b0f1-ec02cb8744ea",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
