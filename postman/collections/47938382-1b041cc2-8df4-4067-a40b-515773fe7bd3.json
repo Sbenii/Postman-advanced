@@ -2727,6 +2727,43 @@
 							"response": []
 						},
 						{
+							"name": "Archive all cards in a list",
+							"id": "47938382-487e81c6-c8eb-4d80-9779-c875e2425b4b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/lists/{{listID}}/archiveAllCards?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"lists",
+										"{{listID}}",
+										"archiveAllCards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Archive list",
 							"event": [
 								{
@@ -2833,43 +2870,6 @@
 										"1",
 										"lists",
 										"{{listID}}"
-									],
-									"query": [
-										{
-											"key": "key",
-											"value": "{{key}}"
-										},
-										{
-											"key": "token",
-											"value": "{{token}}"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Archive all cards in a list",
-							"id": "47938382-487e81c6-c8eb-4d80-9779-c875e2425b4b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "https://api.trello.com/1/lists/{{listID}}/archiveAllCards?key={{key}}&token={{token}}",
-									"protocol": "https",
-									"host": [
-										"api",
-										"trello",
-										"com"
-									],
-									"path": [
-										"1",
-										"lists",
-										"{{listID}}",
-										"archiveAllCards"
 									],
 									"query": [
 										{
