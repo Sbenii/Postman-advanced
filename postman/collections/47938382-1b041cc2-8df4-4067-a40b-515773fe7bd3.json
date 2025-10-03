@@ -2924,7 +2924,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/lists//moveAllCards?idBoard={{boardID}}&idList={{listID}}4&key={{key}}&token={{token}}",
+									"raw": "https://api.trello.com/1/lists/68dfbe1a9fc9df4b348e742a/moveAllCards?idBoard={{boardID}}&idList={{listID}}4&key={{key}}&token={{token}}",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -2934,7 +2934,7 @@
 									"path": [
 										"1",
 										"lists",
-										"",
+										"68dfbe1a9fc9df4b348e742a",
 										"moveAllCards"
 									],
 									"query": [
