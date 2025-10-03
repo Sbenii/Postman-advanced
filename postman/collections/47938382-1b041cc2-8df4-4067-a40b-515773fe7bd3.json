@@ -2546,7 +2546,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"//68dfbe1a9fc9df4b348e742a"
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
