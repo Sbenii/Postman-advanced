@@ -2457,85 +2457,86 @@
 				},
 				{
 					"name": "Lists",
-					"item": [],
-					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
-				},
-				{
-					"name": "Create a list",
-					"event": [
+					"item": [
 						{
-							"listen": "prerequest",
-							"script": {
-								"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
-								"exec": [
-									"let randomNum= Math.floor(Math.random() * 100);",
-									"let uniqueValue = `NewList${randomNum}`;",
-									"pm.environment.set(\"mylistname\", uniqueValue);",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
-								"exec": [
-									"let jasondata=pm.response.json();",
-									"pm.environment.set(\"listID\", jasondata.id);",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"pm.test(\"Successful POST request\", function () {",
-									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
-									"});",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
+							"name": "Create a list",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "03b9e8fa-5848-4008-aedb-03880e5e51a9",
+										"exec": [
+											"let randomNum= Math.floor(Math.random() * 100);",
+											"let uniqueValue = `NewList${randomNum}`;",
+											"pm.environment.set(\"mylistname\", uniqueValue);",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "66fc7cf2-c565-4d51-90f1-0c1dbed54a6d",
+										"exec": [
+											"let jasondata=pm.response.json();",
+											"pm.environment.set(\"listID\", jasondata.id);",
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"pm.test(\"Successful POST request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "47938382-6bbb62ef-114a-4c4e-ab6c-abdc6c9f7bfd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/1/lists?name={{mylistname}}&idBoard={{boardID}}&key={{key}}&token={{token}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"1",
+										"lists"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "{{mylistname}}"
+										},
+										{
+											"key": "idBoard",
+											"value": "{{boardID}}"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
-					"id": "47938382-6bbb62ef-114a-4c4e-ab6c-abdc6c9f7bfd",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{base_url}}/1/lists?name={{mylistname}}&idBoard={{boardID}}&key={{key}}&token={{token}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"1",
-								"lists"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "{{mylistname}}"
-								},
-								{
-									"key": "idBoard",
-									"value": "{{boardID}}"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
+					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
 				},
 				{
 					"name": "Get created list",
