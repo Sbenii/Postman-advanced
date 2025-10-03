@@ -2793,71 +2793,6 @@
 							"response": []
 						},
 						{
-							"name": "Archive list",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "296294c8-0fbd-4bdd-bb78-0ab443b9322f",
-										"exec": [
-											"pm.test(\"Status code is 200\", function () {",
-											"    pm.response.to.have.status(200);",
-											"});"
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"requests": {}
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "e6a6b585-43e7-46bd-a387-49d5e0d7d222",
-										"exec": [],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "47938382-f347814e-0846-4ee9-873b-9cc955ca9594",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"url": {
-									"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value=true",
-									"protocol": "https",
-									"host": [
-										"api",
-										"trello",
-										"com"
-									],
-									"path": [
-										"1",
-										"lists",
-										"{{listID}}",
-										"closed"
-									],
-									"query": [
-										{
-											"key": "key",
-											"value": "{{key}}"
-										},
-										{
-											"key": "token",
-											"value": "{{token}}"
-										},
-										{
-											"key": "value",
-											"value": "true"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "Get  archived list",
 							"event": [
 								{
@@ -2960,14 +2895,67 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
-							"id": "47938382-c9a47af4-e4e8-40ee-872c-950878b9db0f",
+							"name": "Archive list",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "296294c8-0fbd-4bdd-bb78-0ab443b9322f",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "e6a6b585-43e7-46bd-a387-49d5e0d7d222",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "47938382-f347814e-0846-4ee9-873b-9cc955ca9594",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value=true",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"lists",
+										"{{listID}}",
+										"closed"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										},
+										{
+											"key": "value",
+											"value": "true"
+										}
+									]
+								}
 							},
 							"response": []
 						}
