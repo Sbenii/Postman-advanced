@@ -2728,6 +2728,30 @@
 						},
 						{
 							"name": "Archive all cards in a list",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ef3992f2-ca0f-423d-9c88-dfa937d3e2f8",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "99b80b0e-9752-417b-8d60-c035b93c14c2",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-487e81c6-c8eb-4d80-9779-c875e2425b4b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
