@@ -2933,8 +2933,41 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/lists/{id}/moveAllCards?idBoard=5abbe4b7ddc1b351ef961414&idList=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"lists",
+										"{id}",
+										"moveAllCards"
+									],
+									"query": [
+										{
+											"key": "idBoard",
+											"value": "5abbe4b7ddc1b351ef961414"
+										},
+										{
+											"key": "idList",
+											"value": "5abbe4b7ddc1b351ef961414"
+										},
+										{
+											"key": "key",
+											"value": "APIKey"
+										},
+										{
+											"key": "token",
+											"value": "APIToken"
+										}
+									]
+								}
 							},
 							"response": []
 						}
