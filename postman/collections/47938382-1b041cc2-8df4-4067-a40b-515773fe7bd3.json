@@ -2927,7 +2927,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Move all cards of a list to another list",
 							"id": "47938382-499b7362-eff7-433e-b0f1-ec02cb8744ea",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
