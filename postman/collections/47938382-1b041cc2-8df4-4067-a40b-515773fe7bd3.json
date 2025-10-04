@@ -1419,6 +1419,30 @@
 						},
 						{
 							"name": "Get checklist on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9d65fd3c-5101-4258-afce-43361e2550f0",
+										"exec": [
+											"pm.test(\"Check if status code 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "950f1e5c-0d08-48a8-a077-21dbad9d4144",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-aa7ba9d6-8b2c-44e1-9812-6858124138ff",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
