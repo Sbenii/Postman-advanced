@@ -1429,7 +1429,7 @@
 											"    pm.response.to.have.status(200);",
 											"});",
 											"pm.test(\"Response time is less than 200ms\", function () {",
-											"    pm.expect(pm.response.responseTime).to.be.ab(200);",
+											"    pm.expect(pm.response.responseTime).to.be.above(200);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1440,7 +1440,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "53c305b2-5d1a-42a1-878b-9828a4ab99d0",
+										"id": "c3610a82-7f77-4f37-bff8-8fc22fc47771",
 										"exec": [],
 										"type": "text/javascript"
 									}
