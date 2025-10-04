@@ -1222,7 +1222,9 @@
 											"    let field=pm.environment.get(\"name\");",
 											"    pm.expect(jsonData._value).to.eql(field);",
 											"});",
-											""
+											"pm.test(\"Check that status code 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
