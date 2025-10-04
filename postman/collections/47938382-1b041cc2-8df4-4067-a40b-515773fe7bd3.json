@@ -1547,6 +1547,31 @@
 						},
 						{
 							"name": "Get filtered cards on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ea31b1dd-5c7f-4899-849d-e127de64320f",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "cec7161b-3602-419f-bde0-6a7ca532f53c",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-29f72312-b692-4ee1-933e-a3dbe7e9279c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
