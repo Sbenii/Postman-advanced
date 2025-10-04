@@ -1480,6 +1480,30 @@
 						},
 						{
 							"name": "Get cards on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "db6f16ab-8635-4c8d-9b46-c7aed5a2b828",
+										"exec": [
+											"pm.test(\"Check status code: 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "a237706e-cc2b-4650-8f5a-ae1af65ff981",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-166636c2-c183-42af-9e90-68970eb8d4ef",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
