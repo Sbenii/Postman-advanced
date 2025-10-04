@@ -1425,7 +1425,7 @@
 									"script": {
 										"id": "9d65fd3c-5101-4258-afce-43361e2550f0",
 										"exec": [
-											"pm.test(\"Check if status code 200\", function () {",
+											"pm.test(\"Check if status code: 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});"
 										],
@@ -1437,7 +1437,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "950f1e5c-0d08-48a8-a077-21dbad9d4144",
+										"id": "a9ac7b47-7c9b-45ab-9742-97de6fec3d8f",
 										"exec": [],
 										"type": "text/javascript"
 									}
