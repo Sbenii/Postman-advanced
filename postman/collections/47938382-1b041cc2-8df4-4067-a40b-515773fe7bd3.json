@@ -1221,7 +1221,8 @@
 											"",
 											"    let field=pm.environment.get(\"name\");",
 											"    pm.expect(jsonData._value).to.eql(field);",
-											"});"
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
