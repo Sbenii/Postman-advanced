@@ -1698,7 +1698,7 @@
 											"});",
 											"pm.test(\"Check if name is Label1\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].name).to.eql(\"L\");",
+											"    pm.expect(jsonData[0].name).to.eql(\"Label1\");",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1709,7 +1709,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "8465ce28-c644-40d3-8b86-fc99e4e35608",
+										"id": "ecde7de3-bdfb-4e10-a91a-f273d4f526d0",
 										"exec": [],
 										"type": "text/javascript"
 									}
