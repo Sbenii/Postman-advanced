@@ -1698,7 +1698,7 @@
 											"});",
 											"pm.test(\"Check if name is null\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData).to.eql(100);",
+											"    pm.expect(jsonData[0].name).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1709,7 +1709,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "2aa01e59-c666-432e-9a8f-f87897bdcb1c",
+										"id": "49054c31-b3f5-4b17-8150-c580f14dab2d",
 										"exec": [],
 										"type": "text/javascript"
 									}
