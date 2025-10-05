@@ -1752,6 +1752,30 @@
 						},
 						{
 							"name": "Create a label on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9f63e954-0596-4fcf-a8e9-5b69f3aededc",
+										"exec": [
+											"pm.test(\"Status code: 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "2d9d1a00-ff65-427a-9168-362dbe451921",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-ccb88e87-8cde-4842-a21e-ba669553256e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
