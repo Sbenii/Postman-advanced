@@ -1683,6 +1683,31 @@
 						},
 						{
 							"name": "Get labels on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "01e40009-d9eb-447d-ab8c-5d1a985c8c7a",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "91e2095c-ba4a-435e-9faa-1cadeefb4467",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-9848993c-8e5d-4992-9df5-7bca44f57578",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
