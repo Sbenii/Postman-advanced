@@ -1694,7 +1694,7 @@
 											"});",
 											"pm.test(\"Check if color is blue\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].color).to.eql(100);",
+											"    pm.expect(jsonData[0].color).to.eql(\"blue\");",
 											"});",
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
@@ -1709,7 +1709,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "e0f60837-e41e-4a8f-9cf9-aa3bf716426b",
+										"id": "3c1f5949-f9b4-4991-b49e-032185a886ca",
 										"exec": [],
 										"type": "text/javascript"
 									}
