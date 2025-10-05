@@ -1614,6 +1614,30 @@
 						},
 						{
 							"name": "Get custom field on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "01d74431-9950-4b86-957e-8fb23a03142f",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "2781630e-187e-48ef-9732-831457e7cd92",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-cc6d2666-dc2b-4c16-aca2-5dc44bd096e4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
