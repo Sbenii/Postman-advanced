@@ -1696,9 +1696,9 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].color).to.eql(\"blue\");",
 											"});",
-											"pm.test(\"Check if name is Label\", function () {",
+											"pm.test(\"Check if name is Label1\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].name).to.eql(100);",
+											"    pm.expect(jsonData[0].name).to.eql(\"L\");",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1709,7 +1709,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "98d8858f-914d-4cb6-90e4-3d63108ea7e9",
+										"id": "8465ce28-c644-40d3-8b86-fc99e4e35608",
 										"exec": [],
 										"type": "text/javascript"
 									}
