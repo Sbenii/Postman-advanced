@@ -1002,7 +1002,7 @@
 											"let id=pm.environment.get(\"BoardID\");",
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(id);",
+											"    pm.expect(jsonData[1].id).to.eql(id);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1013,7 +1013,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "d7b55e53-7db2-4c60-b4af-37aad3c30336",
+										"id": "e6f8b477-84cf-434e-807c-80f85a5f1596",
 										"exec": [],
 										"type": "text/javascript"
 									}
