@@ -999,7 +999,7 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].name).to.eql(\"Bugs\");",
 											"});",
-											""
+											"pm.environment.get(Bo);"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -1009,7 +1009,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "9689dee0-8121-4a37-aedd-b2c0123044d7",
+										"id": "ceb335fc-e29d-417a-9c69-d390c08523d1",
 										"exec": [],
 										"type": "text/javascript"
 									}
