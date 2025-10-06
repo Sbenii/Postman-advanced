@@ -2626,7 +2626,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "abac143a-433e-48d0-b44f-52ea44dfad9a",
+								"id": "47d31dd0-cef8-48ec-a4ea-9a27ae8f6fc0",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -2638,12 +2638,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a8a06901-09b9-471f-82ea-695608c6869f",
+								"id": "5d6a55de-afd7-4804-897c-a5c4a5cc94b8",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
 								"exec": [
-									"pm.test(\"Check \", function () {",
+									"pm.test(\"Check if API respond fas\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(200);",
 									"});"
 								]
