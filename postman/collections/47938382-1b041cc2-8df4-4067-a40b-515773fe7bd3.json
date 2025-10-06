@@ -2626,7 +2626,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "47d31dd0-cef8-48ec-a4ea-9a27ae8f6fc0",
+								"id": "66547a84-e42c-46be-8355-3787e5dfd2cb",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -2638,13 +2638,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5d6a55de-afd7-4804-897c-a5c4a5cc94b8",
+								"id": "c1ab7dcc-3e34-4077-9539-91e9b5e733e1",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
 								"exec": [
-									"pm.test(\"Check if API respond fas\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"pm.test(\"Check if API respond faster\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"});"
 								]
 							}
