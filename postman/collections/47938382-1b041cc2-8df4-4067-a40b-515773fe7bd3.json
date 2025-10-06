@@ -986,6 +986,31 @@
 					"item": [
 						{
 							"name": "Get all boards",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "129e641e-1d55-4f4a-b58a-2557613270d8",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "d8dab435-3cf8-4640-8863-4835a7cf152c",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-dd8142a1-a904-4c29-a7d4-cb04b094c1ac",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
