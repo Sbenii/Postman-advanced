@@ -2626,7 +2626,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c3ce3ba2-91c4-44b1-a465-040581b2516d",
+								"id": "abac143a-433e-48d0-b44f-52ea44dfad9a",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -2638,12 +2638,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f1ef121d-9e90-4036-a582-fc695d75bec8",
+								"id": "a8a06901-09b9-471f-82ea-695608c6869f",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
 								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
+									"pm.test(\"Check \", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(200);",
 									"});"
 								]
