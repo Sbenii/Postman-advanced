@@ -2621,7 +2621,35 @@
 							"response": []
 						}
 					],
-					"id": "47938382-b336cf1e-e1b7-465f-8432-fbb6366dc825"
+					"id": "47938382-b336cf1e-e1b7-465f-8432-fbb6366dc825",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c3ce3ba2-91c4-44b1-a465-040581b2516d",
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "f1ef121d-9e90-4036-a582-fc695d75bec8",
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {},
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								]
+							}
+						}
+					]
 				},
 				{
 					"name": "Cards",
