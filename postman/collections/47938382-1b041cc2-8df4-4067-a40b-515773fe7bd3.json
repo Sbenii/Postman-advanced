@@ -998,7 +998,8 @@
 											"pm.test(\"Check name of the first board\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].name).to.eql(\"Bugs\");",
-											"});"
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -1008,7 +1009,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "d2137def-3983-48a5-b60c-d962a5e6f633",
+										"id": "9689dee0-8121-4a37-aedd-b2c0123044d7",
 										"exec": [],
 										"type": "text/javascript"
 									}
