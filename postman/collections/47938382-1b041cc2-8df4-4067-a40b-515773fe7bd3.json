@@ -999,7 +999,11 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].name).to.eql(\"Bugs\");",
 											"});",
-											"let id=pm.environment.get(\"BoardID\");"
+											"let id=pm.environment.get(\"BoardID\");",
+											"pm.test(\"Your test name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -1009,7 +1013,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "24c66b85-b280-41cd-89fe-dd8f499a1f2f",
+										"id": "26a905c9-6231-4fe6-9080-3cc47d986839",
 										"exec": [],
 										"type": "text/javascript"
 									}
