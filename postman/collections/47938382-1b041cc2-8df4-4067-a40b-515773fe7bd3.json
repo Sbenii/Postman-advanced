@@ -1605,8 +1605,9 @@
 											"    }",
 											"});",
 											"",
-											"pm.test(\"Check if \", function () {",
+											"pm.test(\"Check if cards are completed\", function () {",
 											"    var jsonData = pm.response.json();",
+											"    for(let i)",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
