@@ -1596,6 +1596,7 @@
 											"    var jsonData = pm.response.json();",
 											"    for (var i = 0; i < jsonData.length; i++) {",
 											"    pm.expect(jsonData.value).to.eql(100);",
+											"    }",
 											"});"
 										],
 										"type": "text/javascript",
