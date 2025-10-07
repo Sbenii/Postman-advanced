@@ -1612,7 +1612,6 @@
 											"            pm.expect(jsonData[i].dueComplete).to.eql(true);",
 											"            break;",
 											"        }",
-											"       ",
 											"    }",
 											"});"
 										],
