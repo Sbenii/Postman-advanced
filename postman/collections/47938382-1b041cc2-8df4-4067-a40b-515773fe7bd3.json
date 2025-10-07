@@ -1600,7 +1600,7 @@
 											"});",
 											"pm.test(\"Check if a card contains checklists\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    for ",
+											"    for (let i=0;i<)",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
