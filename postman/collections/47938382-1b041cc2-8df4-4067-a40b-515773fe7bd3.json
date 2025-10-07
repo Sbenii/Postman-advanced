@@ -1603,8 +1603,9 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        pm.expect(jsonData[i].idChecklists.length).to.be.greaterThanOrEqual(0);",
 											"    }",
-											"    ",
-											"});"
+											"});",
+											"",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
