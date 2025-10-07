@@ -1605,7 +1605,7 @@
 											"    }",
 											"});",
 											"",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Check if \", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
