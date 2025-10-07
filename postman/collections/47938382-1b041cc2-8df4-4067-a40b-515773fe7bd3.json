@@ -1592,9 +1592,10 @@
 											"pm.test(\"Response time is less than 200ms\", function () {",
 											"    pm.expect(pm.response.responseTime).to.be.above(200);",
 											"});",
-											"pm.test(\"Check if all cards are op\", function () {",
+											"pm.test(\"Check if all cards are open\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
+											"    pm.expect(jsonData.value).to.eql(10",
+											"    0);",
 											"});"
 										],
 										"type": "text/javascript",
