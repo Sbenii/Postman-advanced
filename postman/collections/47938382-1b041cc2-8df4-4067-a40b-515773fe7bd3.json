@@ -1733,7 +1733,7 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].name).to.eql(\"Label1\");",
 											"});",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Check usage time of \", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
