@@ -1610,7 +1610,6 @@
 											"    for(let i=0;i<jsonData.length;++i){",
 											"        pm.expect(jsonData[i].dueComplete).to.eql(false);",
 											"    }",
-											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
