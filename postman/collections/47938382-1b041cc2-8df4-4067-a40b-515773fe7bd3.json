@@ -1598,8 +1598,9 @@
 											"    pm.expect(jsonData[i].closed).to.eql(false);",
 											"    }",
 											"});",
-											"pm.test(\"Check if a\", function () {",
+											"pm.test(\"Check if a card contains checklists\", function () {",
 											"    var jsonData = pm.response.json();",
+											"    for ",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
