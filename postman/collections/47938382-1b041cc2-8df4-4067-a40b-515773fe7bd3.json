@@ -1735,8 +1735,10 @@
 											"});",
 											"pm.test(\"Check usage time of a label\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    for(let i=)",
+											"    for (let i = 0; i < jsonData.length; i++) {",
+											"        ",
 											"    pm.expect(jsonData.value).to.eql(100);",
+											"    }",
 											"});"
 										],
 										"type": "text/javascript",
