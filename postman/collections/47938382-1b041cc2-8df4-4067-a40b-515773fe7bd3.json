@@ -1594,8 +1594,8 @@
 											"});",
 											"pm.test(\"Check if all cards are open\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(10",
-											"    0);",
+											"    for (var i = 0; i < jsonData.length; i++) {",
+											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
