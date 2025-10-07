@@ -1592,8 +1592,10 @@
 											"pm.test(\"Response time is less than 200ms\", function () {",
 											"    pm.expect(pm.response.responseTime).to.be.above(200);",
 											"});",
-											"",
-											""
+											"pm.test(\"Your t\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -1604,8 +1606,12 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "012682be-2ee6-4402-af74-b997ba1245cb",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
