@@ -1874,7 +1874,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Check \", function () {",
+											"pm.test(\"Check number of created labels\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -1887,7 +1887,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "3b7524e3-18b9-410b-8124-502c1a6e8002",
+										"id": "a168d42c-735c-473a-8a5b-56cd72e9c599",
 										"exec": [],
 										"type": "text/javascript"
 									}
