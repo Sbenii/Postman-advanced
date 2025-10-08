@@ -1943,7 +1943,7 @@
 											"pm.test(\"Check that there's no subscription on any list\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    for (let i=0;jsonData.length;++i){",
-											"        ",
+											"        pm.expect(jsonData)",
 											"    }",
 											"    pm.expect(jsonData.v).to.eql(100);",
 											"});"
@@ -1956,7 +1956,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "435002bc-ef99-4b4f-bc0a-59bbb52dccfd",
+										"id": "a61a2bd9-dccd-4c0a-a745-698418145bb2",
 										"exec": [],
 										"type": "text/javascript"
 									}
