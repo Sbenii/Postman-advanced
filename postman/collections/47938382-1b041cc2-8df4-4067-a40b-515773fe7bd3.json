@@ -1876,7 +1876,7 @@
 											"});",
 											"pm.test(\"Check number of created labels\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    for (let i=0;i<jsonData.l)",
+											"    for (let i=0;i<jsonData.length;++i)",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
@@ -1888,7 +1888,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "9cf4a554-4db9-433e-af44-31b7d0badaa3",
+										"id": "98e49a77-08b9-4c4e-9ee1-8a38e0ae5fae",
 										"exec": [],
 										"type": "text/javascript"
 									}
