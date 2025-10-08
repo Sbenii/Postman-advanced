@@ -1027,12 +1027,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/members/me/boards?fields=name,url&filter=open&key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1423,12 +1420,9 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/boardStars?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/boardStars?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1487,12 +1481,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/checklists?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1551,12 +1542,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/cards?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/cards?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1641,12 +1629,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/cards/visible?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/cards/visible?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1711,12 +1696,9 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/customFields?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/customFields?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1791,12 +1773,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/labels?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1852,12 +1831,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?name=Label1&color=blue&key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/labels?name=Label1&color=blue&key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1897,12 +1873,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/labels?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/labels?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1939,12 +1912,9 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/lists?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/lists?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -1976,12 +1946,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/lists/open?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/lists/open?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2014,12 +1981,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2159,12 +2123,9 @@
 									}
 								},
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/members?email=sezebeni@gmail.com&key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/members?email=sezebeni@gmail.com&key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2200,12 +2161,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2314,12 +2272,9 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/memberships/{{membershipID}}?type=observer&key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/{{membershipID}}?type=observer&key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2426,12 +2381,9 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/members/{{memberID}}?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/members/{{memberID}}?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2464,12 +2416,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/members?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2501,12 +2450,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/calendarKey/generate?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/calendarKey/generate?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2539,12 +2485,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/emailKey/generate?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/emailKey/generate?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2577,12 +2520,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/markedAsViewed?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/markedAsViewed?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2619,12 +2559,9 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/boardPlugins?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/boardPlugins?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2661,12 +2598,9 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{{boardID}}/plugins?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/plugins?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -2909,12 +2843,9 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{mynewlistname}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/lists/{{listID}}?key={{key}}&token={{token}}&name={{mynewlistname}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -3035,12 +2966,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/lists/{{listID}}/archiveAllCards?key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/lists/{{listID}}/archiveAllCards?key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -3072,12 +3000,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/lists/68dfbe1a9fc9df4b348e742a/moveAllCards?idBoard={{boardID}}&idList={{listID}}&key={{key}}&token={{token}}",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/lists/68dfbe1a9fc9df4b348e742a/moveAllCards?idBoard={{boardID}}&idList={{listID}}&key={{key}}&token={{token}}",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -3141,12 +3066,9 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value=true",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/lists/{{listID}}/closed?key={{key}}&token={{token}}&value=true",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
@@ -3361,12 +3283,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
@@ -3428,12 +3347,9 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/boards/{{boardID}}?key={{key}}&token={{token}}&name={{mynewboardname}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/boards/{{boardID}}?key={{key}}&token={{token}}&name={{mynewboardname}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
@@ -3574,12 +3490,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}&name={{mynewcardname}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}&name={{mynewcardname}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
@@ -3651,12 +3564,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
@@ -3711,12 +3621,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
@@ -3776,12 +3683,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.trello.com/1/cards/{{cardID}}?key={{key}}&token={{token}}",
-							"protocol": "https",
+							"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}",
 							"host": [
-								"api",
-								"trello",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"1",
