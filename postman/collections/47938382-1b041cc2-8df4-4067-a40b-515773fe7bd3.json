@@ -1931,6 +1931,30 @@
 						},
 						{
 							"name": "Get lists on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5903eb31-e801-4f56-a4d3-0a5f3a23c9e8",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "c6757ab8-9727-4900-8fa3-6c1664b40fca",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-eb5421c5-253f-48d4-912d-bb8fa7ede7fe",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
