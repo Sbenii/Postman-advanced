@@ -1940,7 +1940,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"C\", function () {",
+											"pm.test(\"Check that there's no subscription on any list\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -1953,7 +1953,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "e43bb388-273f-45f6-a808-2b4dc4d14d16",
+										"id": "6858bf36-27f7-4a0b-8d4f-e556772a453f",
 										"exec": [],
 										"type": "text/javascript"
 									}
