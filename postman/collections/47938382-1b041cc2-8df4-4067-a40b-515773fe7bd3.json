@@ -1942,7 +1942,7 @@
 											"});",
 											"pm.test(\"Check that there's no subscription on any list\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    for (let i=0;jsonData.length;++i){",
+											"    for (let i=0;i<jsonData.length;++i){",
 											"        pm.expect(jsonData[i].subscribed).to.eql(false);",
 											"    }",
 											"});"
