@@ -1865,6 +1865,31 @@
 						},
 						{
 							"name": "Get created labels on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ee6cb08f-4789-4dd7-8707-b5994c1f925b",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "20c6ab38-da02-45b1-bc91-7a49d7a9ecd2",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-fdf32ed1-6dca-44cc-b651-2feb215a0b85",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
