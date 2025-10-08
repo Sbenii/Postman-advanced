@@ -1880,7 +1880,7 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        x+=1;",
 											"    }",
-											"    console.log(\"The\"x)",
+											"    console.log(\"The total number of created labels : \"x)",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1891,7 +1891,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "02388573-930b-4717-8509-a08851908b12",
+										"id": "e1a6a41b-c790-4b25-9fc5-5d4f59a09a9a",
 										"exec": [],
 										"type": "text/javascript"
 									}
