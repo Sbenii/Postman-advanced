@@ -1880,7 +1880,7 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        x+=1;",
 											"    }",
-											"    console.",
+											"    console.log(x)",
 											"});"
 										],
 										"type": "text/javascript",
@@ -1891,7 +1891,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "0939ae67-fd11-4bba-b010-274f42302fd6",
+										"id": "19dab413-f995-4087-b71f-4ca7e26686be",
 										"exec": [],
 										"type": "text/javascript"
 									}
