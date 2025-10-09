@@ -2017,7 +2017,7 @@
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    for (let i=0;i<jsonData.length;++i){",
-											"        ",
+											"        console.log()",
 											"    }",
 											"});"
 										],
@@ -2029,7 +2029,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "92f80a20-57f9-4b0f-9c56-93dafecff022",
+										"id": "d65e15b1-f8f7-45e7-97ec-1b84c158fdbd",
 										"exec": [],
 										"type": "text/javascript"
 									}
