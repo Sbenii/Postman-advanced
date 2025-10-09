@@ -2018,10 +2018,10 @@
 											"    var jsonData = pm.response.json();",
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        console.log(jsonData[i].name);",
-											"        ",
+											"",
 											"    }",
-											"    ",
 											"});",
+											"",
 											""
 										],
 										"type": "text/javascript",
@@ -2032,7 +2032,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "b378c112-bc46-46c4-9f14-114d4eb017a8",
+										"id": "f95618d6-a62a-4ed9-bca0-32ba5b536e5d",
 										"exec": [],
 										"type": "text/javascript"
 									}
