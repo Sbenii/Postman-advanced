@@ -2022,7 +2022,10 @@
 											"    }",
 											"});",
 											"",
-											""
+											"pm.test(\"e\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -2032,7 +2035,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "f95618d6-a62a-4ed9-bca0-32ba5b536e5d",
+										"id": "c081712a-5267-46e9-9779-5c035d32b30a",
 										"exec": [],
 										"type": "text/javascript"
 									}
