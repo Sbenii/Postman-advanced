@@ -2019,8 +2019,9 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        console.log(jsonData[i].name);",
 											"    }",
-											"    pm.response.",
-											"});"
+											"    ",
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -2030,7 +2031,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "eb37da7b-abee-49b4-8f39-80d90f3496f4",
+										"id": "e8184af7-8970-4359-ade8-a6b79928fba8",
 										"exec": [],
 										"type": "text/javascript"
 									}
