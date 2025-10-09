@@ -2014,7 +2014,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Display the name o\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        console.log(jsonData[i].name);",
@@ -2029,7 +2029,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "9464cc45-18d7-4aa6-b474-71f4dc1a98f0",
+										"id": "efdc297f-5d00-4d2f-9e51-ed30ad8f32f0",
 										"exec": [],
 										"type": "text/javascript"
 									}
