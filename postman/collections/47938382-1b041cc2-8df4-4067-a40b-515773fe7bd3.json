@@ -2025,7 +2025,7 @@
 											"pm.test(\"Check if all lists are open\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    for (let i =0;i<jsonData.length;++i){",
-											"        pm.expect(jsonData[].closed)",
+											"        pm.expect(jsonData[i].closed).to.eql(false)",
 											"    }",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2038,7 +2038,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "32e0b608-bbcd-4840-8195-c6832e87b8b7",
+										"id": "cfaf0dd4-fc64-4afe-8cd5-dda263977a1e",
 										"exec": [],
 										"type": "text/javascript"
 									}
