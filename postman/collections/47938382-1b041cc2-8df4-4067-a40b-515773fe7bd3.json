@@ -2016,7 +2016,9 @@
 											"});",
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    for (let i=0;i<)",
+											"    for (let i=0;i<jsonData.length;++i){",
+											"        ",
+											"    }",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2027,7 +2029,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "8f4405dc-84b4-4d8d-9633-56ffe1398ff5",
+										"id": "92f80a20-57f9-4b0f-9c56-93dafecff022",
 										"exec": [],
 										"type": "text/javascript"
 									}
