@@ -1945,7 +1945,8 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        pm.expect(jsonData[i].subscribed).to.eql(false);",
 											"    }",
-											"});"
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
