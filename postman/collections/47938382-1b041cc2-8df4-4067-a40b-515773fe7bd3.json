@@ -2019,7 +2019,7 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        console.log(jsonData[i].name);",
 											"    }",
-											"    pm.expect(jsonData.length).to.eql(100);",
+											"    pm.expect(jsonData.length).to.eql(i);",
 											"});",
 											""
 										],
@@ -2031,7 +2031,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "a611b117-a5a7-4602-bf18-f890d26d0820",
+										"id": "7bc26d27-6222-477c-aec3-6b35b6f4bbd5",
 										"exec": [],
 										"type": "text/javascript"
 									}
