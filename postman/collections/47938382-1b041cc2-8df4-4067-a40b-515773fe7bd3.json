@@ -2022,7 +2022,7 @@
 											"    }",
 											"});",
 											"",
-											"pm.test(\"e\", function () {",
+											"pm.test(\"Check if all lists are open\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2035,7 +2035,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "c081712a-5267-46e9-9779-5c035d32b30a",
+										"id": "d24ada4e-18bd-4a3e-8723-95657007065c",
 										"exec": [],
 										"type": "text/javascript"
 									}
