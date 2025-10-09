@@ -2014,11 +2014,12 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Display the name o\", function () {",
+											"pm.test(\"Display the names of the lists\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        console.log(jsonData[i].name);",
 											"    }",
+											"    pm",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2029,7 +2030,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "efdc297f-5d00-4d2f-9e51-ed30ad8f32f0",
+										"id": "1dc160a1-afdb-4af0-a09b-be99d9fa57d2",
 										"exec": [],
 										"type": "text/javascript"
 									}
