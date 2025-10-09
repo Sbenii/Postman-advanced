@@ -2005,6 +2005,31 @@
 						},
 						{
 							"name": "Get filtered lists on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "28c6c45e-f145-4c91-bc51-37cd3e9fd3c8",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "3b03b467-ae56-4a76-b230-72874c3e812e",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-0c433324-4a86-4e74-a087-92e831fdbbc4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
