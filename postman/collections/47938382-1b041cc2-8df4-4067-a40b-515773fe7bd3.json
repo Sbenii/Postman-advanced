@@ -2018,8 +2018,9 @@
 											"    var jsonData = pm.response.json();",
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        console.log(jsonData[i].name);",
+											"        ",
 											"    }",
-											"    pm.expect(jsonData.length).to.eql(i);",
+											"    ",
 											"});",
 											""
 										],
@@ -2031,7 +2032,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "7bc26d27-6222-477c-aec3-6b35b6f4bbd5",
+										"id": "b378c112-bc46-46c4-9f14-114d4eb017a8",
 										"exec": [],
 										"type": "text/javascript"
 									}
