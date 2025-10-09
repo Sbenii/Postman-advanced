@@ -2016,7 +2016,7 @@
 											"});",
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
+											"    for (let i=0;i<)",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2027,7 +2027,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "4792d153-181e-4bb5-ad03-f6518d7de6de",
+										"id": "8f4405dc-84b4-4d8d-9633-56ffe1398ff5",
 										"exec": [],
 										"type": "text/javascript"
 									}
