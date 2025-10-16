@@ -2091,7 +2091,7 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].fullName).to.eql(\"Beni Sezerano\");",
 											"});",
-											"pm.test(\"Your test \", function () {",
+											"pm.test(\"cH\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2104,7 +2104,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "bc433660-bd60-490f-ba42-263284967938",
+										"id": "8e9b2451-861d-44c7-a718-3a4625ab071c",
 										"exec": [],
 										"type": "text/javascript"
 									}
