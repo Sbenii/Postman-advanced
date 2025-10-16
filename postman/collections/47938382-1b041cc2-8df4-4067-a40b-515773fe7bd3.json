@@ -2093,7 +2093,7 @@
 											"});",
 											"pm.test(\"Check owner username\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].username).to.eql(\"sezerano\");",
+											"    pm.expect(jsonData[0].username).to.eql(\"sezeranobenny\");",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2104,7 +2104,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "621c85eb-2ca6-4213-80e5-f44a9a3f258b",
+										"id": "fb278ac7-a49a-4296-bb4d-9b964742bfaa",
 										"exec": [],
 										"type": "text/javascript"
 									}
