@@ -2313,10 +2313,11 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Check if invite was sent\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
-											"});"
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -2326,7 +2327,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "8e19d160-ac65-4a87-bc9b-b4535d5594de",
+										"id": "4ddad7fe-b4cb-4307-a0e0-1d7ca7d3c0bb",
 										"exec": [],
 										"type": "text/javascript"
 									}
