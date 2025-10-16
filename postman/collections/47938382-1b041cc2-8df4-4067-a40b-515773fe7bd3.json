@@ -2230,7 +2230,9 @@
 										"exec": [
 											"var jsonData = pm.response.json();",
 											"pm.environment.set(\"memberID\", jsonData.members[0].id);",
-											""
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -2241,8 +2243,12 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "489d588b-12df-4b70-a6cd-3cb2f3621e47",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
