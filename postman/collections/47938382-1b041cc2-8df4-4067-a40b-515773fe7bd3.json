@@ -2078,6 +2078,34 @@
 						},
 						{
 							"name": "Get members of a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "39b81013-a3c9-4373-9fd4-aac87178ca9e",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"pm.test(\"Check owner full name\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData[0].fullName).to.eql(\"Beni Sezerano\");",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "80922b45-c960-4c59-b76d-2741c359c7ef",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-eec10e98-35d9-43d1-b866-628447d384e0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
