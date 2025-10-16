@@ -2090,7 +2090,8 @@
 											"pm.test(\"Check owner full name\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].fullName).to.eql(\"Beni Sezerano\");",
-											"});"
+											"});",
+											"As"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -2100,7 +2101,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "80922b45-c960-4c59-b76d-2741c359c7ef",
+										"id": "6db7e9e5-aa69-49e5-8ba7-2a710eca9388",
 										"exec": [],
 										"type": "text/javascript"
 									}
