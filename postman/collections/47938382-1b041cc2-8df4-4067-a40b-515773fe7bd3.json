@@ -2304,6 +2304,30 @@
 						},
 						{
 							"name": "Get invited members of a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f591ab21-40d7-4a0a-9853-22ed186713b8",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "0263132f-7f78-49bb-9e0f-b95ad75c5394",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-2ec67493-0280-494c-b6bc-53e734f1c85b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
