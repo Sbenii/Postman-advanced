@@ -2315,7 +2315,7 @@
 											"});",
 											"pm.test(\"Check if invite was sent\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.Length).to.eql(2);",
+											"    pm.expect(jsonData.length).to.eql(2);",
 											"});",
 											""
 										],
@@ -2327,7 +2327,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "96a8ba26-42b0-4ae7-8c9f-c6a96bd5f57a",
+										"id": "5c03c7c6-d31a-4fc7-a955-b298b364bdaa",
 										"exec": [],
 										"type": "text/javascript"
 									}
