@@ -2159,6 +2159,10 @@
 											"pm.test(\"Check member type is equal to admin\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].memberType).to.equal(\"admin\");",
+											"});",
+											"pm.test(\"Check if account is deac\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2170,8 +2174,12 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "f9a2c0eb-b608-424e-b8a5-b21248d277f5",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
