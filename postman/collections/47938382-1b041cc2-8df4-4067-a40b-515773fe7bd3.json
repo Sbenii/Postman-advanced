@@ -2162,7 +2162,7 @@
 											"});",
 											"pm.test(\"Check if account is deactivated\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].deactivated).to.eql(\"false\");",
+											"    pm.expect(jsonData[0].deactivated).to.eql(false);",
 											"});"
 										],
 										"type": "text/javascript",
