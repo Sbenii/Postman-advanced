@@ -2386,7 +2386,10 @@
 											"var jsonData=pm.response.json();",
 											"pm.environment.set(\"membershipID\", jsonData[1].id);",
 											"",
-											""
+											"pm.test(\"Check number of adm\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
