@@ -2388,7 +2388,7 @@
 											"",
 											"pm.test(\"Check number of admins on a board\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
+											"    for (let i=0);",
 											"});"
 										],
 										"type": "text/javascript",
