@@ -2398,7 +2398,9 @@
 											"});",
 											"pm.test(\"Check if all members are not deactivated\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    for (let i=0;i)",
+											"    for (let i=0;i<jsonData.length;++i){",
+											"        ",
+											"    }",
 											"});"
 										],
 										"type": "text/javascript",
