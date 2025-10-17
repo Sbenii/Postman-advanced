@@ -2392,7 +2392,9 @@
 											"    for (let i=0;i<jsonData.length;++i){",
 											"        if (jsonData[i].memberType == \"admin\") {",
 											"            num+=1;",
+											"        }",
 											"    }",
+											"    console.l",
 											"});"
 										],
 										"type": "text/javascript",
