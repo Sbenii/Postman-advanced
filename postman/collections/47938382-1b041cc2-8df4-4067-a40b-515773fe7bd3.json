@@ -2395,6 +2395,10 @@
 											"        }",
 											"    }",
 											"    console.log(\"Number of admins: \",num);",
+											"});",
+											"pm.test(\"Chec\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
