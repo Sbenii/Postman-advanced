@@ -2390,8 +2390,8 @@
 											"    var jsonData = pm.response.json();",
 											"    let num=0;",
 											"    for (let i=0;i<jsonData.length;++i){",
-											"        ",
-											"        ",
+											"        if (jsonData[i].memberType == \"admin\") {",
+											"            ",
 											"    }",
 											"});"
 										],
