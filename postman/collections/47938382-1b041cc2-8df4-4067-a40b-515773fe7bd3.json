@@ -2394,7 +2394,7 @@
 											"            num+=1;",
 											"        }",
 											"    }",
-											"    console.log(\"Number of admins: \",)",
+											"    console.log(\"Number of admins: \",num)",
 											"});"
 										],
 										"type": "text/javascript",
