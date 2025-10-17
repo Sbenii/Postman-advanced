@@ -2396,7 +2396,7 @@
 											"    }",
 											"    console.log(\"Number of admins: \",num);",
 											"});",
-											"pm.test(\"Chec\", function () {",
+											"pm.test(\"Check if all members are not deactivated\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
