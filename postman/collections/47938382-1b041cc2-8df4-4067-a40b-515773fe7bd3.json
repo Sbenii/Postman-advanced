@@ -2389,7 +2389,9 @@
 											"pm.test(\"Check number of admins on a board\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    let num=0;",
-											"    for (let i=0;i<jsonData.length);",
+											"    for (let i=0;i<jsonData.length;++i){",
+											"        ",
+											"    }",
 											"});"
 										],
 										"type": "text/javascript",
