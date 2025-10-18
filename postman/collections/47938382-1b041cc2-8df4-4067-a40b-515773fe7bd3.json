@@ -2468,9 +2468,9 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{b/1/boards/{id}/memberships/{idMembership}?type={type}&key=APIKey&token=APIToken",
+									"raw": "{{base_/1/boards/{id}/memberships/{idMembership}?type={type}&key=APIKey&token=APIToken",
 									"host": [
-										"{{b"
+										"{{base_"
 									],
 									"path": [
 										"1",
