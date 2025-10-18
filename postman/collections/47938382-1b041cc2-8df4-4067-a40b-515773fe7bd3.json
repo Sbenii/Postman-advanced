@@ -2468,7 +2468,13 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": ""
+									"raw": "{{base_url}}/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										""
+									]
 								}
 							},
 							"response": []
