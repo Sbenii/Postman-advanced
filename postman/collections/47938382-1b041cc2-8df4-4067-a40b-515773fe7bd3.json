@@ -2468,12 +2468,30 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/",
+									"raw": "{{b/1/boards/{id}/memberships/{idMembership}?type={type}&key=APIKey&token=APIToken",
 									"host": [
-										"{{base_url}}"
+										"{{b"
 									],
 									"path": [
-										""
+										"1",
+										"boards",
+										"{id}",
+										"memberships",
+										"{idMembership}"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "{type}"
+										},
+										{
+											"key": "key",
+											"value": "APIKey"
+										},
+										{
+											"key": "token",
+											"value": "APIToken"
+										}
 									]
 								}
 							},
