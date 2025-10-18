@@ -2468,26 +2468,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships?key={{key}}&token={{token}}",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"1",
-										"boards",
-										"{{boardID}}",
-										"memberships"
-									],
-									"query": [
-										{
-											"key": "key",
-											"value": "{{key}}"
-										},
-										{
-											"key": "token",
-											"value": "{{token}}"
-										}
-									]
+									"raw": ""
 								}
 							},
 							"response": []
