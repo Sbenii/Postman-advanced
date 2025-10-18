@@ -2468,7 +2468,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/{{memberID}}?type={observer}&key={{key}}&token=APIToken",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/{{memberID}}?type={observer}&key={{key}}&token={{token}}",
 									"host": [
 										"{{base_url}}"
 									],
@@ -2490,7 +2490,7 @@
 										},
 										{
 											"key": "token",
-											"value": "APIToken"
+											"value": "{{token}}"
 										}
 									]
 								}
