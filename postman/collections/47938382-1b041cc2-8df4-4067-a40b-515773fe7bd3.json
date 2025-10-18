@@ -2468,7 +2468,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/{idMembership}?type={type}&key=APIKey&token=APIToken",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/{{memberID}}?type={type}&key=APIKey&token=APIToken",
 									"host": [
 										"{{base_url}}"
 									],
@@ -2477,7 +2477,7 @@
 										"boards",
 										"{{boardID}}",
 										"memberships",
-										"{idMembership}"
+										"{{memberID}}"
 									],
 									"query": [
 										{
