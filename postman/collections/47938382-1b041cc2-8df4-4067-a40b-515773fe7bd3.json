@@ -2468,31 +2468,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/1/boards/68f12cbc82fa7d2ed5b797e4/memberships/{{membershipID}}?type=observer&key={{key}}&token={{token}}",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"1",
-										"boards",
-										"68f12cbc82fa7d2ed5b797e4",
-										"memberships",
-										"{{membershipID}}"
-									],
-									"query": [
-										{
-											"key": "type",
-											"value": "observer"
-										},
-										{
-											"key": "key",
-											"value": "{{key}}"
-										},
-										{
-											"key": "token",
-											"value": "{{token}}"
-										}
-									]
+									"raw": ""
 								}
 							},
 							"response": []
