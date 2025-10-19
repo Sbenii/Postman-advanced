@@ -2468,7 +2468,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/68f12cbc82fa7d2ed5b797e4/members/{{?type=observer&key={{key}}&token={{token}}\n",
+									"raw": "https://api.trello.com/1/boards/68f12cbc82fa7d2ed5b797e4/members/{{memberID}}?type=observer&key={{key}}&token={{token}}\n",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -2480,7 +2480,7 @@
 										"boards",
 										"68f12cbc82fa7d2ed5b797e4",
 										"members",
-										"{{"
+										"{{memberID}}"
 									],
 									"query": [
 										{
