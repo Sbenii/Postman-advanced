@@ -2468,7 +2468,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/{id}/memberships/{{memberID}}?type={normal}&key={{key}}&token={{token}}",
+									"raw": "https://api.trello.com/1/boards/{}/memberships/{{memberID}}?type={normal}&key={{key}}&token={{token}}",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -2478,7 +2478,7 @@
 									"path": [
 										"1",
 										"boards",
-										"{id}",
+										"{}",
 										"memberships",
 										"{{memberID}}"
 									],
