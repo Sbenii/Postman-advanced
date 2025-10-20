@@ -2496,7 +2496,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/{{memberID}}?type=observer&key={{key}}&token={{token}}",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/68f12cbc82fa7d2ed5b797e4?type=observer&key={{key}}&token={{token}}",
 									"host": [
 										"{{base_url}}"
 									],
@@ -2505,7 +2505,7 @@
 										"boards",
 										"{{boardID}}",
 										"memberships",
-										"{{memberID}}"
+										"68f12cbc82fa7d2ed5b797e4"
 									],
 									"query": [
 										{
