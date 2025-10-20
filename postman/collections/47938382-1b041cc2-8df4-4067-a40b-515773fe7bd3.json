@@ -2460,6 +2460,30 @@
 						},
 						{
 							"name": "Update membership of a member on a board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bcff327e-ee9f-4a91-bc8e-e8f749bf0bf3",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(404);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "fbd08b3a-b05b-4732-b266-c5afa27437b7",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-167ec34b-60a4-437b-a8b1-20dfc5463455",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
