@@ -2496,7 +2496,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/68f12cbc82fa7d2ed5b797e4?type=bserver&key={{key}}&token={{token}}",
+									"raw": "{{base_url}}/1/boards/{{boardID}}/memberships/68f12cbc82fa7d2ed5b797e4?type=normal&key={{key}}&token={{token}}",
 									"host": [
 										"{{base_url}}"
 									],
@@ -2510,7 +2510,7 @@
 									"query": [
 										{
 											"key": "type",
-											"value": "bserver"
+											"value": "normal"
 										},
 										{
 											"key": "key",
