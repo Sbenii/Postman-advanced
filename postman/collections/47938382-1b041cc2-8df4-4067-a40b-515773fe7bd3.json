@@ -2783,7 +2783,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Test promotion\", function () {",
+											"pm.test(\"Test if promotion is true\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2797,8 +2797,12 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "7e904ca5-8f64-46c6-90db-1a976cb78c36",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
