@@ -2869,7 +2869,7 @@
 											"        console.log(a[j]);",
 											"    }",
 											"});",
-											"pm.test(\"Your tese\", function () {",
+											"pm.test(\"Checl \", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
