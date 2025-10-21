@@ -2857,8 +2857,9 @@
 											"});",
 											"pm.test(\"Check if author is Trello \", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].author).to.eql(\"T\");",
-											"});"
+											"    pm.expect(jsonData[0].author).to.eql(\"Trello Inc\");",
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -2868,7 +2869,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "b13c2976-ba82-4c09-b00a-1349082e2e91",
+										"id": "fa5479ad-57e0-44db-84c1-ab247b7546a2",
 										"exec": [],
 										"type": "text/javascript"
 									}
