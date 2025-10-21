@@ -2866,7 +2866,7 @@
 											"        a[i]=jsonData[0].capabilities[i]",
 											"    }",
 											"    for (let j=0;j<=a.length;++j){",
-											"        console.log(a[i]);",
+											"        console.log(a[j]);",
 											"    }",
 											"});"
 										],
@@ -2878,7 +2878,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "d74b2d62-5d90-4f32-a1d7-bf333d73faee",
+										"id": "fe09ee65-4473-43ac-bcd9-9c4950c151a9",
 										"exec": [],
 										"type": "text/javascript"
 									}
