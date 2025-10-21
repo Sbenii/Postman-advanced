@@ -2861,6 +2861,7 @@
 											"});",
 											"pm.test(\"Print capabilities\", function () {",
 											"    var jsonData = pm.response.json();",
+											"    let a[]={};",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
@@ -2872,7 +2873,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "118e0a87-06f0-4c52-adc9-4b521ae0cc1b",
+										"id": "09ed529b-03b7-4046-a50a-8adbb2418335",
 										"exec": [],
 										"type": "text/javascript"
 									}
