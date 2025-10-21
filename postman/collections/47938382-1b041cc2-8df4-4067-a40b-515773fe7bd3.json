@@ -2863,7 +2863,7 @@
 											"    var jsonData = pm.response.json();",
 											"    let a=[];",
 											"    for(let i=0;i<jsonData.length;++i){",
-											"        a[i]=",
+											"        a[i]=jsonData[0].capabolities",
 											"    }",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2876,7 +2876,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "2dead1db-8428-4be7-b3e3-8b737de360a5",
+										"id": "f007df21-6b89-49e7-9472-f2c930f63a40",
 										"exec": [],
 										"type": "text/javascript"
 									}
