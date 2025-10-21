@@ -2855,9 +2855,9 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Check author \", function () {",
+											"pm.test(\"Check if author is Trello \", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].author).to.eql(100);",
+											"    pm.expect(jsonData[0].author).to.eql(\"T\");",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2868,7 +2868,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "bb4c384e-53bd-4cde-8131-7fed71b05cb5",
+										"id": "b13c2976-ba82-4c09-b00a-1349082e2e91",
 										"exec": [],
 										"type": "text/javascript"
 									}
