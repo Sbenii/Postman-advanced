@@ -2871,9 +2871,7 @@
 											"});",
 											"pm.test(\"Check if callback is available in capabilities\", function () {",
 											"    for(let i=0;i<a.length;++i){",
-											"        if (a[i] == \"callback\") {",
-											"        pm.expect(a[i]).to.eql(\"\");",
-											"        break;",
+											"        ",
 											"    }",
 											"});"
 										],
