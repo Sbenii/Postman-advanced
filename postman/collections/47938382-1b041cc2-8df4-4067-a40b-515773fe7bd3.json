@@ -2846,6 +2846,30 @@
 						},
 						{
 							"name": "Get powerUps on board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "96eb63e9-ff97-42e7-b5ba-aa89679bea5e",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "d078beb7-b49d-4577-bb96-4e07c4ea9485",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-22d6ec4b-f793-485e-9ecb-fd6a11c51180",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
