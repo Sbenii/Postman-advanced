@@ -2785,7 +2785,7 @@
 											"});",
 											"pm.test(\"Test if promotion is true\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].promotional.to.eql(100);",
+											"    pm.expect(jsonData[0].promotional).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
