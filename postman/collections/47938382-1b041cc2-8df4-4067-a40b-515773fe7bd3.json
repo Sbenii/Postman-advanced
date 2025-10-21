@@ -2855,7 +2855,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Check author \", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2868,7 +2868,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "57b15a00-ba70-4b11-820a-1d137e208fd9",
+										"id": "90b09e74-a8d8-4e6c-81ba-8c60cac996a6",
 										"exec": [],
 										"type": "text/javascript"
 									}
