@@ -2868,6 +2868,10 @@
 											"    for (let j=0;j<a.length;++j){",
 											"        console.log(a[j]);",
 											"    }",
+											"});",
+											"pm.test(\"Your tese\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2879,8 +2883,12 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "a8bfb760-6d75-472b-9bc0-685e4ad9dba3",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
