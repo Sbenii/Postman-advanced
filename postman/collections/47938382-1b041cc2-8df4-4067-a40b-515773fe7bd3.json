@@ -2857,7 +2857,7 @@
 											"});",
 											"pm.test(\"Check author \", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
+											"    pm.expect(jsonData[0].author).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2868,7 +2868,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "90b09e74-a8d8-4e6c-81ba-8c60cac996a6",
+										"id": "bb4c384e-53bd-4cde-8131-7fed71b05cb5",
 										"exec": [],
 										"type": "text/javascript"
 									}
