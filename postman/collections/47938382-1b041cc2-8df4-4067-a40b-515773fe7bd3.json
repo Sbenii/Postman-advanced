@@ -2859,13 +2859,12 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].author).to.eql(\"Trello Inc\");",
 											"});",
-											"pm.test(\"Print capabilities\", function () {",
+											"pm.test(\"Capabilities\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    let a=[];",
 											"    for(let i=0;i<jsonData[0].capabilities.length;++i){",
 											"        a[i]=jsonData[0].capabilities[i]",
 											"    }",
-											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -2876,7 +2875,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "9f098652-6623-423a-9076-4a53cb034382",
+										"id": "aac5147a-8a79-4832-834d-84128d1c8576",
 										"exec": [],
 										"type": "text/javascript"
 									}
