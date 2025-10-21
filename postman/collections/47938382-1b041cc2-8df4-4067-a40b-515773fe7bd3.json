@@ -2859,7 +2859,7 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData[0].author).to.eql(\"Trello Inc\");",
 											"});",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Print capa\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
@@ -2872,7 +2872,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "d97d1b4c-693e-4715-bbdf-0fa2c9c4b5c7",
+										"id": "21d998e6-29cb-430b-8b57-582461995bd7",
 										"exec": [],
 										"type": "text/javascript"
 									}
