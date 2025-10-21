@@ -2870,7 +2870,9 @@
 											"    }",
 											"});",
 											"pm.test(\"Check if callback is available in capabilities\", function () {",
-											"    for(let i=0;i<a.length;++i)",
+											"    for(let i=0;i<a.length;++i){",
+											"        pm.expect(a[i]).to.eql(100);",
+											"    }",
 											"});"
 										],
 										"type": "text/javascript",
