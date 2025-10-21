@@ -2774,6 +2774,31 @@
 						},
 						{
 							"name": "Get enabled  powerUps on board",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bcfd3337-60f1-4074-a591-1f83b686ba10",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "2a0d196a-a6c9-48bb-ab9f-477045e71ee4",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-f01b9463-0f89-44fc-8793-246959e672ea",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
