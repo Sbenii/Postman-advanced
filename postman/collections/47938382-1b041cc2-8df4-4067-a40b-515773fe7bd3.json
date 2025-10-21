@@ -2869,7 +2869,7 @@
 											"        console.log(a[j]);",
 											"    }",
 											"});",
-											"pm.test(\"Check if callback is \", function () {",
+											"pm.test(\"Check if callback is available in capabilities\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
