@@ -2871,7 +2871,7 @@
 											"});",
 											"pm.test(\"Check if callback is available in capabilities\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
+											"    pm.expect().to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
