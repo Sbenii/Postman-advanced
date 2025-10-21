@@ -2870,7 +2870,7 @@
 											"    }",
 											"});",
 											"pm.test(\"Check if callback is available in capabilities\", function () {",
-											"    pm.expect(a.).to.eql(100);",
+											"    pm.expect(a[i]).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
