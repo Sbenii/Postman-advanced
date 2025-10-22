@@ -3063,7 +3063,7 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.closed).to.eql(false);",
 											"});",
-											"pm.test(\"Check if \", function () {",
+											"pm.test(\"Check if there is no filter to the creatd \", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});"
