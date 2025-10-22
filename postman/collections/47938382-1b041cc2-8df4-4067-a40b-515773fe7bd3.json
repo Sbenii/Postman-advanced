@@ -2965,160 +2965,7 @@
 				},
 				{
 					"name": "Cards",
-					"item": [
-						{
-							"name": "Create a card",
-							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "b48d38e6-e18f-497a-a6e2-e39a27efce7b",
-										"exec": [
-											"let randomNum= Math.floor(Math.random() * 100);",
-											"let uniqueValue = `NewCard${randomNum}`;",
-											"pm.environment.set(\"mycardname\", uniqueValue);",
-											""
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"requests": {}
-									}
-								},
-								{
-									"listen": "test",
-									"script": {
-										"id": "33b42674-6656-412a-9a85-a9c2886e1060",
-										"exec": [
-											"let jasondata=pm.response.json();",
-											"pm.environment.set(\"cardID\", jasondata.id);",
-											"pm.test(\"Status code is 200\", function () {",
-											"    pm.response.to.have.status(200);",
-											"});",
-											"pm.test(\"Successful POST request\", function () {",
-											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
-											"});"
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"requests": {}
-									}
-								}
-							],
-							"id": "47938382-4ec4f9ba-48c9-4641-8eb4-2b6dd2296499",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "{{base_url}}/1/cards?idList={{listID}}&key={{key}}&token={{token}}&name={{mycardname}}",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"1",
-										"cards"
-									],
-									"query": [
-										{
-											"key": "idList",
-											"value": "{{listID}}"
-										},
-										{
-											"key": "key",
-											"value": "{{key}}"
-										},
-										{
-											"key": "token",
-											"value": "{{token}}"
-										},
-										{
-											"key": "name",
-											"value": "{{mycardname}}"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get card",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "691ffc64-5512-455a-a720-3d4113f17168",
-										"exec": [
-											"pm.test(\"Status code is 200\", function () {",
-											"    pm.response.to.have.status(200);",
-											"});",
-											"pm.test(\"Check that created card is empty by default\", function () {",
-											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.badges.checkItems).to.eql(0);",
-											"});",
-											""
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"requests": {}
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "83f86538-bb17-4276-9d4f-e578ffb0a28c",
-										"exec": [
-											""
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"requests": {}
-									}
-								}
-							],
-							"id": "47938382-d55aa68c-2f96-4584-a770-c64cb9a363cd",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"1",
-										"cards",
-										"{{cardID}}"
-									],
-									"query": [
-										{
-											"key": "key",
-											"value": "{{key}}"
-										},
-										{
-											"key": "token",
-											"value": "{{token}}"
-										}
-									]
-								}
-							},
-							"response": []
-						}
-					],
+					"item": [],
 					"id": "47938382-3ef7582e-1b80-4290-a289-1632e8bf025d"
 				},
 				{
@@ -3616,6 +3463,158 @@
 						}
 					],
 					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
+				},
+				{
+					"name": "Create a card",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b48d38e6-e18f-497a-a6e2-e39a27efce7b",
+								"exec": [
+									"let randomNum= Math.floor(Math.random() * 100);",
+									"let uniqueValue = `NewCard${randomNum}`;",
+									"pm.environment.set(\"mycardname\", uniqueValue);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "33b42674-6656-412a-9a85-a9c2886e1060",
+								"exec": [
+									"let jasondata=pm.response.json();",
+									"pm.environment.set(\"cardID\", jasondata.id);",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"id": "47938382-4ec4f9ba-48c9-4641-8eb4-2b6dd2296499",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/cards?idList={{listID}}&key={{key}}&token={{token}}&name={{mycardname}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "{{listID}}"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "{{mycardname}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "691ffc64-5512-455a-a720-3d4113f17168",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Check that created card is empty by default\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.badges.checkItems).to.eql(0);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "83f86538-bb17-4276-9d4f-e578ffb0a28c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"id": "47938382-d55aa68c-2f96-4584-a770-c64cb9a363cd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/1/cards/{{cardID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"{{cardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
 				},
 				{
 					"name": "Update board",
