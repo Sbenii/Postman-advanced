@@ -3002,7 +3002,7 @@
 											"pm.test(\"Successful POST request\", function () {",
 											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 											"});",
-											"pm.test(\"\", function () {",
+											"pm.test(\"Check l\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.value).to.eql(100);",
 											"});",
