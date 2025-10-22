@@ -3065,7 +3065,7 @@
 											"});",
 											"pm.test(\"Check if there is no filter to the created list\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.datasource).to.eql(100);",
+											"    pm.expect(jsonData.datasource.filter).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
