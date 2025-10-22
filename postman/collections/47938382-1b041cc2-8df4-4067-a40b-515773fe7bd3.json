@@ -3002,10 +3002,6 @@
 											"pm.test(\"Successful POST request\", function () {",
 											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 											"});",
-											"pm.test(\"Check if created list is opened\", function () {",
-											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.closed).to.eql(false);",
-											"});",
 											""
 										],
 										"type": "text/javascript",
@@ -3062,6 +3058,10 @@
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
+											"});",
+											"pm.test(\"Check if created list is opened\", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.closed).to.eql(false);",
 											"});",
 											""
 										],
