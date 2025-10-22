@@ -3004,7 +3004,7 @@
 											"});",
 											"pm.test(\"Check if created list is opened\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.closed).to.eql(100);",
+											"    pm.expect(jsonData.closed).to.eql(false);",
 											"});",
 											""
 										],
