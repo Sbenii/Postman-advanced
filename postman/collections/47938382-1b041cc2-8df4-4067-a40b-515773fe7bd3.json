@@ -3565,7 +3565,10 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.badges.checkItems).to.eql(0);",
 											"});",
-											""
+											"pm.test(\"Check if card isn't \", function () {",
+											"    var jsonData = pm.response.json();",
+											"    pm.expect(jsonData.value).to.eql(100);",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {},
