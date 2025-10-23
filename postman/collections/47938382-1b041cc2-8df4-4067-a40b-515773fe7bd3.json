@@ -2967,11 +2967,6 @@
 					"name": "Lists",
 					"item": [
 						{
-							"name": "Cards",
-							"item": [],
-							"id": "47938382-3ef7582e-1b80-4290-a289-1632e8bf025d"
-						},
-						{
 							"name": "Create a list",
 							"event": [
 								{
@@ -3470,6 +3465,11 @@
 						}
 					],
 					"id": "47938382-b5af2018-63d2-412d-9dee-3d3611b270d9"
+				},
+				{
+					"name": "Cards",
+					"item": [],
+					"id": "47938382-3ef7582e-1b80-4290-a289-1632e8bf025d"
 				},
 				{
 					"name": "Create a card",
