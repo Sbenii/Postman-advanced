@@ -3773,6 +3773,30 @@
 						},
 						{
 							"name": "Get a field on a card",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1ead2bc5-a9c1-42aa-860b-f7d1dca61cde",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "918a5ac4-6139-41f2-8596-55fccc2af817",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "47938382-67e2bef9-d6da-4cee-bdde-c88b5a4af3b9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
