@@ -3772,14 +3772,44 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get a field on a card",
 							"id": "47938382-67e2bef9-d6da-4cee-bdde-c88b5a4af3b9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://api.trello.com/1/cards/{id}/{field}?key=APIKey&token=APIToken",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"cards",
+										"{id}",
+										"{field}"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "APIKey"
+										},
+										{
+											"key": "token",
+											"value": "APIToken"
+										}
+									]
+								}
 							},
 							"response": []
 						}
