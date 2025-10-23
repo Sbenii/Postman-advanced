@@ -3786,12 +3786,9 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/cards/{id}/{field}?key=APIKey&token=APIToken",
-									"protocol": "https",
+									"raw": "{{base_url}}/1/cards/{id}/{field}?key=APIKey&token=APIToken",
 									"host": [
-										"api",
-										"trello",
-										"com"
+										"{{base_url}}"
 									],
 									"path": [
 										"1",
