@@ -3714,7 +3714,7 @@
 											"});",
 											"pm.test(\"Check if updated card is empty\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
+											"    pm.expect(jsonData.badges).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
