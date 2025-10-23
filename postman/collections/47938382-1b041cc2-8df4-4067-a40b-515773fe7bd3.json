@@ -3711,7 +3711,8 @@
 											"pm.test(\"Check that it is not a template card\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.isTemplate).to.eql(false);",
-											"});"
+											"});",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
