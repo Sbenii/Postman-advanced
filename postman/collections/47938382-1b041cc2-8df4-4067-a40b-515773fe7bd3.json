@@ -3786,7 +3786,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{base_url}}/1/cards/{{cardID}}/{field}?key=APIKey&token=APIToken",
+									"raw": "{{base_url}}/1/cards/{{cardID}}/{?key=APIKey&token=APIToken",
 									"host": [
 										"{{base_url}}"
 									],
@@ -3794,7 +3794,7 @@
 										"1",
 										"cards",
 										"{{cardID}}",
-										"{field}"
+										"{"
 									],
 									"query": [
 										{
