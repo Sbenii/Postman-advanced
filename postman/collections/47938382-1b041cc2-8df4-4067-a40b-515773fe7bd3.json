@@ -3786,14 +3786,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{base_url}}/1/cards/{id}/{field}?key=APIKey&token=APIToken",
+									"raw": "{{base_url}}/1/cards/{{cardID}}/{field}?key=APIKey&token=APIToken",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"1",
 										"cards",
-										"{id}",
+										"{{cardID}}",
 										"{field}"
 									],
 									"query": [
