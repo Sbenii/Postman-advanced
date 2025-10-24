@@ -3571,7 +3571,8 @@
 											"});",
 											"",
 											"var jsonData = pm.response.json();",
-											""
+											"let url=jsonData.url;",
+											"console.log(url)"
 										],
 										"type": "text/javascript",
 										"packages": {},
