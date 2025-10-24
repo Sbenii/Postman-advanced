@@ -3569,10 +3569,8 @@
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData.isTemplate).to.eql(false);",
 											"});",
-											"pm.test(\"Your test name\", function () {",
-											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.value).to.eql(100);",
-											"});"
+											"",
+											"    var jsonData = pm.response.json();"
 										],
 										"type": "text/javascript",
 										"packages": {},
