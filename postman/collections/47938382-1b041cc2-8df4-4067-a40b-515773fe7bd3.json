@@ -3570,7 +3570,8 @@
 											"    pm.expect(jsonData.isTemplate).to.eql(false);",
 											"});",
 											"",
-											"    var jsonData = pm.response.json();"
+											"var jsonData = pm.response.json();",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
