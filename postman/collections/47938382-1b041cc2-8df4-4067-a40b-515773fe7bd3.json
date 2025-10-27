@@ -3906,9 +3906,7 @@
 											"});",
 											"//Check date of attachement",
 											"pm.test(\"Attachment date is in correct format\", function () {",
-											"    pm.expect(jsonData[0].date).to.match(/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{",
-											"        ",
-											"        ",
+											"    pm.expect(jsonData[0].date).to.match(/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2",
 											""
 										],
 										"type": "text/javascript",
@@ -3919,7 +3917,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "3b3a1358-7bac-4535-b812-cca98bffbda0",
+										"id": "f6226c63-2f25-4eeb-af9e-2e5f5dd9150d",
 										"exec": [],
 										"type": "text/javascript"
 									}
