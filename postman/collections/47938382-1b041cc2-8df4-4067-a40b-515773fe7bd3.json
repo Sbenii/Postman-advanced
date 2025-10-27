@@ -3897,7 +3897,8 @@
 											"    pm.response.to.have.status(200);",
 											"});",
 											"var jsonData = pm.response.json();",
-											"let name=jsonData[0].fileNa"
+											"let name=jsonData[0].fileName",
+											"console.log(\"Name of atta\")"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -3907,7 +3908,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "50abdd06-6e86-4a4b-b01a-f75f122e4ca8",
+										"id": "265dfa2a-aaee-4a96-8f34-1b228316d77b",
 										"exec": [],
 										"type": "text/javascript"
 									}
