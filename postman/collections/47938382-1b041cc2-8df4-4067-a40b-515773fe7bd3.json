@@ -3904,7 +3904,11 @@
 											"pm.test(\"Attachment is a url\", function () {",
 											"    pm.expect(jsonData[0].url).to.match(/^https?:\\/\\/[^ \"]+$/);",
 											"});",
-											"//Check if ",
+											"//Check date of attachement",
+											"pm.test(\"Attachment date is in correct format\", function () {",
+											"    pm.expect(jsonData[0].date).to.match(/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{",
+											"        ",
+											"        ",
 											""
 										],
 										"type": "text/javascript",
@@ -3915,7 +3919,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "1d8b1bc1-7424-4270-b5e5-5b3a1f0cf5c7",
+										"id": "3b3a1358-7bac-4535-b812-cca98bffbda0",
 										"exec": [],
 										"type": "text/javascript"
 									}
