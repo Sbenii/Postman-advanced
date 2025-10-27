@@ -3904,6 +3904,7 @@
 											"pm.test(\"Attachment is a url\", function () {",
 											"    pm.expect(jsonData[0].url).to.match(/^https?:\\/\\/[^ \"]+$/);",
 											"});",
+											"//Check if ",
 											""
 										],
 										"type": "text/javascript",
@@ -3914,7 +3915,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "5e176b89-8cba-4915-9ca9-2d1e03a68fb9",
+										"id": "1d8b1bc1-7424-4270-b5e5-5b3a1f0cf5c7",
 										"exec": [],
 										"type": "text/javascript"
 									}
