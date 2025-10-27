@@ -3845,6 +3845,48 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get actions on a board",
+							"id": "47938382-20de4fc8-cba5-4a8b-aa46-3cfc5ccec491",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://api.trello.com/1/cards/{{cardID}}/actions?key=APIKey&token=APIToken",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"cards",
+										"{{cardID}}",
+										"actions"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "APIKey"
+										},
+										{
+											"key": "token",
+											"value": "APIToken"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-3ef7582e-1b80-4290-a289-1632e8bf025d"
