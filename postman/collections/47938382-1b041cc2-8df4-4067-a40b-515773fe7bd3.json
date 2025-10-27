@@ -3905,7 +3905,8 @@
 											"    pm.expect(jsonData[0].url).to.match(/^https?:\\/\\/[^ \"]+$/);",
 											"});",
 											"//Check date of attachement",
-											"let date=jsonData[0]."
+											"let date=jsonData[0].date;",
+											"console.log(D)"
 										],
 										"type": "text/javascript",
 										"packages": {},
