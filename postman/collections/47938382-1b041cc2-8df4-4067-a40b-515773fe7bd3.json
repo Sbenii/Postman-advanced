@@ -3900,7 +3900,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.trello.com/1/cards/{id}/attachments?key=APIKey&token={{token}}",
+									"raw": "https://api.trello.com/1/cards/{id}/attachments?key={{ke&token={{token}}",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -3916,7 +3916,7 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "APIKey"
+											"value": "{{ke"
 										},
 										{
 											"key": "token",
