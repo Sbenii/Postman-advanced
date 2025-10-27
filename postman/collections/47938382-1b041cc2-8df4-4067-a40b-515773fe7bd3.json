@@ -3786,7 +3786,7 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Check that \", function () {",
+											"pm.test(\"Check that the response body is not null\", function () {",
 											"    var jsonData = pm.response.json();",
 											"    pm.expect(jsonData._value).to.not.eql(null);",
 											"});"
