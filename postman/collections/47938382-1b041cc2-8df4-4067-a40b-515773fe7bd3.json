@@ -3906,7 +3906,7 @@
 											"});",
 											"//Check date of attachement",
 											"let date=jsonData[0].date;",
-											"console.log(\"Date: \",date);"
+											"console.log('Date: ',date);"
 										],
 										"type": "text/javascript",
 										"packages": {},
