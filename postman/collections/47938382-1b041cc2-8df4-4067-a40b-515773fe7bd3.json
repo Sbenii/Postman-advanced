@@ -3884,6 +3884,18 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get attachments on a card",
+							"id": "47938382-d4136492-d0d1-448a-970b-4fc50cd26511",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "47938382-3ef7582e-1b80-4290-a289-1632e8bf025d"
