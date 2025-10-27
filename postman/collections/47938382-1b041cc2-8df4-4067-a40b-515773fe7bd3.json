@@ -3896,9 +3896,8 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Check name of attached file\", function () {",
-											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData[0].fileName).to.eql(10);"
+											"var jsonData = pm.response.json();",
+											"let nam"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -3908,7 +3907,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "3016d48b-9eef-4b81-a7c4-c74a4e600b10",
+										"id": "c1432782-eba5-482d-b2fc-52dc0fcf9fad",
 										"exec": [],
 										"type": "text/javascript"
 									}
