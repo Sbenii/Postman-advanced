@@ -3896,9 +3896,12 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
+											"//Check name of at",
 											"var jsonData = pm.response.json();",
 											"let name=jsonData[0].fileName",
-											"console.log(\"Name of attachement:\",name)"
+											"console.log(\"Name of attachement:\",name)",
+											"",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -3908,7 +3911,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "c24c00ca-1700-4016-8192-699126a050a0",
+										"id": "021d633c-2e3f-46f3-8302-000eab7858ee",
 										"exec": [],
 										"type": "text/javascript"
 									}
