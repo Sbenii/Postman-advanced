@@ -3898,7 +3898,7 @@
 											"});",
 											"var jsonData = pm.response.json();",
 											"let name=jsonData[0].fileName",
-											"console.log(\"Name of atta\")"
+											"console.log(\"Name of attachement:\",name)"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -3908,7 +3908,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "265dfa2a-aaee-4a96-8f34-1b228316d77b",
+										"id": "c24c00ca-1700-4016-8192-699126a050a0",
 										"exec": [],
 										"type": "text/javascript"
 									}
