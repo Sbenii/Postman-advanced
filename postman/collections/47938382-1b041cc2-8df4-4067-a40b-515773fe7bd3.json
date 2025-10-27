@@ -3897,7 +3897,7 @@
 											"    pm.response.to.have.status(200);",
 											"});",
 											"var jsonData = pm.response.json();",
-											"let nam"
+											"let name=jsonData[0].fileNa"
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -3907,7 +3907,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "c1432782-eba5-482d-b2fc-52dc0fcf9fad",
+										"id": "50abdd06-6e86-4a4b-b01a-f75f122e4ca8",
 										"exec": [],
 										"type": "text/javascript"
 									}
