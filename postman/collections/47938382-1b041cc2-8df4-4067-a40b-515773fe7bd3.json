@@ -3900,7 +3900,9 @@
 											"var jsonData = pm.response.json();",
 											"let name=jsonData[0].fileName",
 											"console.log(\"Name of attachement:\",name)",
-											"//Check date",
+											"//Check if attachment is a url",
+											"pm.test(\"Attachment is a url\", function () {",
+											"    pm.expect(jsonData[0].url).to.match(/^https?:\\/\\/[^ \"]+$/);",
 											""
 										],
 										"type": "text/javascript",
@@ -3911,7 +3913,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "c60e3682-fd0a-4e48-9888-569affbbb094",
+										"id": "b20c31d7-50b4-43ec-8bfe-37cb330682c4",
 										"exec": [],
 										"type": "text/javascript"
 									}
