@@ -3900,7 +3900,7 @@
 											"var jsonData = pm.response.json();",
 											"let name=jsonData[0].fileName",
 											"console.log(\"Name of attachement:\",name)",
-											"//Check ",
+											"//Check date",
 											""
 										],
 										"type": "text/javascript",
@@ -3911,7 +3911,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "d36f8fd2-8b1f-40e6-b9e2-b1ff33ec05b6",
+										"id": "c60e3682-fd0a-4e48-9888-569affbbb094",
 										"exec": [],
 										"type": "text/javascript"
 									}
