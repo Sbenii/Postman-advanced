@@ -3786,9 +3786,9 @@
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
-											"pm.test(\"Your test name\", function () {",
+											"pm.test(\"Check that \", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData._value).to.not.eql(100);",
+											"    pm.expect(jsonData._value).to.not.eql(null);",
 											"});"
 										],
 										"type": "text/javascript",
