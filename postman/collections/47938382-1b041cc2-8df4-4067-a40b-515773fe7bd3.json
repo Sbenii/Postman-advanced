@@ -3788,7 +3788,7 @@
 											"});",
 											"pm.test(\"Your test name\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData._value).to.(100);",
+											"    pm.expect(jsonData._value).to.not.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
