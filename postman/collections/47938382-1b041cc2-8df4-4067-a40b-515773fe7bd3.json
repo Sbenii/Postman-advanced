@@ -3898,7 +3898,7 @@
 											"});",
 											"pm.test(\"Check name of attached file\", function () {",
 											"    var jsonData = pm.response.json();",
-											"    pm.expect(jsonData.).to.eql(100);",
+											"    pm.expect(jsonData[0].fileName).to.eql(100);",
 											"});"
 										],
 										"type": "text/javascript",
@@ -3909,7 +3909,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "9ccec431-cd2f-4314-911b-f3365bf6256c",
+										"id": "faa4914a-2ea5-4e60-81b3-101aecdb3e48",
 										"exec": [],
 										"type": "text/javascript"
 									}
